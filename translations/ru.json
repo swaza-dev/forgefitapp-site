@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "ForgeFit – AI That Knows Your Body",
+    "description": "AI-powered fitness coaching that analyzes your unique body composition, age, and experience to create truly personalized programs."
+  },
+  "nav": {
+    "howItWorks": "How It Works",
+    "features": "Features",
+    "pricing": "Pricing",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "tagline": "AI-Powered Fitness App",
+    "title": "YOU DON'T NEED",
+    "titleOutline": "ANOTHER APP.",
+    "subtitle": "You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.",
+    "startFreeTrial": "Start Free Trial",
+    "seeHowItWorks": "See How It Works",
+    "weekPrograms": "Week Programs",
+    "exercises": "Exercises",
+    "aiCoach": "AI Coach"
+  },
+  "marquee": {
+    "realTimeAccountability": "Real-Time Accountability",
+    "aiPersonalization": "AI-Powered Personalization",
+    "nutritionGuidance": "Complete Nutrition Guidance",
+    "worksOffline": "Works Offline",
+    "languages": "11 Languages",
+    "progressAnalytics": "Progress Analytics"
+  },
+  "problem": {
+    "text": "Most fitness apps give you generic workouts and hope for the best.",
+    "subtext": "ForgeFit analyzes YOUR body, goals, experience, and equipment—then builds a complete 52-week program designed specifically for you."
+  },
+  "emotional": {
+    "title": "THE #1 REASON PEOPLE FAIL\nISN'T LACK OF MOTIVATION.",
+    "quote": "It's lack of accountability. Most people know what to do. They just don't do it consistently. That's where we come in. We track your compliance in real-time, show you exactly where you stand, and keep you honest. Not because we're watching—because you deserve to see your progress.",
+    "subtext": "This isn't about perfection. It's about showing up. Day after day. Week after week. Until showing up becomes who you are."
+  },
+  "value": {
+    "label": "The ForgeFit Difference",
+    "title": "YOUR AI COACH,\nALWAYS AVAILABLE",
+    "aiPersonalization": {
+      "title": "AI-Powered Personalization",
+      "desc": "Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access. Your program is built from the ground up for YOU."
+    },
+    "accountability": {
+      "title": "Real-Time Accountability",
+      "desc": "Track compliance across workouts, nutrition, hydration, and sleep. We keep you honest. Miss a workout? We know. Crush your week? We celebrate it."
+    },
+    "nutrition": {
+      "title": "Complete Nutrition Guidance",
+      "desc": "Personalized nutrition coaching that respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages."
+    },
+    "coach": {
+      "title": "24/7 AI Coach Chat",
+      "desc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling."
+    }
+  },
+  "pillars": {
+    "label": "Why ForgeFit is Different",
+    "title": "ONE PLATFORM.\nALL FOUR PILLARS.",
+    "subtitle": "Most apps track one thing. We track everything that matters—plus give you a 24/7 AI coach to guide you through it all.",
+    "workouts": {
+      "title": "Workouts",
+      "desc": "52-week progressive programs tailored to your body, goals, and equipment. 5,700+ exercises with video demonstrations.",
+      "feature1": "Auto-progressive overload",
+      "feature2": "Equipment-based programming"
+    },
+    "nutrition": {
+      "title": "Nutrition",
+      "desc": "Meal logging is a breeze. Just type in natural language what you ate, and we'll figure out the nutrition. AI-powered meal planning that respects your diet and culture.",
+      "feature1": "Natural language meal logging",
+      "feature2": "11 languages with local cuisine"
+    },
+    "hydration": {
+      "title": "Hydration",
+      "desc": "Track your daily water intake with smart reminders. Stay hydrated for optimal performance and recovery.",
+      "feature1": "Smart hydration reminders",
+      "feature2": "Daily goal tracking"
+    },
+    "sleep": {
+      "title": "Sleep",
+      "desc": "Log your sleep to track recovery. Connect wearables for automatic tracking. Sleep quality impacts everything.",
+      "feature1": "Wearable integration",
+      "feature2": "Recovery-based adjustments"
+    },
+    "coachSubtitle": "Plus Your 24/7 AI Coach",
+    "coachDesc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Your AI coach knows your program, progress, and goals—always available to guide you."
+  },
+  "mealLogging": {
+    "label": "Natural Language Meal Logging",
+    "title": "MEAL LOGGING\nIS A BREEZE.",
+    "subtitle": "No more searching through databases. Just type what you ate in natural language, and our AI figures out the nutrition.",
+    "demoInput": "I had grilled chicken breast with brown rice and steamed broccoli for lunch",
+    "demoResult": "Logged:",
+    "demoResultDetails": "350 calories, 45g protein, 35g carbs, 8g fat",
+    "footer": "Works in 11 languages. Respects your diet preferences. Adapts to your culture. It's that simple."
+  },
+  "wowFeatures": {
+    "label": "Built For Everyone",
+    "title": "YOUR BODY.\nYOUR LIFE STAGE.\nYOUR PROGRAM.",
+    "subtitle": "A 25-year-old beginner and a 55-year-old intermediate need completely different approaches. ForgeFit understands the research and adapts to you.",
+    "ageAware": {
+      "badge": "Age-Aware AI",
+      "title": "50+ & 60+\nSpecialized",
+      "desc": "Research shows age affects muscle protein synthesis, hormone levels, and recovery. We don't give everyone the same plan. Your program adapts to your age with appropriate volume, intensity, and recovery protocols.",
+      "highlight": "Science-backed: Special protocols for 50-59 and 60+ age groups with modified intensity and extended recovery."
+    },
+    "pregnancy": {
+      "badge": "Pregnancy-Safe",
+      "title": "Pregnancy\nFitness",
+      "desc": "Safe, modified workouts that adapt to your trimester. Nutrition guidance that supports both you and your baby. Track your fitness journey through pregnancy and beyond.",
+      "highlight": "Trimester-aware: Workouts and nutrition plans that adjust automatically based on your stage of pregnancy."
+    },
+    "photoAnalysis": {
+      "badge": "AI Vision",
+      "title": "Photo Body\nAnalysis",
+      "desc": "Upload 3 photos. Our AI analyzes your body composition, muscle development, and posture—no gym assessment needed. Get personalized recommendations based on what your body actually looks like.",
+      "highlight": "GPT-4 Vision: Advanced AI that sees your body composition, posture, and fitness level from photos. Face blur for privacy."
+    },
+    "cultural": {
+      "badge": "11 Languages",
+      "title": "Cultural\nAdaptation",
+      "desc": "Meal plans that respect your culture. Get recipes in 11 languages with local cuisine. Indian, Mexican, Mediterranean, Asian—your meals, your way.",
+      "highlight": "Local cuisine: Not just translated—actually adapted. Indian dal, Mexican tacos, Japanese bento boxes, all with proper macros."
+    },
+    "offline": {
+      "badge": "Works Offline",
+      "title": "Train\nAnywhere",
+      "desc": "No internet? No problem. All workouts, exercises, and meal plans work completely offline. Sync when you're back online. Your progress never stops.",
+      "highlight": "100% offline: 5,700+ exercise videos, all workout plans, and meal suggestions available without internet."
+    },
+    "videoCoverage": {
+      "badge": "99.98% Coverage",
+      "title": "Never\nWonder How",
+      "desc": "With 99.98% video coverage across 5,700+ exercises, you'll never be stuck wondering how to perform a movement. Every exercise has a video demonstration.",
+      "highlight": "HD videos: Professional demonstrations for virtually every exercise. Form cues, common mistakes, and alternatives included."
+    }
+  },
+  "statement": {
+    "text": "GENERIC PLANS\nDON'T WORK",
+    "outline": "DON'T WORK",
+    "subtext": "Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. No templates. No guesswork. Just results."
+  },
+  "features": {
+    "label": "Complete System",
+    "title": "Everything You Need",
+    "programs": {
+      "title": "52-Week Programs",
+      "desc": "Progressive programming tailored to your goals. 5,700+ exercise library with 99.98% video coverage. Never wonder how to perform a movement."
+    },
+    "mealPlanning": {
+      "title": "AI Meal Planning",
+      "desc": "Respects your diet and culture. Get meals in 11 languages with local cuisine. Real-time compliance tracking and accountability."
+    },
+    "analytics": {
+      "title": "Progress Analytics",
+      "desc": "Body composition tracking, photo progress with face blur for privacy, and detailed analytics to see your transformation."
+    }
+  },
+  "testimonials": {
+    "label": "Real Results",
+    "title": "WHAT USERS\nARE SAYING",
+    "subtitle": "People are seeing real results. Not because of motivation—because of accountability.",
+    "testimonial1": {
+      "text": "I've tried every fitness app. This is the first one that actually keeps me accountable. The AI coach knows my program and calls me out when I skip workouts. Down 15 pounds in 12 weeks.",
+      "name": "Sarah M.",
+      "role": "Marketing Manager, 32",
+      "weeks": "12 weeks",
+      "compliance": "87%"
+    },
+    "testimonial2": {
+      "text": "At 58, I thought I was too old to start. The age-specific programming is incredible. My coach adjusts everything for my recovery. I'm stronger now than I was at 40.",
+      "name": "Robert J.",
+      "role": "Retired Engineer, 58",
+      "weeks": "16 weeks",
+      "compliance": "92%"
+    },
+    "testimonial3": {
+      "text": "The meal logging is a game changer. I just type 'chicken and rice' and it figures everything out. No more searching through databases. And the cultural meals? Perfect for my Indian diet.",
+      "name": "Priya K.",
+      "role": "Software Developer, 29",
+      "weeks": "8 weeks",
+      "compliance": "94%"
+    },
+    "testimonial4": {
+      "text": "The 4-pillar tracking is what makes this different. I can see my hydration, sleep, workouts, and nutrition all in one place. The AI coach connects the dots and tells me why I'm not recovering.",
+      "name": "Marcus C.",
+      "role": "Personal Trainer, 35",
+      "weeks": "20 weeks",
+      "compliance": "96%"
+    },
+    "testimonial5": {
+      "text": "I'm 6 months pregnant and the pregnancy-safe workouts are perfect. My coach adjusts everything automatically. I feel strong and confident, and I know I'm doing the right things for me and my baby.",
+      "name": "Emma L.",
+      "role": "Teacher, 31",
+      "weeks": "24 weeks",
+      "compliance": "89%"
+    },
+    "testimonial6": {
+      "text": "The photo body analysis was mind-blowing. Uploaded 3 photos and got a complete program. No gym assessment, no trainer needed. The AI saw things I didn't even know about my posture.",
+      "name": "David T.",
+      "role": "Consultant, 42",
+      "weeks": "10 weeks",
+      "compliance": "91%"
+    },
+    "onProgram": "on program",
+    "compliance": "compliance"
+  },
+  "stats": {
+    "weekPrograms": "Week Programs",
+    "exercises": "Exercises",
+    "languages": "Languages",
+    "aiCoach": "AI Coach"
+  },
+  "pricing": {
+    "label": "Simple Pricing",
+    "title": "One Plan. Everything.",
+    "planName": "ForgeFit Pro",
+    "perMonth": "per month",
+    "or": "or",
+    "perYear": "$19.99/year",
+    "save": "save 58%",
+    "feature1": "52-week personalized workout plans",
+    "feature2": "AI-powered meal planning",
+    "feature3": "5,700+ exercise library with videos",
+    "feature4": "Real-time compliance tracking",
+    "feature5": "24/7 AI coach chat",
+    "feature6": "Progress analytics & body composition",
+    "feature7": "Works offline",
+    "feature8": "11 languages supported",
+    "startFreeTrial": "Start Free Trial"
+  },
+  "cta": {
+    "title": "YOUR AI COACH IS WAITING.",
+    "subtitle": "7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.",
+    "downloadFree": "Download Free",
+    "appStore": {
+      "label": "Download on the",
+      "name": "App Store"
+    },
+    "googlePlay": {
+      "label": "Get it on",
+      "name": "Google Play"
+    }
+  },
+  "footer": {
+    "description": "AI-powered fitness coaching that keeps you accountable. Built for results, powered by intelligence.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "© 2026 ForgeFit. All rights reserved."
+  },
+  "comingSoon": {
+    "title": "Coming Soon!",
+    "message": "We're putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download."
+  }
+}
