@@ -154,16 +154,27 @@ function updateLinks() {
     const href = link.getAttribute('href');
     
     // Skip external links and hash links
-    if (href.startsWith('#')) {
+    if (href.startsWith('#') || href.startsWith('http')) {
       return;
     }
     
     // Skip if already has language prefix
-    if (SUPPORTED_LANGUAGES.some(lang => href.startsWith(`/${lang}/`))) {
+    if (SUPPORTED_LANGUAGES.some(lang => href.startsWith(`/${lang}/`) || href === `/${lang}`)) {
       return;
     }
     
-    // Add language prefix
+    // Special handling for privacy and terms
+    if (href === '/privacy/' || href.startsWith('/privacy/')) {
+      link.setAttribute('href', `/${currentLanguage}/privacy/`);
+      return;
+    }
+    
+    if (href === '/terms/' || href.startsWith('/terms/')) {
+      link.setAttribute('href', `/${currentLanguage}/terms/`);
+      return;
+    }
+    
+    // Add language prefix for other internal links
     if (href.startsWith('/')) {
       link.setAttribute('href', `/${currentLanguage}${href}`);
     } else if (!href.startsWith('http')) {
