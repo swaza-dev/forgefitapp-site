@@ -1964,17 +1964,12 @@
             });
         });
 
-        // Coming Soon alert for download buttons
+        // Coming Soon - prevent navigation for download buttons
         document.querySelectorAll('.download-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
-                if (window.i18n && window.i18n.t) {
-                    const title = window.i18n.t('comingSoon.title', 'Coming Soon!');
-                    const message = window.i18n.t('comingSoon.message', 'We\'re putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download.');
-                    alert(`${title}\n\n${message}`);
-                } else {
-                    alert('Coming Soon!\n\nWe\'re putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download.');
-                }
+                // Just prevent navigation, no alert
+                return false;
             });
         });
 
