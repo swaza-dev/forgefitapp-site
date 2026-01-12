@@ -1246,6 +1246,8 @@
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .mobile-menu-btn { display: block; }
+            .lang-switcher { order: -1; margin-right: auto; }
+            .lang-switcher-btn { padding: 6px 10px; font-size: 10px; }
             .hero { padding: 100px 0 60px; }
             .hero-title { font-size: 48px; }
             .hero-stats { gap: 24px; }
@@ -1918,10 +1920,19 @@
             </div>
             <div class="footer-bottom">
                 <p class="footer-copyright">© 2026 ForgeFit. All rights reserved.</p>
-                <div class="footer-socials">
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">LinkedIn</a>
+                <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+                    <div class="lang-switcher" id="footerLangSwitcher" style="position: relative;">
+                        <button class="lang-switcher-btn" id="footerLangSwitcherBtn" style="font-size: 11px;">
+                            <span id="footerCurrentLangCode">EN</span>
+                            <span>▼</span>
+                        </button>
+                        <div class="lang-switcher-dropdown" id="footerLangDropdown"></div>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1969,6 +1980,12 @@
             const btn = document.getElementById('langSwitcherBtn');
             const dropdown = document.getElementById('langDropdown');
             const currentLangCode = document.getElementById('currentLangCode');
+            
+            // Footer language switcher
+            const footerSwitcher = document.getElementById('footerLangSwitcher');
+            const footerBtn = document.getElementById('footerLangSwitcherBtn');
+            const footerDropdown = document.getElementById('footerLangDropdown');
+            const footerCurrentLangCode = document.getElementById('footerCurrentLangCode');
 
             if (!switcher || !btn || !dropdown) return;
 
@@ -1993,7 +2010,11 @@
                 if (currentLangCode) {
                     currentLangCode.textContent = currentLang.toUpperCase();
                 }
+                if (footerCurrentLangCode) {
+                    footerCurrentLangCode.textContent = currentLang.toUpperCase();
+                }
 
+                // Update nav dropdown
                 dropdown.innerHTML = '';
                 languages.forEach(lang => {
                     const option = document.createElement('a');
@@ -2006,19 +2027,52 @@
                             window.i18n.changeLanguage(lang.code);
                         }
                         switcher.classList.remove('open');
+                        if (footerSwitcher) footerSwitcher.classList.remove('open');
                     });
                     dropdown.appendChild(option);
                 });
+                
+                // Update footer dropdown
+                if (footerDropdown) {
+                    footerDropdown.innerHTML = '';
+                    languages.forEach(lang => {
+                        const option = document.createElement('a');
+                        option.href = '#';
+                        option.className = `lang-option ${lang.code === currentLang ? 'active' : ''}`;
+                        option.innerHTML = `<span class="lang-flag">${lang.flag}</span><span>${lang.name}</span>`;
+                        option.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            if (window.i18n && lang.code !== currentLang) {
+                                window.i18n.changeLanguage(lang.code);
+                            }
+                            switcher.classList.remove('open');
+                            if (footerSwitcher) footerSwitcher.classList.remove('open');
+                        });
+                        footerDropdown.appendChild(option);
+                    });
+                }
             }
 
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 switcher.classList.toggle('open');
+                if (footerSwitcher) footerSwitcher.classList.remove('open');
             });
+            
+            if (footerBtn && footerSwitcher) {
+                footerBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    footerSwitcher.classList.toggle('open');
+                    switcher.classList.remove('open');
+                });
+            }
 
             document.addEventListener('click', (e) => {
                 if (!switcher.contains(e.target)) {
                     switcher.classList.remove('open');
+                }
+                if (footerSwitcher && !footerSwitcher.contains(e.target)) {
+                    footerSwitcher.classList.remove('open');
                 }
             });
 
