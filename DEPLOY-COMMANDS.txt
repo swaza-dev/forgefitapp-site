@@ -1,0 +1,28 @@
+# Vercel CLI Deployment Commands
+
+# Step 1: Navigate to the site directory
+cd ~/Documents/forgefitapp-site
+
+# Step 2: Login to Vercel (if not already logged in)
+# This will open a browser for authentication
+vercel login
+
+# Step 3: Deploy to production
+vercel --prod --yes
+
+# OR for preview deployment first:
+vercel --yes
+
+# After deployment, Vercel will:
+# 1. Give you a deployment URL (e.g., https://forgefitapp-site.vercel.app)
+# 2. You can then add your custom domain in Vercel dashboard
+# 3. Update DNS at GoDaddy as instructed by Vercel
+
+
+
+
+
+
+
+
+
