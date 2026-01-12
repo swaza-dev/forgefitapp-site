@@ -1260,7 +1260,7 @@
                     <li><a href="#features">Features</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                 </ul>
-                <a href="#download" class="btn btn-orange">Get Started</a>
+                <a href="#download" class="btn btn-orange download-btn">Get Started</a>
                 <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
             </div>
         </div>
@@ -1281,7 +1281,7 @@
                 </h1>
                 <p class="hero-subtitle">You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.</p>
                 <div class="hero-cta">
-                    <a href="#download" class="btn btn-orange">Start Free Trial</a>
+                    <a href="#download" class="btn btn-orange download-btn">Start Free Trial</a>
                     <a href="#how" class="btn btn-outline">See How It Works</a>
                 </div>
                 <div class="hero-stats">
@@ -1756,7 +1756,7 @@
                     <li>Works offline</li>
                     <li>11 languages supported</li>
                 </ul>
-                <a href="#download" class="btn btn-orange" style="width: 100%;">Start Free Trial</a>
+                <a href="#download" class="btn btn-orange download-btn" style="width: 100%;">Start Free Trial</a>
             </div>
         </div>
     </section>
@@ -1769,17 +1769,17 @@
                 <h2 class="cta-title fade-in">YOUR AI COACH IS WAITING.</h2>
                 <p class="cta-subtitle fade-in">7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.</p>
                 <div class="fade-in">
-                    <a href="#" class="btn btn-orange">Download Free</a>
+                    <a href="#" class="btn btn-orange download-btn">Download Free</a>
                 </div>
                 <div class="store-badges fade-in">
-                    <a href="#" class="store-badge">
+                    <a href="#" class="store-badge download-btn" data-store="App Store">
                         <span class="store-icon">🍎</span>
                         <div class="store-text">
                             <span class="store-label">Download on the</span>
                             <span class="store-name">App Store</span>
                         </div>
                     </a>
-                    <a href="#" class="store-badge">
+                    <a href="#" class="store-badge download-btn" data-store="Google Play">
                         <svg class="store-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.11L13.69 12L3.84 21.89C3.34 21.6 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.53 12.9 20.18 13.18L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z" fill="currentColor"/>
                         </svg>
@@ -1854,6 +1854,15 @@
             a.addEventListener('click', e => { 
                 e.preventDefault(); 
                 document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' }); 
+            });
+        });
+
+        // Coming Soon alert for download buttons
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const storeName = btn.getAttribute('data-store') || 'ForgeFit';
+                alert('Coming Soon!\n\nWe\'re putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download.');
             });
         });
     </script>
