@@ -367,19 +367,34 @@
         .problem-section {
             padding: 100px 0;
             background: var(--black);
-            text-align: center;
         }
 
         .problem-text {
             max-width: 900px;
             margin: 0 auto;
+            text-align: left;
+            padding: 0;
         }
 
         .problem-text p {
-            font-size: clamp(20px, 4vw, 32px);
-            line-height: 1.6;
+            font-size: clamp(18px, 3.5vw, 28px);
+            line-height: 1.7;
             color: var(--gray-300);
-            margin: 0 0 24px 0;
+            margin: 0 0 28px 0;
+            text-align: left;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            text-indent: 0;
+            padding: 0;
+            margin-left: 0;
+            margin-right: 0;
+            display: block;
+        }
+
+        .problem-text p:first-child {
+            text-indent: 0;
+            margin-left: 0;
+            padding-left: 0;
         }
 
         .problem-text p:last-child {
@@ -1374,7 +1389,7 @@
 
     <section class="hero">
         <div class="hero-video-bg">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline preload="auto" poster="">
                 <source src="login-video.mp4" type="video/mp4">
             </video>
         </div>
@@ -1382,7 +1397,7 @@
             <div class="hero-content">
                 <p class="hero-tagline" data-i18n="hero.tagline">AI-Powered Fitness App</p>
                 <h1 class="hero-title">
-                    YOUR ALL-IN-ONE<br>
+                    <span data-i18n="hero.title">YOUR ALL-IN-ONE</span><br>
                     <span class="outline" data-i18n="hero.titleOutline">AI POWERED FITNESS APP</span>
                 </h1>
                 <p class="hero-subtitle" data-i18n="hero.subtitle">You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.</p>
