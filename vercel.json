@@ -13,7 +13,15 @@
       "destination": "/privacy/:lang/"
     },
     {
+      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/privacy/",
+      "destination": "/privacy/:lang/"
+    },
+    {
       "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/terms",
+      "destination": "/terms/:lang/"
+    },
+    {
+      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/terms/",
       "destination": "/terms/:lang/"
     },
     {

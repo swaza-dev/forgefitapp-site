@@ -1,264 +1,264 @@
 {
   "meta": {
-    "title": "ForgeFit – AI That Knows Your Body",
-    "description": "AI-powered fitness coaching that analyzes your unique body composition, age, and experience to create truly personalized programs."
+    "title": "ForgeFit – L'IA qui connaît votre corps",
+    "description": "Coaching fitness alimenté par IA qui analyse votre composition corporelle unique, votre âge et votre expérience pour créer des programmes véritablement personnalisés."
   },
   "nav": {
-    "howItWorks": "How It Works",
-    "features": "Features",
-    "pricing": "Pricing",
-    "getStarted": "Get Started"
+    "howItWorks": "Comment ça marche",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "getStarted": "Commencer"
   },
   "hero": {
-    "tagline": "AI-Powered Fitness App",
-    "title": "YOU DON'T NEED",
-    "titleOutline": "ANOTHER APP.",
-    "subtitle": "You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.",
-    "startFreeTrial": "Start Free Trial",
-    "seeHowItWorks": "See How It Works",
-    "weekPrograms": "Week Programs",
-    "exercises": "Exercises",
-    "aiCoach": "AI Coach"
+    "tagline": "Application de fitness alimentée par IA",
+    "title": "VOTRE CORPS.",
+    "titleOutline": "VOTRE PROGRAMME.",
+    "subtitle": "Vous avez besoin d'un coach qui vous tient responsable. La plupart des applications de fitness vous donnent des entraînements génériques et espèrent le mieux. ForgeFit est différent.",
+    "startFreeTrial": "Essai gratuit",
+    "seeHowItWorks": "Voir comment ça marche",
+    "weekPrograms": "Programmes hebdomadaires",
+    "exercises": "Exercices",
+    "aiCoach": "Coach IA"
   },
   "marquee": {
-    "realTimeAccountability": "Real-Time Accountability",
-    "aiPersonalization": "AI-Powered Personalization",
-    "nutritionGuidance": "Complete Nutrition Guidance",
-    "worksOffline": "Works Offline",
-    "languages": "11 Languages",
-    "progressAnalytics": "Progress Analytics"
+    "realTimeAccountability": "Responsabilité en temps réel",
+    "aiPersonalization": "Personnalisation alimentée par IA",
+    "nutritionGuidance": "Conseils nutritionnels complets",
+    "worksOffline": "Fonctionne hors ligne",
+    "languages": "11 langues",
+    "progressAnalytics": "Analyse des progrès"
   },
   "problem": {
-    "text": "Most fitness apps give you generic workouts and hope for the best.",
-    "subtext": "ForgeFit analyzes YOUR body, goals, experience, and equipment—then builds a complete 52-week program designed specifically for you."
+    "text": "ForgeFit est une application de coaching fitness alimentée par l'IA qui suit et optimise les quatre piliers essentiels du fitness : musculation, cardio, nutrition et hydratation - car les vrais résultats viennent de l'équilibre, pas seulement du temps passé en salle de sport.",
+    "subtext": "Il propose des programmes personnalisés de 52 semaines qui s'adaptent à vos progrès, vous aidant à construire une cohérence sur les quatre piliers et à atteindre vos objectifs à un prix abordable."
   },
   "emotional": {
-    "title": "THE #1 REASON PEOPLE FAIL\nISN'T LACK OF MOTIVATION.",
-    "quote": "It's lack of accountability. Most people know what to do. They just don't do it consistently. That's where we come in. We track your compliance in real-time, show you exactly where you stand, and keep you honest. Not because we're watching—because you deserve to see your progress.",
-    "subtext": "This isn't about perfection. It's about showing up. Day after day. Week after week. Until showing up becomes who you are."
+    "title": "LA RAISON #1 POUR LAQUELLE LES GENS ÉCHOUENT\nN'EST PAS LE MANQUE DE MOTIVATION.",
+    "quote": "C'est le manque de responsabilité. La plupart des gens savent quoi faire. Ils ne le font tout simplement pas de manière cohérente. C'est là que nous intervenons. Nous suivons votre conformité en temps réel, vous montrons exactement où vous en êtes et vous gardons honnête. Pas parce que nous regardons—parce que vous méritez de voir vos progrès.",
+    "subtext": "Il ne s'agit pas de perfection. Il s'agit de se présenter. Jour après jour. Semaine après semaine. Jusqu'à ce que se présenter devienne qui vous êtes."
   },
   "value": {
-    "label": "The ForgeFit Difference",
-    "title": "YOUR AI COACH,\nALWAYS AVAILABLE",
+    "label": "La différence ForgeFit",
+    "title": "VOTRE COACH IA,\nTOUJOURS DISPONIBLE",
     "aiPersonalization": {
-      "title": "AI-Powered Personalization",
-      "desc": "Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access. Your program is built from the ground up for YOU."
+      "title": "Personnalisation alimentée par IA",
+      "desc": "Basé sur 60 profils utilisateur différents couvrant les types de corps, les niveaux de fitness, les objectifs et l'accès à l'équipement. Votre programme est construit depuis le début pour VOUS."
     },
     "accountability": {
-      "title": "Real-Time Accountability",
-      "desc": "Track compliance across workouts, nutrition, hydration, and sleep. We keep you honest. Miss a workout? We know. Crush your week? We celebrate it."
+      "title": "Responsabilité en temps réel",
+      "desc": "Suivez la conformité pour les entraînements, la nutrition, l'hydratation et le sommeil. Nous vous gardons honnête. Entraînement manqué ? Nous le savons. Semaine écrasée ? Nous la célébrons."
     },
     "nutrition": {
-      "title": "Complete Nutrition Guidance",
-      "desc": "Personalized nutrition coaching that respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages."
+      "title": "Conseils nutritionnels complets",
+      "desc": "Coaching nutritionnel personnalisé qui respecte votre alimentation (pescétarien, végétarien, végétalien) et s'adapte à votre culture avec des repas en 11 langues."
     },
     "coach": {
-      "title": "24/7 AI Coach Chat",
-      "desc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling."
+      "title": "Chat avec coach IA 24/7",
+      "desc": "Bloqué sur la forme ? Pas sûr de quoi manger ? Besoin d'échanger un exercice ? Demandez simplement. Comme avoir un entraîneur personnel dans votre poche. Pas d'attente. Pas de planification."
     }
   },
   "pillars": {
-    "label": "Why ForgeFit is Different",
-    "title": "ONE PLATFORM.\nALL FOUR PILLARS.",
-    "subtitle": "Most apps track one thing. We track everything that matters—plus give you a 24/7 AI coach to guide you through it all.",
+    "label": "Pourquoi ForgeFit est différent",
+    "title": "UNE PLATEFORME.\nLES QUATRE PILIERS.",
+    "subtitle": "La plupart des applications suivent une chose. Nous suivons tout ce qui compte—plus vous donner un coach IA 24/7 pour vous guider à travers tout.",
     "workouts": {
-      "title": "Workouts",
-      "desc": "52-week progressive programs tailored to your body, goals, and equipment. 5,700+ exercises with video demonstrations.",
-      "feature1": "Auto-progressive overload",
-      "feature2": "Equipment-based programming"
+      "title": "Entraînements",
+      "desc": "Programmes progressifs de 52 semaines adaptés à votre corps, vos objectifs et votre équipement. Plus de 5 700 exercices avec démonstrations vidéo.",
+      "feature1": "Surcharge progressive automatique",
+      "feature2": "Programmation basée sur l'équipement"
     },
     "nutrition": {
       "title": "Nutrition",
-      "desc": "Meal logging is a breeze. Just type in natural language what you ate, and we'll figure out the nutrition. AI-powered meal planning that respects your diet and culture.",
-      "feature1": "Natural language meal logging",
-      "feature2": "11 languages with local cuisine"
+      "desc": "Enregistrer les repas est un jeu d'enfant. Tapez simplement en langage naturel ce que vous avez mangé, et nous trouverons la nutrition. Planification des repas alimentée par IA qui respecte votre alimentation et votre culture.",
+      "feature1": "Enregistrement des repas en langage naturel",
+      "feature2": "11 langues avec cuisine locale"
     },
     "hydration": {
-      "title": "Hydration",
-      "desc": "Track your daily water intake with smart reminders. Stay hydrated for optimal performance and recovery.",
-      "feature1": "Smart hydration reminders",
-      "feature2": "Daily goal tracking"
+      "title": "Hydratation",
+      "desc": "Suivez votre consommation d'eau quotidienne avec des rappels intelligents. Restez hydraté pour des performances et une récupération optimales.",
+      "feature1": "Rappels d'hydratation intelligents",
+      "feature2": "Suivi des objectifs quotidiens"
     },
     "sleep": {
-      "title": "Sleep",
-      "desc": "Log your sleep to track recovery. Connect wearables for automatic tracking. Sleep quality impacts everything.",
-      "feature1": "Wearable integration",
-      "feature2": "Recovery-based adjustments"
+      "title": "Sommeil",
+      "desc": "Enregistrez votre sommeil pour suivre la récupération. Connectez les wearables pour un suivi automatique. La qualité du sommeil affecte tout.",
+      "feature1": "Intégration des wearables",
+      "feature2": "Ajustements basés sur la récupération"
     },
-    "coachSubtitle": "Plus Your 24/7 AI Coach",
-    "coachDesc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Your AI coach knows your program, progress, and goals—always available to guide you."
+    "coachSubtitle": "Plus votre coach IA 24/7",
+    "coachDesc": "Bloqué sur la forme ? Pas sûr de quoi manger ? Besoin d'échanger un exercice ? Demandez simplement. Votre coach IA connaît votre programme, vos progrès et vos objectifs—toujours disponible pour vous guider."
   },
   "mealLogging": {
-    "label": "Natural Language Meal Logging",
-    "title": "MEAL LOGGING\nIS A BREEZE.",
-    "subtitle": "No more searching through databases. Just type what you ate in natural language, and our AI figures out the nutrition.",
-    "demoInput": "I had grilled chicken breast with brown rice and steamed broccoli for lunch",
-    "demoResult": "Logged:",
-    "demoResultDetails": "350 calories, 45g protein, 35g carbs, 8g fat",
-    "footer": "Works in 11 languages. Respects your diet preferences. Adapts to your culture. It's that simple."
+    "label": "Enregistrement des repas en langage naturel",
+    "title": "ENREGISTRER LES REPAS\nEST UN JEU D'ENFANT.",
+    "subtitle": "Plus besoin de chercher dans des bases de données. Tapez simplement ce que vous avez mangé en langage naturel, et notre IA trouve la nutrition.",
+    "demoInput": "J'ai mangé du blanc de poulet grillé avec du riz brun et du brocoli cuit à la vapeur pour le déjeuner",
+    "demoResult": "Enregistré :",
+    "demoResultDetails": "350 calories, 45g de protéines, 35g de glucides, 8g de lipides",
+    "footer": "Fonctionne en 11 langues. Respecte vos préférences alimentaires. S'adapte à votre culture. C'est aussi simple que ça."
   },
   "wowFeatures": {
-    "label": "Built For Everyone",
-    "title": "YOUR BODY.\nYOUR LIFE STAGE.\nYOUR PROGRAM.",
-    "subtitle": "A 25-year-old beginner and a 55-year-old intermediate need completely different approaches. ForgeFit understands the research and adapts to you.",
+    "label": "Conçu pour tous",
+    "title": "VOTRE CORPS.\nVOTRE ÉTAPE DE VIE.\nVOTRE PROGRAMME.",
+    "subtitle": "Un débutant de 25 ans et un intermédiaire de 55 ans ont besoin d'approches complètement différentes. ForgeFit comprend la recherche et s'adapte à vous.",
     "ageAware": {
-      "badge": "Age-Aware AI",
-      "title": "50+ & 60+\nSpecialized",
-      "desc": "Research shows age affects muscle protein synthesis, hormone levels, and recovery. We don't give everyone the same plan. Your program adapts to your age with appropriate volume, intensity, and recovery protocols.",
-      "highlight": "Science-backed: Special protocols for 50-59 and 60+ age groups with modified intensity and extended recovery."
+      "badge": "IA consciente de l'âge",
+      "title": "50+ & 60+\nSpécialisé",
+      "desc": "La recherche montre que l'âge affecte la synthèse des protéines musculaires, les niveaux d'hormones et la récupération. Nous ne donnons pas à tout le monde le même plan. Votre programme s'adapte à votre âge avec un volume, une intensité et des protocoles de récupération appropriés.",
+      "highlight": "Scientifiquement prouvé : Protocoles spéciaux pour les groupes d'âge 50-59 et 60+ avec intensité modifiée et récupération prolongée."
     },
     "pregnancy": {
-      "badge": "Pregnancy-Safe",
-      "title": "Pregnancy\nFitness",
-      "desc": "Safe, modified workouts that adapt to your trimester. Nutrition guidance that supports both you and your baby. Track your fitness journey through pregnancy and beyond.",
-      "highlight": "Trimester-aware: Workouts and nutrition plans that adjust automatically based on your stage of pregnancy."
+      "badge": "Sûr pour la grossesse",
+      "title": "Fitness\npendant la grossesse",
+      "desc": "Entraînements sûrs et modifiés qui s'adaptent à votre trimestre. Conseils nutritionnels qui soutiennent vous et votre bébé. Suivez votre parcours de fitness pendant la grossesse et au-delà.",
+      "highlight": "Conscient du trimestre : Entraînements et plans nutritionnels qui s'ajustent automatiquement en fonction de votre stade de grossesse."
     },
     "photoAnalysis": {
-      "badge": "AI Vision",
-      "title": "Photo Body\nAnalysis",
-      "desc": "Upload 3 photos. Our AI analyzes your body composition, muscle development, and posture—no gym assessment needed. Get personalized recommendations based on what your body actually looks like.",
-      "highlight": "GPT-4 Vision: Advanced AI that sees your body composition, posture, and fitness level from photos. Face blur for privacy."
+      "badge": "Vision IA",
+      "title": "Analyse corporelle\npar photo",
+      "desc": "Téléchargez 3 photos. Notre IA analyse votre composition corporelle, le développement musculaire et la posture—aucune évaluation en salle de sport nécessaire. Obtenez des recommandations personnalisées basées sur l'apparence réelle de votre corps.",
+      "highlight": "GPT-4 Vision : IA avancée qui voit votre composition corporelle, votre posture et votre niveau de fitness à partir de photos. Floutage du visage pour la confidentialité."
     },
     "cultural": {
-      "badge": "11 Languages",
-      "title": "Cultural\nAdaptation",
-      "desc": "Meal plans that respect your culture. Get recipes in 11 languages with local cuisine. Indian, Mexican, Mediterranean, Asian—your meals, your way.",
-      "highlight": "Local cuisine: Not just translated—actually adapted. Indian dal, Mexican tacos, Japanese bento boxes, all with proper macros."
+      "badge": "11 langues",
+      "title": "Adaptation\nculturelle",
+      "desc": "Plans de repas qui respectent votre culture. Obtenez des recettes en 11 langues avec cuisine locale. Indien, Mexicain, Méditerranéen, Asiatique—vos repas, votre façon.",
+      "highlight": "Cuisine locale : Pas seulement traduit—vraiment adapté. Dal indien, tacos mexicains, boîtes bento japonaises, tous avec les bons macros."
     },
     "offline": {
-      "badge": "Works Offline",
-      "title": "Train\nAnywhere",
-      "desc": "No internet? No problem. All workouts, exercises, and meal plans work completely offline. Sync when you're back online. Your progress never stops.",
-      "highlight": "100% offline: 5,700+ exercise videos, all workout plans, and meal suggestions available without internet."
+      "badge": "Fonctionne hors ligne",
+      "title": "Entraînez-vous\npartout",
+      "desc": "Pas d'internet ? Pas de problème. Tous les entraînements, exercices et plans de repas fonctionnent complètement hors ligne. Synchronisez quand vous êtes de nouveau en ligne. Vos progrès ne s'arrêtent jamais.",
+      "highlight": "100% hors ligne : Plus de 5 700 vidéos d'exercices, tous les plans d'entraînement et suggestions de repas disponibles sans internet."
     },
     "videoCoverage": {
-      "badge": "99.98% Coverage",
-      "title": "Never\nWonder How",
-      "desc": "With 99.98% video coverage across 5,700+ exercises, you'll never be stuck wondering how to perform a movement. Every exercise has a video demonstration.",
-      "highlight": "HD videos: Professional demonstrations for virtually every exercise. Form cues, common mistakes, and alternatives included."
+      "badge": "99,98% de couverture",
+      "title": "Ne vous demandez\njamais comment",
+      "desc": "Avec 99,98% de couverture vidéo sur plus de 5 700 exercices, vous ne serez jamais bloqué à vous demander comment effectuer un mouvement. Chaque exercice a une démonstration vidéo.",
+      "highlight": "Vidéos HD : Démonstrations professionnelles pour pratiquement chaque exercice. Indices de forme, erreurs communes et alternatives inclus."
     }
   },
   "statement": {
-    "text": "GENERIC PLANS\nDON'T WORK",
-    "outline": "DON'T WORK",
-    "subtext": "Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. No templates. No guesswork. Just results."
+    "text": "LES PLANS GÉNÉRIQUES\nNE FONCTIONNENT PAS",
+    "outline": "NE FONCTIONNENT PAS",
+    "subtext": "Notre IA analyse votre corps, vos objectifs, votre expérience et l'équipement disponible—puis construit un programme complet de 52 semaines conçu spécifiquement pour vous. Pas de modèles. Pas de devinettes. Juste des résultats."
   },
   "features": {
-    "label": "Complete System",
-    "title": "Everything You Need",
+    "label": "Système complet",
+    "title": "Tout ce dont vous avez besoin",
     "programs": {
-      "title": "52-Week Programs",
-      "desc": "Progressive programming tailored to your goals. 5,700+ exercise library with 99.98% video coverage. Never wonder how to perform a movement."
+      "title": "Programmes de 52 semaines",
+      "desc": "Programmation progressive adaptée à vos objectifs. Bibliothèque de plus de 5 700 exercices avec 99,98% de couverture vidéo. Ne vous demandez jamais comment effectuer un mouvement."
     },
     "mealPlanning": {
-      "title": "AI Meal Planning",
-      "desc": "Respects your diet and culture. Get meals in 11 languages with local cuisine. Real-time compliance tracking and accountability."
+      "title": "Planification des repas par IA",
+      "desc": "Respecte votre alimentation et votre culture. Obtenez des repas en 11 langues avec cuisine locale. Suivi de conformité en temps réel et responsabilité."
     },
     "analytics": {
-      "title": "Progress Analytics",
-      "desc": "Body composition tracking, photo progress with face blur for privacy, and detailed analytics to see your transformation."
+      "title": "Analyse des progrès",
+      "desc": "Suivi de la composition corporelle, progrès photo avec floutage du visage pour la confidentialité et analyses détaillées pour voir votre transformation."
     }
   },
   "testimonials": {
-    "label": "Real Results",
-    "title": "WHAT USERS\nARE SAYING",
-    "subtitle": "People are seeing real results. Not because of motivation—because of accountability.",
+    "label": "Vrais résultats",
+    "title": "CE QUE DISENT\nLES UTILISATEURS",
+    "subtitle": "Les gens voient de vrais résultats. Pas à cause de la motivation—à cause de la responsabilité.",
     "testimonial1": {
-      "text": "I've tried every fitness app. This is the first one that actually keeps me accountable. The AI coach knows my program and calls me out when I skip workouts. Down 15 pounds in 12 weeks.",
+      "text": "J'ai essayé chaque application de fitness. C'est la première qui me tient vraiment responsable. Le coach IA connaît mon programme et me rappelle quand je saute des entraînements. 15 livres perdues en 12 semaines.",
       "name": "Sarah M.",
-      "role": "Marketing Manager, 32",
-      "weeks": "12 weeks",
+      "role": "Directrice marketing, 32",
+      "weeks": "12 semaines",
       "compliance": "87%"
     },
     "testimonial2": {
-      "text": "At 58, I thought I was too old to start. The age-specific programming is incredible. My coach adjusts everything for my recovery. I'm stronger now than I was at 40.",
+      "text": "À 58 ans, je pensais que j'étais trop vieux pour commencer. La programmation spécifique à l'âge est incroyable. Mon coach ajuste tout pour ma récupération. Je suis plus fort maintenant qu'à 40 ans.",
       "name": "Robert J.",
-      "role": "Retired Engineer, 58",
-      "weeks": "16 weeks",
+      "role": "Ingénieur à la retraite, 58",
+      "weeks": "16 semaines",
       "compliance": "92%"
     },
     "testimonial3": {
-      "text": "The meal logging is a game changer. I just type 'chicken and rice' and it figures everything out. No more searching through databases. And the cultural meals? Perfect for my Indian diet.",
+      "text": "L'enregistrement des repas change la donne. Je tape simplement 'poulet et riz' et ça trouve tout. Plus besoin de chercher dans des bases de données. Et les repas culturels ? Parfait pour mon alimentation indienne.",
       "name": "Priya K.",
-      "role": "Software Developer, 29",
-      "weeks": "8 weeks",
+      "role": "Développeuse de logiciels, 29",
+      "weeks": "8 semaines",
       "compliance": "94%"
     },
     "testimonial4": {
-      "text": "The 4-pillar tracking is what makes this different. I can see my hydration, sleep, workouts, and nutrition all in one place. The AI coach connects the dots and tells me why I'm not recovering.",
+      "text": "Le suivi à 4 piliers est ce qui rend cela différent. Je peux voir mon hydratation, mon sommeil, mes entraînements et ma nutrition en un seul endroit. Le coach IA connecte les points et me dit pourquoi je ne récupère pas.",
       "name": "Marcus C.",
-      "role": "Personal Trainer, 35",
-      "weeks": "20 weeks",
+      "role": "Entraîneur personnel, 35",
+      "weeks": "20 semaines",
       "compliance": "96%"
     },
     "testimonial5": {
-      "text": "I'm 6 months pregnant and the pregnancy-safe workouts are perfect. My coach adjusts everything automatically. I feel strong and confident, and I know I'm doing the right things for me and my baby.",
+      "text": "Je suis enceinte de 6 mois et les entraînements sûrs pour la grossesse sont parfaits. Mon coach ajuste tout automatiquement. Je me sens forte et confiante, et je sais que je fais les bonnes choses pour moi et mon bébé.",
       "name": "Emma L.",
-      "role": "Teacher, 31",
-      "weeks": "24 weeks",
+      "role": "Enseignante, 31",
+      "weeks": "24 semaines",
       "compliance": "89%"
     },
     "testimonial6": {
-      "text": "The photo body analysis was mind-blowing. Uploaded 3 photos and got a complete program. No gym assessment, no trainer needed. The AI saw things I didn't even know about my posture.",
+      "text": "L'analyse corporelle par photo était époustouflante. J'ai téléchargé 3 photos et j'ai eu un programme complet. Pas d'évaluation en salle de sport, pas besoin d'entraîneur. L'IA a vu des choses que je ne savais même pas sur ma posture.",
       "name": "David T.",
       "role": "Consultant, 42",
-      "weeks": "10 weeks",
+      "weeks": "10 semaines",
       "compliance": "91%"
     },
-    "onProgram": "on program",
-    "compliance": "compliance"
+    "onProgram": "au programme",
+    "compliance": "conformité"
   },
   "stats": {
-    "weekPrograms": "Week Programs",
-    "exercises": "Exercises",
-    "languages": "Languages",
-    "aiCoach": "AI Coach"
+    "weekPrograms": "Programmes hebdomadaires",
+    "exercises": "Exercices",
+    "languages": "Langues",
+    "aiCoach": "Coach IA"
   },
   "pricing": {
-    "label": "Simple Pricing",
-    "title": "One Plan. Everything.",
+    "label": "Tarification simple",
+    "title": "Un plan. Tout.",
     "planName": "ForgeFit Pro",
-    "perMonth": "per month",
-    "or": "or",
-    "perYear": "$19.99/year",
-    "save": "save 58%",
-    "feature1": "52-week personalized workout plans",
-    "feature2": "AI-powered meal planning",
-    "feature3": "5,700+ exercise library with videos",
-    "feature4": "Real-time compliance tracking",
-    "feature5": "24/7 AI coach chat",
-    "feature6": "Progress analytics & body composition",
-    "feature7": "Works offline",
-    "feature8": "11 languages supported",
-    "startFreeTrial": "Start Free Trial"
+    "perMonth": "par mois",
+    "or": "ou",
+    "perYear": "$19.99/an",
+    "save": "économisez 58%",
+    "feature1": "Plans d'entraînement personnalisés de 52 semaines",
+    "feature2": "Planification des repas alimentée par IA",
+    "feature3": "Bibliothèque de plus de 5 700 exercices avec vidéos",
+    "feature4": "Suivi de conformité en temps réel",
+    "feature5": "Chat avec coach IA 24/7",
+    "feature6": "Analyse des progrès et composition corporelle",
+    "feature7": "Fonctionne hors ligne",
+    "feature8": "11 langues supportées",
+    "startFreeTrial": "Commencer l'essai gratuit"
   },
   "cta": {
-    "title": "YOUR AI COACH IS WAITING.",
-    "subtitle": "7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.",
-    "downloadFree": "Download Free",
+    "title": "VOTRE COACH IA VOUS ATTEND.",
+    "subtitle": "Essai gratuit de 7 jours. Ensuite seulement $3.99/mois ou $19.99/an. Téléchargez ForgeFit et commencez votre transformation aujourd'hui.",
+    "downloadFree": "Télécharger gratuitement",
     "appStore": {
-      "label": "Download on the",
+      "label": "Télécharger sur l'",
       "name": "App Store"
     },
     "googlePlay": {
-      "label": "Get it on",
+      "label": "Disponible sur",
       "name": "Google Play"
     }
   },
   "footer": {
-    "description": "AI-powered fitness coaching that keeps you accountable. Built for results, powered by intelligence.",
-    "product": "Product",
-    "company": "Company",
-    "legal": "Legal",
-    "about": "About",
+    "description": "Coaching fitness alimenté par IA qui vous tient responsable. Conçu pour les résultats, alimenté par l'intelligence.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "about": "À propos",
     "blog": "Blog",
     "contact": "Contact",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "copyright": "© 2026 ForgeFit. All rights reserved."
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "copyright": "© 2026 ForgeFit. Tous droits réservés."
   },
   "comingSoon": {
-    "title": "Coming Soon!",
-    "message": "We're putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download."
+    "title": "Bientôt disponible !",
+    "message": "Nous mettons les dernières touches à ForgeFit. Restez à l'écoute pour des mises à jour sur le moment où l'application sera disponible au téléchargement."
   }
 }

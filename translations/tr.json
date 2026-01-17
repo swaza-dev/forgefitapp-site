@@ -1,264 +1,264 @@
 {
   "meta": {
-    "title": "ForgeFit – AI That Knows Your Body",
-    "description": "AI-powered fitness coaching that analyzes your unique body composition, age, and experience to create truly personalized programs."
+    "title": "ForgeFit – Vücudunuzu Tanıyan AI",
+    "description": "Benzersiz vücut kompozisyonunuzu, yaşınızı ve deneyiminizi analiz ederek gerçekten kişiselleştirilmiş programlar oluşturan AI destekli fitness koçluğu."
   },
   "nav": {
-    "howItWorks": "How It Works",
-    "features": "Features",
-    "pricing": "Pricing",
-    "getStarted": "Get Started"
+    "howItWorks": "Nasıl Çalışır",
+    "features": "Özellikler",
+    "pricing": "Fiyatlandırma",
+    "getStarted": "Başlayın"
   },
   "hero": {
-    "tagline": "AI-Powered Fitness App",
-    "title": "YOU DON'T NEED",
-    "titleOutline": "ANOTHER APP.",
-    "subtitle": "You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.",
-    "startFreeTrial": "Start Free Trial",
-    "seeHowItWorks": "See How It Works",
-    "weekPrograms": "Week Programs",
-    "exercises": "Exercises",
-    "aiCoach": "AI Coach"
+    "tagline": "AI Destekli Fitness Uygulaması",
+    "title": "VÜCUDUNUZ.",
+    "titleOutline": "PROGRAMINIZ.",
+    "subtitle": "Sizi sorumlu tutan bir koça ihtiyacınız var. Çoğu fitness uygulaması size genel antrenmanlar verir ve en iyisini umar. ForgeFit farklı.",
+    "startFreeTrial": "Ücretsiz Deneme Başlat",
+    "seeHowItWorks": "Nasıl Çalıştığını Görün",
+    "weekPrograms": "Haftalık Programlar",
+    "exercises": "Egzersizler",
+    "aiCoach": "AI Koç"
   },
   "marquee": {
-    "realTimeAccountability": "Real-Time Accountability",
-    "aiPersonalization": "AI-Powered Personalization",
-    "nutritionGuidance": "Complete Nutrition Guidance",
-    "worksOffline": "Works Offline",
-    "languages": "11 Languages",
-    "progressAnalytics": "Progress Analytics"
+    "realTimeAccountability": "Gerçek Zamanlı Sorumluluk",
+    "aiPersonalization": "AI Destekli Kişiselleştirme",
+    "nutritionGuidance": "Tam Beslenme Rehberliği",
+    "worksOffline": "Çevrimdışı Çalışır",
+    "languages": "11 Dil",
+    "progressAnalytics": "İlerleme Analitiği"
   },
   "problem": {
-    "text": "Most fitness apps give you generic workouts and hope for the best.",
-    "subtext": "ForgeFit analyzes YOUR body, goals, experience, and equipment—then builds a complete 52-week program designed specifically for you."
+    "text": "ForgeFit, fitness'ın dört temel direğini (kuvvet antrenmanı, kardiyo, beslenme ve hidrasyon) takip eden ve optimize eden AI destekli bir fitness koçluk uygulamasıdır - çünkü gerçek sonuçlar sadece spor salonu zamanından değil, dengeden gelir.",
+    "subtext": "İlerlemenize uyum sağlayan kişiselleştirilmiş 52 haftalık programlar sunar, dört direğin tümünde tutarlılık oluşturmanıza ve uygun fiyatlı bir şekilde hedeflerinize ulaşmanıza yardımcı olur."
   },
   "emotional": {
-    "title": "THE #1 REASON PEOPLE FAIL\nISN'T LACK OF MOTIVATION.",
-    "quote": "It's lack of accountability. Most people know what to do. They just don't do it consistently. That's where we come in. We track your compliance in real-time, show you exactly where you stand, and keep you honest. Not because we're watching—because you deserve to see your progress.",
-    "subtext": "This isn't about perfection. It's about showing up. Day after day. Week after week. Until showing up becomes who you are."
+    "title": "İNSANLARIN BAŞARISIZ OLMA NEDENİ #1\nMOTİVASYON EKSİKLİĞİ DEĞİL.",
+    "quote": "Sorumluluk eksikliği. Çoğu insan ne yapması gerektiğini biliyor. Sadece tutarlı bir şekilde yapmıyorlar. İşte burada devreye giriyoruz. Uyumunuzu gerçek zamanlı olarak takip ediyoruz, tam olarak nerede olduğunuzu gösteriyoruz ve sizi dürüst tutuyoruz. İzlediğimiz için değil—çünkü ilerlemenizi görmeyi hak ediyorsunuz.",
+    "subtext": "Bu mükemmellikle ilgili değil. Ortaya çıkmakla ilgili. Gün be gün. Hafta hafta. Ortaya çıkmak sizin kim olduğunuz olana kadar."
   },
   "value": {
-    "label": "The ForgeFit Difference",
-    "title": "YOUR AI COACH,\nALWAYS AVAILABLE",
+    "label": "ForgeFit Farkı",
+    "title": "AI KOÇUNUZ,\nHER ZAMAN MEVCUT",
     "aiPersonalization": {
-      "title": "AI-Powered Personalization",
-      "desc": "Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access. Your program is built from the ground up for YOU."
+      "title": "AI Destekli Kişiselleştirme",
+      "desc": "Vücut tipleri, fitness seviyeleri, hedefler ve ekipman erişimini kapsayan 60 farklı kullanıcı profiline dayanır. Programınız SİZİN için sıfırdan oluşturulmuştur."
     },
     "accountability": {
-      "title": "Real-Time Accountability",
-      "desc": "Track compliance across workouts, nutrition, hydration, and sleep. We keep you honest. Miss a workout? We know. Crush your week? We celebrate it."
+      "title": "Gerçek Zamanlı Sorumluluk",
+      "desc": "Antrenmanlar, beslenme, hidrasyon ve uyku boyunca uyumu takip edin. Sizi dürüst tutuyoruz. Antrenmanı kaçırdınız mı? Biliyoruz. Haftanızı mahvettiniz mi? Bunu kutluyoruz."
     },
     "nutrition": {
-      "title": "Complete Nutrition Guidance",
-      "desc": "Personalized nutrition coaching that respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages."
+      "title": "Tam Beslenme Rehberliği",
+      "desc": "Diyetinizi (pesketaryen, vejetaryen, vegan) saygı duyan ve 11 dilde yemeklerle kültürünüze uyum sağlayan kişiselleştirilmiş beslenme koçluğu."
     },
     "coach": {
-      "title": "24/7 AI Coach Chat",
-      "desc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling."
+      "title": "7/24 AI Koç Sohbeti",
+      "desc": "Formda takıldınız mı? Ne yiyeceğinizden emin değil misiniz? Bir egzersizi değiştirmeniz mi gerekiyor? Sadece sorun. Cebinizde kişisel bir antrenör gibi. Bekleme yok. Planlama yok."
     }
   },
   "pillars": {
-    "label": "Why ForgeFit is Different",
-    "title": "ONE PLATFORM.\nALL FOUR PILLARS.",
-    "subtitle": "Most apps track one thing. We track everything that matters—plus give you a 24/7 AI coach to guide you through it all.",
+    "label": "ForgeFit'in Neden Farklı Olduğu",
+    "title": "BİR PLATFORM.\nDÖRT SÜTUN.",
+    "subtitle": "Çoğu uygulama bir şeyi takip eder. Önemli olan her şeyi takip ediyoruz—artı her şeyde size rehberlik etmek için 7/24 bir AI koçu veriyoruz.",
     "workouts": {
-      "title": "Workouts",
-      "desc": "52-week progressive programs tailored to your body, goals, and equipment. 5,700+ exercises with video demonstrations.",
-      "feature1": "Auto-progressive overload",
-      "feature2": "Equipment-based programming"
+      "title": "Antrenmanlar",
+      "desc": "Vücudunuza, hedeflerinize ve ekipmanınıza uyarlanmış 52 haftalık ilerici programlar. Video gösterimleriyle 5.700'den fazla egzersiz.",
+      "feature1": "Otomatik ilerici aşırı yükleme",
+      "feature2": "Ekipmana dayalı programlama"
     },
     "nutrition": {
-      "title": "Nutrition",
-      "desc": "Meal logging is a breeze. Just type in natural language what you ate, and we'll figure out the nutrition. AI-powered meal planning that respects your diet and culture.",
-      "feature1": "Natural language meal logging",
-      "feature2": "11 languages with local cuisine"
+      "title": "Beslenme",
+      "desc": "Yemek günlüğü tutmak çocuk oyuncağı. Sadece doğal dille ne yediğinizi yazın, biz beslenmeyi çözeriz. Diyetinizi ve kültürünüzü saygı duyan AI destekli yemek planlama.",
+      "feature1": "Doğal dil yemek günlüğü",
+      "feature2": "Yerel mutfakla 11 dil"
     },
     "hydration": {
-      "title": "Hydration",
-      "desc": "Track your daily water intake with smart reminders. Stay hydrated for optimal performance and recovery.",
-      "feature1": "Smart hydration reminders",
-      "feature2": "Daily goal tracking"
+      "title": "Hidrasyon",
+      "desc": "Akıllı hatırlatıcılarla günlük su alımınızı takip edin. Optimal performans ve toparlanma için hidratlı kalın.",
+      "feature1": "Akıllı hidrasyon hatırlatıcıları",
+      "feature2": "Günlük hedef takibi"
     },
     "sleep": {
-      "title": "Sleep",
-      "desc": "Log your sleep to track recovery. Connect wearables for automatic tracking. Sleep quality impacts everything.",
-      "feature1": "Wearable integration",
-      "feature2": "Recovery-based adjustments"
+      "title": "Uyku",
+      "desc": "Toparlanmayı takip etmek için uykunuzu kaydedin. Otomatik takip için giyilebilir cihazları bağlayın. Uyku kalitesi her şeyi etkiler.",
+      "feature1": "Giyilebilir entegrasyon",
+      "feature2": "Toparlanmaya dayalı ayarlamalar"
     },
-    "coachSubtitle": "Plus Your 24/7 AI Coach",
-    "coachDesc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Your AI coach knows your program, progress, and goals—always available to guide you."
+    "coachSubtitle": "Artı 7/24 AI Koçunuz",
+    "coachDesc": "Formda takıldınız mı? Ne yiyeceğinizden emin değil misiniz? Bir egzersizi değiştirmeniz mi gerekiyor? Sadece sorun. AI koçunuz programınızı, ilerlemenizi ve hedeflerinizi biliyor—size rehberlik etmek için her zaman mevcut."
   },
   "mealLogging": {
-    "label": "Natural Language Meal Logging",
-    "title": "MEAL LOGGING\nIS A BREEZE.",
-    "subtitle": "No more searching through databases. Just type what you ate in natural language, and our AI figures out the nutrition.",
-    "demoInput": "I had grilled chicken breast with brown rice and steamed broccoli for lunch",
-    "demoResult": "Logged:",
-    "demoResultDetails": "350 calories, 45g protein, 35g carbs, 8g fat",
-    "footer": "Works in 11 languages. Respects your diet preferences. Adapts to your culture. It's that simple."
+    "label": "Doğal Dil Yemek Günlüğü",
+    "title": "YEMEK GÜNLÜĞÜ TUTMAK\nÇOCUK OYUNCAĞI.",
+    "subtitle": "Artık veritabanlarında arama yok. Sadece doğal dille ne yediğinizi yazın, AI'mız beslenmeyi çözer.",
+    "demoInput": "Öğle yemeğinde kahverengi pirinç ve buharda pişmiş brokoli ile ızgara tavuk göğsü yedim",
+    "demoResult": "Kaydedildi:",
+    "demoResultDetails": "350 kalori, 45g protein, 35g karbonhidrat, 8g yağ",
+    "footer": "11 dilde çalışır. Beslenme tercihlerinize saygı duyar. Kültürünüze uyum sağlar. Bu kadar basit."
   },
   "wowFeatures": {
-    "label": "Built For Everyone",
-    "title": "YOUR BODY.\nYOUR LIFE STAGE.\nYOUR PROGRAM.",
-    "subtitle": "A 25-year-old beginner and a 55-year-old intermediate need completely different approaches. ForgeFit understands the research and adapts to you.",
+    "label": "Herkes İçin Yapıldı",
+    "title": "VÜCUDUNUZ.\nYAŞAM EVRENİZ.\nPROGRAMINIZ.",
+    "subtitle": "25 yaşındaki bir başlangıç ve 55 yaşındaki bir orta seviye tamamen farklı yaklaşımlar gerektirir. ForgeFit araştırmayı anlar ve size uyum sağlar.",
     "ageAware": {
-      "badge": "Age-Aware AI",
-      "title": "50+ & 60+\nSpecialized",
-      "desc": "Research shows age affects muscle protein synthesis, hormone levels, and recovery. We don't give everyone the same plan. Your program adapts to your age with appropriate volume, intensity, and recovery protocols.",
-      "highlight": "Science-backed: Special protocols for 50-59 and 60+ age groups with modified intensity and extended recovery."
+      "badge": "Yaşa Duyarlı AI",
+      "title": "50+ & 60+\nUzmanlaşmış",
+      "desc": "Araştırmalar yaşın kas protein sentezini, hormon seviyelerini ve toparlanmayı etkilediğini gösteriyor. Herkese aynı planı vermiyoruz. Programınız yaşınıza uygun hacim, yoğunluk ve toparlanma protokolleriyle uyum sağlar.",
+      "highlight": "Bilim destekli: Değiştirilmiş yoğunluk ve genişletilmiş toparlanma ile 50-59 ve 60+ yaş grupları için özel protokoller."
     },
     "pregnancy": {
-      "badge": "Pregnancy-Safe",
-      "title": "Pregnancy\nFitness",
-      "desc": "Safe, modified workouts that adapt to your trimester. Nutrition guidance that supports both you and your baby. Track your fitness journey through pregnancy and beyond.",
-      "highlight": "Trimester-aware: Workouts and nutrition plans that adjust automatically based on your stage of pregnancy."
+      "badge": "Gebelik Güvenli",
+      "title": "Gebelik\nFitness",
+      "desc": "Trimesterinize uyum sağlayan güvenli, değiştirilmiş antrenmanlar. Hem sizi hem de bebeğinizi destekleyen beslenme rehberliği. Gebelik boyunca ve sonrasında fitness yolculuğunuzu takip edin.",
+      "highlight": "Trimester duyarlı: Gebelik evrenize göre otomatik olarak ayarlanan antrenmanlar ve beslenme planları."
     },
     "photoAnalysis": {
-      "badge": "AI Vision",
-      "title": "Photo Body\nAnalysis",
-      "desc": "Upload 3 photos. Our AI analyzes your body composition, muscle development, and posture—no gym assessment needed. Get personalized recommendations based on what your body actually looks like.",
-      "highlight": "GPT-4 Vision: Advanced AI that sees your body composition, posture, and fitness level from photos. Face blur for privacy."
+      "badge": "AI Görüşü",
+      "title": "Fotoğraf Vücut\nAnalizi",
+      "desc": "3 fotoğraf yükleyin. AI'mız vücut kompozisyonunuzu, kas gelişiminizi ve duruşunuzu analiz eder—spor salonu değerlendirmesi gerekmez. Vücudunuzun gerçekte nasıl göründüğüne dayalı kişiselleştirilmiş öneriler alın.",
+      "highlight": "GPT-4 Vision: Fotoğraflardan vücut kompozisyonunuzu, duruşunuzu ve fitness seviyenizi gören gelişmiş AI. Gizlilik için yüz bulanıklaştırma."
     },
     "cultural": {
-      "badge": "11 Languages",
-      "title": "Cultural\nAdaptation",
-      "desc": "Meal plans that respect your culture. Get recipes in 11 languages with local cuisine. Indian, Mexican, Mediterranean, Asian—your meals, your way.",
-      "highlight": "Local cuisine: Not just translated—actually adapted. Indian dal, Mexican tacos, Japanese bento boxes, all with proper macros."
+      "badge": "11 Dil",
+      "title": "Kültürel\nUyum",
+      "desc": "Kültürünüze saygı duyan yemek planları. Yerel mutfakla 11 dilde tarifler alın. Hint, Meksika, Akdeniz, Asya—yemekleriniz, tarzınız.",
+      "highlight": "Yerel mutfak: Sadece çevrilmiş değil—gerçekten uyarlanmış. Hint dal, Meksika taco'ları, Japon bento kutuları, hepsi doğru makrolarla."
     },
     "offline": {
-      "badge": "Works Offline",
-      "title": "Train\nAnywhere",
-      "desc": "No internet? No problem. All workouts, exercises, and meal plans work completely offline. Sync when you're back online. Your progress never stops.",
-      "highlight": "100% offline: 5,700+ exercise videos, all workout plans, and meal suggestions available without internet."
+      "badge": "Çevrimdışı Çalışır",
+      "title": "Her Yerde\nAntrenman Yapın",
+      "desc": "İnternet yok mu? Sorun değil. Tüm antrenmanlar, egzersizler ve yemek planları tamamen çevrimdışı çalışır. Çevrimiçi olduğunuzda senkronize edin. İlerlemeniz asla durmaz.",
+      "highlight": "100% çevrimdışı: 5.700'den fazla egzersiz videosu, tüm antrenman planları ve yemek önerileri internetsiz kullanılabilir."
     },
     "videoCoverage": {
-      "badge": "99.98% Coverage",
-      "title": "Never\nWonder How",
-      "desc": "With 99.98% video coverage across 5,700+ exercises, you'll never be stuck wondering how to perform a movement. Every exercise has a video demonstration.",
-      "highlight": "HD videos: Professional demonstrations for virtually every exercise. Form cues, common mistakes, and alternatives included."
+      "badge": "99,98% Kapsam",
+      "title": "Nasıl Yapılacağını\nAsla Merak Etmeyin",
+      "desc": "5.700'den fazla egzersizde %99,98 video kapsamı ile bir hareketi nasıl yapacağınızı merak etmekte asla takılıp kalmayacaksınız. Her egzersizin bir video gösterimi vardır.",
+      "highlight": "HD videolar: Neredeyse her egzersiz için profesyonel gösterimler. Form ipuçları, yaygın hatalar ve alternatifler dahil."
     }
   },
   "statement": {
-    "text": "GENERIC PLANS\nDON'T WORK",
-    "outline": "DON'T WORK",
-    "subtext": "Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. No templates. No guesswork. Just results."
+    "text": "GENEL PLANLAR\nÇALIŞMIYOR",
+    "outline": "ÇALIŞMIYOR",
+    "subtext": "AI'mız vücudunuzu, hedeflerinizi, deneyiminizi ve mevcut ekipmanınızı analiz eder—sonra size özel olarak tasarlanmış eksiksiz bir 52 haftalık program oluşturur. Şablon yok. Tahmin yok. Sadece sonuçlar."
   },
   "features": {
-    "label": "Complete System",
-    "title": "Everything You Need",
+    "label": "Eksiksiz Sistem",
+    "title": "İhtiyacınız Olan Her Şey",
     "programs": {
-      "title": "52-Week Programs",
-      "desc": "Progressive programming tailored to your goals. 5,700+ exercise library with 99.98% video coverage. Never wonder how to perform a movement."
+      "title": "52 Haftalık Programlar",
+      "desc": "Hedeflerinize uyarlanmış ilerici programlama. 99,98% video kapsamıyla 5.700'den fazla egzersiz kütüphanesi. Bir hareketi nasıl yapacağınızı asla merak etmeyin."
     },
     "mealPlanning": {
-      "title": "AI Meal Planning",
-      "desc": "Respects your diet and culture. Get meals in 11 languages with local cuisine. Real-time compliance tracking and accountability."
+      "title": "AI Yemek Planlama",
+      "desc": "Diyetinize ve kültürünüze saygı duyar. Yerel mutfakla 11 dilde yemekler alın. Gerçek zamanlı uyum takibi ve sorumluluk."
     },
     "analytics": {
-      "title": "Progress Analytics",
-      "desc": "Body composition tracking, photo progress with face blur for privacy, and detailed analytics to see your transformation."
+      "title": "İlerleme Analitiği",
+      "desc": "Vücut kompozisyonu takibi, gizlilik için yüz bulanıklaştırmalı fotoğraf ilerlemesi ve dönüşümünüzü görmek için detaylı analitik."
     }
   },
   "testimonials": {
-    "label": "Real Results",
-    "title": "WHAT USERS\nARE SAYING",
-    "subtitle": "People are seeing real results. Not because of motivation—because of accountability.",
+    "label": "Gerçek Sonuçlar",
+    "title": "KULLANICILAR\nNE DİYOR",
+    "subtitle": "İnsanlar gerçek sonuçlar görüyor. Motivasyondan değil—sorumluluktan.",
     "testimonial1": {
-      "text": "I've tried every fitness app. This is the first one that actually keeps me accountable. The AI coach knows my program and calls me out when I skip workouts. Down 15 pounds in 12 weeks.",
+      "text": "Her fitness uygulamasını denedim. Beni gerçekten sorumlu tutan bu ilk. AI koç programımı biliyor ve antrenmanları atladığımda beni uyarıyor. 12 haftada 15 kilo verdim.",
       "name": "Sarah M.",
-      "role": "Marketing Manager, 32",
-      "weeks": "12 weeks",
+      "role": "Pazarlama Müdürü, 32",
+      "weeks": "12 hafta",
       "compliance": "87%"
     },
     "testimonial2": {
-      "text": "At 58, I thought I was too old to start. The age-specific programming is incredible. My coach adjusts everything for my recovery. I'm stronger now than I was at 40.",
+      "text": "58 yaşında, başlamak için çok yaşlı olduğumu düşündüm. Yaşa özel programlama inanılmaz. Koçum toparlanmam için her şeyi ayarlıyor. Şimdi 40 yaşındayken olduğumdan daha güçlüyüm.",
       "name": "Robert J.",
-      "role": "Retired Engineer, 58",
-      "weeks": "16 weeks",
+      "role": "Emekli Mühendis, 58",
+      "weeks": "16 hafta",
       "compliance": "92%"
     },
     "testimonial3": {
-      "text": "The meal logging is a game changer. I just type 'chicken and rice' and it figures everything out. No more searching through databases. And the cultural meals? Perfect for my Indian diet.",
+      "text": "Yemek günlüğü oyunu değiştiren şey. Sadece 'tavuk ve pilav' yazıyorum ve her şeyi çözüyor. Artık veritabanlarında arama yok. Kültürel yemekler? Hint diyetim için mükemmel.",
       "name": "Priya K.",
-      "role": "Software Developer, 29",
-      "weeks": "8 weeks",
+      "role": "Yazılım Geliştirici, 29",
+      "weeks": "8 hafta",
       "compliance": "94%"
     },
     "testimonial4": {
-      "text": "The 4-pillar tracking is what makes this different. I can see my hydration, sleep, workouts, and nutrition all in one place. The AI coach connects the dots and tells me why I'm not recovering.",
+      "text": "4 sütun takibi bunu farklı kılan şey. Hidrasyonumu, uykumu, antrenmanlarımı ve beslenmemi tek bir yerde görebiliyorum. AI koç noktaları birleştiriyor ve neden toparlanmadığımı söylüyor.",
       "name": "Marcus C.",
-      "role": "Personal Trainer, 35",
-      "weeks": "20 weeks",
+      "role": "Kişisel Antrenör, 35",
+      "weeks": "20 hafta",
       "compliance": "96%"
     },
     "testimonial5": {
-      "text": "I'm 6 months pregnant and the pregnancy-safe workouts are perfect. My coach adjusts everything automatically. I feel strong and confident, and I know I'm doing the right things for me and my baby.",
+      "text": "6 aylık hamileyim ve gebelik güvenli antrenmanlar mükemmel. Koçum her şeyi otomatik olarak ayarlıyor. Kendimi güçlü ve kendinden emin hissediyorum ve hem kendim hem de bebeğim için doğru şeyleri yaptığımı biliyorum.",
       "name": "Emma L.",
-      "role": "Teacher, 31",
-      "weeks": "24 weeks",
+      "role": "Öğretmen, 31",
+      "weeks": "24 hafta",
       "compliance": "89%"
     },
     "testimonial6": {
-      "text": "The photo body analysis was mind-blowing. Uploaded 3 photos and got a complete program. No gym assessment, no trainer needed. The AI saw things I didn't even know about my posture.",
+      "text": "Fotoğraf vücut analizi akılalmazdı. 3 fotoğraf yükledim ve eksiksiz bir program aldım. Spor salonu değerlendirmesi yok, antrenöre gerek yok. AI duruşumla ilgili bilmediğim şeyleri gördü.",
       "name": "David T.",
-      "role": "Consultant, 42",
-      "weeks": "10 weeks",
+      "role": "Danışman, 42",
+      "weeks": "10 hafta",
       "compliance": "91%"
     },
-    "onProgram": "on program",
-    "compliance": "compliance"
+    "onProgram": "programda",
+    "compliance": "uyum"
   },
   "stats": {
-    "weekPrograms": "Week Programs",
-    "exercises": "Exercises",
-    "languages": "Languages",
-    "aiCoach": "AI Coach"
+    "weekPrograms": "Haftalık Programlar",
+    "exercises": "Egzersizler",
+    "languages": "Diller",
+    "aiCoach": "AI Koç"
   },
   "pricing": {
-    "label": "Simple Pricing",
-    "title": "One Plan. Everything.",
+    "label": "Basit Fiyatlandırma",
+    "title": "Bir Plan. Her Şey.",
     "planName": "ForgeFit Pro",
-    "perMonth": "per month",
-    "or": "or",
-    "perYear": "$19.99/year",
-    "save": "save 58%",
-    "feature1": "52-week personalized workout plans",
-    "feature2": "AI-powered meal planning",
-    "feature3": "5,700+ exercise library with videos",
-    "feature4": "Real-time compliance tracking",
-    "feature5": "24/7 AI coach chat",
-    "feature6": "Progress analytics & body composition",
-    "feature7": "Works offline",
-    "feature8": "11 languages supported",
-    "startFreeTrial": "Start Free Trial"
+    "perMonth": "aylık",
+    "or": "veya",
+    "perYear": "$19.99/yıl",
+    "save": "58% tasarruf edin",
+    "feature1": "52 haftalık kişiselleştirilmiş antrenman planları",
+    "feature2": "AI destekli yemek planlama",
+    "feature3": "Videolarla 5.700'den fazla egzersiz kütüphanesi",
+    "feature4": "Gerçek zamanlı uyum takibi",
+    "feature5": "7/24 AI koç sohbeti",
+    "feature6": "İlerleme analitiği ve vücut kompozisyonu",
+    "feature7": "Çevrimdışı çalışır",
+    "feature8": "11 dil desteklenir",
+    "startFreeTrial": "Ücretsiz Deneme Başlat"
   },
   "cta": {
-    "title": "YOUR AI COACH IS WAITING.",
-    "subtitle": "7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.",
-    "downloadFree": "Download Free",
+    "title": "AI KOÇUNUZ BEKLİYOR.",
+    "subtitle": "7 günlük ücretsiz deneme. Sonra sadece $3.99/ay veya $19.99/yıl. ForgeFit'i indirin ve dönüşümünüze bugün başlayın.",
+    "downloadFree": "Ücretsiz İndir",
     "appStore": {
-      "label": "Download on the",
-      "name": "App Store"
+      "label": "İndir",
+      "name": "App Store'da"
     },
     "googlePlay": {
-      "label": "Get it on",
-      "name": "Google Play"
+      "label": "Alın",
+      "name": "Google Play'de"
     }
   },
   "footer": {
-    "description": "AI-powered fitness coaching that keeps you accountable. Built for results, powered by intelligence.",
-    "product": "Product",
-    "company": "Company",
-    "legal": "Legal",
-    "about": "About",
+    "description": "Sizi sorumlu tutan AI destekli fitness koçluğu. Sonuçlar için yapıldı, zeka ile destekleniyor.",
+    "product": "Ürün",
+    "company": "Şirket",
+    "legal": "Yasal",
+    "about": "Hakkında",
     "blog": "Blog",
-    "contact": "Contact",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "copyright": "© 2026 ForgeFit. All rights reserved."
+    "contact": "İletişim",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "copyright": "© 2026 ForgeFit. Tüm hakları saklıdır."
   },
   "comingSoon": {
-    "title": "Coming Soon!",
-    "message": "We're putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download."
+    "title": "Yakında!",
+    "message": "ForgeFit'e son dokunuşları yapıyoruz. Uygulamanın ne zaman indirilebilir olacağına dair güncellemeler için bizi takip edin."
   }
 }

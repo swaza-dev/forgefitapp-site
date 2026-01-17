@@ -56,7 +56,12 @@
             border-bottom: 1px solid var(--gray-800);
         }
 
-        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+        .nav-inner { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            gap: 20px;
+        }
         
         .logo {
             display: flex;
@@ -96,6 +101,7 @@
             display: inline-block !important;
             visibility: visible !important;
             opacity: 1 !important;
+            z-index: 100;
         }
 
         .lang-switcher-btn {
@@ -1348,14 +1354,16 @@
                     <li><a href="#features" data-i18n="nav.features">Features</a></li>
                     <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
                 </ul>
-                <div class="lang-switcher" id="langSwitcher" style="display: inline-block;">
-                    <button class="lang-switcher-btn" id="langSwitcherBtn" style="display: flex;">
-                        <span id="currentLangCode">EN</span>
-                        <span style="font-size: 8px; margin-left: 4px;">▼</span>
-                    </button>
-                    <div class="lang-switcher-dropdown" id="langDropdown"></div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <div class="lang-switcher" id="langSwitcher">
+                        <button class="lang-switcher-btn" id="langSwitcherBtn">
+                            <span id="currentLangCode">EN</span>
+                            <span style="font-size: 8px; margin-left: 4px;">▼</span>
+                        </button>
+                        <div class="lang-switcher-dropdown" id="langDropdown"></div>
+                    </div>
+                    <a href="#download" class="btn btn-orange download-btn" data-i18n="nav.getStarted">Get Started</a>
                 </div>
-                <a href="#download" class="btn btn-orange download-btn" data-i18n="nav.getStarted">Get Started</a>
                 <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
             </div>
         </div>
@@ -1371,8 +1379,8 @@
             <div class="hero-content">
                 <p class="hero-tagline" data-i18n="hero.tagline">AI-Powered Fitness App</p>
                 <h1 class="hero-title">
-                    <span data-i18n-nl="hero.title">YOU DON'T NEED</span><br>
-                    <span class="outline" data-i18n="hero.titleOutline">ANOTHER APP.</span>
+                    YOUR ALL-IN-ONE<br>
+                    <span class="outline" data-i18n="hero.titleOutline">AI POWERED FITNESS APP</span>
                 </h1>
                 <p class="hero-subtitle" data-i18n="hero.subtitle">You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.</p>
                 <div class="hero-cta">
@@ -1400,20 +1408,20 @@
     <div class="marquee-section">
         <div class="marquee">
             <div class="marquee-content">
-                <span class="marquee-item">Real-Time Accountability</span><span class="marquee-dot"></span>
-                <span class="marquee-item">AI-Powered Personalization</span><span class="marquee-dot"></span>
-                <span class="marquee-item">Complete Nutrition Guidance</span><span class="marquee-dot"></span>
-                <span class="marquee-item">Works Offline</span><span class="marquee-dot"></span>
-                <span class="marquee-item">11 Languages</span><span class="marquee-dot"></span>
-                <span class="marquee-item">Progress Analytics</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.realTimeAccountability">Real-Time Accountability</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.aiPersonalization">AI-Powered Personalization</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.nutritionGuidance">Complete Nutrition Guidance</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.worksOffline">Works Offline</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.languages">11 Languages</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.progressAnalytics">Progress Analytics</span><span class="marquee-dot"></span>
             </div>
             <div class="marquee-content">
-                <span class="marquee-item">Real-Time Accountability</span><span class="marquee-dot"></span>
-                <span class="marquee-item">AI-Powered Personalization</span><span class="marquee-dot"></span>
-                <span class="marquee-item">Complete Nutrition Guidance</span><span class="marquee-dot"></span>
-                <span class="marquee-item">Works Offline</span><span class="marquee-dot"></span>
-                <span class="marquee-item">11 Languages</span><span class="marquee-dot"></span>
-                <span class="marquee-item">Progress Analytics</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.realTimeAccountability">Real-Time Accountability</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.aiPersonalization">AI-Powered Personalization</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.nutritionGuidance">Complete Nutrition Guidance</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.worksOffline">Works Offline</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.languages">11 Languages</span><span class="marquee-dot"></span>
+                <span class="marquee-item" data-i18n="marquee.progressAnalytics">Progress Analytics</span><span class="marquee-dot"></span>
             </div>
         </div>
     </div>
@@ -1421,19 +1429,19 @@
     <section class="problem-section">
         <div class="container">
             <p class="problem-text fade-in">
-                <strong>Most fitness apps give you generic workouts and hope for the best.</strong><br>
-                ForgeFit analyzes YOUR body, goals, experience, and equipment—then builds a complete 52-week program designed specifically for you.
+                <strong data-i18n="problem.text">ForgeFit is an AI-powered fitness coaching app that tracks and optimizes all four essential pillars of fitness: strength training, cardio, nutrition, and hydration - because real results come from balance, not just gym time.</strong><br>
+                <span data-i18n="problem.subtext">It delivers personalized 52-week programs that adapt to your progress, helping you build consistency across all four pillars and reach your goals at an accessible price.</span>
             </p>
         </div>
     </section>
 
     <section class="emotional-section">
         <div class="container">
-            <h2 class="emotional-title fade-in">THE #1 REASON PEOPLE FAIL<br>ISN'T LACK OF MOTIVATION.</h2>
-            <p class="emotional-quote fade-in">
+            <h2 class="emotional-title fade-in" data-i18n-nl="emotional.title">THE #1 REASON PEOPLE FAIL<br>ISN'T LACK OF MOTIVATION.</h2>
+            <p class="emotional-quote fade-in" data-i18n="emotional.quote">
                 It's lack of accountability. Most people know what to do. They just don't do it consistently. That's where we come in. We track your compliance in real-time, show you exactly where you stand, and keep you honest. Not because we're watching—because you deserve to see your progress.
             </p>
-            <p class="statement-sub fade-in" style="margin-top: 40px;">
+            <p class="statement-sub fade-in" style="margin-top: 40px;" data-i18n="emotional.subtext">
                 This isn't about perfection. It's about showing up. Day after day. Week after week. Until showing up becomes who you are.
             </p>
         </div>
@@ -1442,33 +1450,33 @@
     <section class="value-section" id="how">
         <div class="container">
             <div class="section-header fade-in">
-                <p class="section-label">The ForgeFit Difference</p>
-                <h2 class="section-title">YOUR AI COACH,<br>ALWAYS AVAILABLE</h2>
+                <p class="section-label" data-i18n="value.label">The ForgeFit Difference</p>
+                <h2 class="section-title" data-i18n-nl="value.title">YOUR AI COACH,<br>ALWAYS AVAILABLE</h2>
             </div>
             <div class="value-grid">
                 <div class="value-card fade-in">
                     <span class="value-number">01</span>
                     <div class="value-icon">🤖</div>
-                    <h3 class="value-title">AI-Powered Personalization</h3>
-                    <p class="value-desc">Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access. Your program is built from the ground up for YOU.</p>
+                    <h3 class="value-title" data-i18n="value.aiPersonalization.title">AI-Powered Personalization</h3>
+                    <p class="value-desc" data-i18n="value.aiPersonalization.desc">Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access. Your program is built from the ground up for YOU.</p>
                 </div>
                 <div class="value-card fade-in">
                     <span class="value-number">02</span>
                     <div class="value-icon">📊</div>
-                    <h3 class="value-title">Real-Time Accountability</h3>
-                    <p class="value-desc">Track compliance across workouts, nutrition, hydration, and sleep. We keep you honest. Miss a workout? We know. Crush your week? We celebrate it.</p>
+                    <h3 class="value-title" data-i18n="value.accountability.title">Real-Time Accountability</h3>
+                    <p class="value-desc" data-i18n="value.accountability.desc">Track compliance across workouts, nutrition, hydration, and sleep. We keep you honest. Miss a workout? We know. Crush your week? We celebrate it.</p>
                 </div>
                 <div class="value-card fade-in">
                     <span class="value-number">03</span>
                     <div class="value-icon">🍽️</div>
-                    <h3 class="value-title">Complete Nutrition Guidance</h3>
-                    <p class="value-desc">Personalized nutrition coaching that respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages.</p>
+                    <h3 class="value-title" data-i18n="value.nutrition.title">Complete Nutrition Guidance</h3>
+                    <p class="value-desc" data-i18n="value.nutrition.desc">Personalized nutrition coaching that respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages.</p>
                 </div>
                 <div class="value-card fade-in">
                     <span class="value-number">04</span>
                     <div class="value-icon">💬</div>
-                    <h3 class="value-title">24/7 AI Coach Chat</h3>
-                    <p class="value-desc">Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling.</p>
+                    <h3 class="value-title" data-i18n="value.coach.title">24/7 AI Coach Chat</h3>
+                    <p class="value-desc" data-i18n="value.coach.desc">Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling.</p>
                 </div>
             </div>
         </div>
@@ -1477,9 +1485,9 @@
     <section class="pillars-section">
         <div class="container">
             <div class="section-header fade-in">
-                <p class="section-label">Why ForgeFit is Different</p>
-                <h2 class="section-title">ONE PLATFORM.<br>ALL FOUR PILLARS.</h2>
-                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;">
+                <p class="section-label" data-i18n="pillars.label">Why ForgeFit is Different</p>
+                <h2 class="section-title" data-i18n-nl="pillars.title">ONE PLATFORM.<br>ALL FOUR PILLARS.</h2>
+                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;" data-i18n="pillars.subtitle">
                     Most apps track one thing. We track everything that matters—plus give you a 24/7 AI coach to guide you through it all.
                 </p>
             </div>
@@ -1487,45 +1495,45 @@
                 <div class="pillar-card fade-in">
                     <div class="pillar-header">
                         <div class="pillar-icon">💪</div>
-                        <h3 class="pillar-title">Workouts</h3>
+                        <h3 class="pillar-title" data-i18n="pillars.workouts.title">Workouts</h3>
                     </div>
-                    <p class="pillar-desc">52-week progressive programs tailored to your body, goals, and equipment. 5,700+ exercises with video demonstrations.</p>
-                    <div class="pillar-feature">Auto-progressive overload</div>
-                    <div class="pillar-feature">Equipment-based programming</div>
+                    <p class="pillar-desc" data-i18n="pillars.workouts.desc">52-week progressive programs tailored to your body, goals, and equipment. 5,700+ exercises with video demonstrations.</p>
+                    <div class="pillar-feature" data-i18n="pillars.workouts.feature1">Auto-progressive overload</div>
+                    <div class="pillar-feature" data-i18n="pillars.workouts.feature2">Equipment-based programming</div>
                 </div>
                 <div class="pillar-card fade-in">
                     <div class="pillar-header">
                         <div class="pillar-icon">🍽️</div>
-                        <h3 class="pillar-title">Nutrition</h3>
+                        <h3 class="pillar-title" data-i18n="pillars.nutrition.title">Nutrition</h3>
                     </div>
-                    <p class="pillar-desc">Meal logging is a breeze. Just type in natural language what you ate, and we'll figure out the nutrition. AI-powered meal planning that respects your diet and culture.</p>
-                    <div class="pillar-feature">Natural language meal logging</div>
-                    <div class="pillar-feature">11 languages with local cuisine</div>
+                    <p class="pillar-desc" data-i18n="pillars.nutrition.desc">Meal logging is a breeze. Just type in natural language what you ate, and we'll figure out the nutrition. AI-powered meal planning that respects your diet and culture.</p>
+                    <div class="pillar-feature" data-i18n="pillars.nutrition.feature1">Natural language meal logging</div>
+                    <div class="pillar-feature" data-i18n="pillars.nutrition.feature2">11 languages with local cuisine</div>
                 </div>
                 <div class="pillar-card fade-in">
                     <div class="pillar-header">
                         <div class="pillar-icon">💧</div>
-                        <h3 class="pillar-title">Hydration</h3>
+                        <h3 class="pillar-title" data-i18n="pillars.hydration.title">Hydration</h3>
                     </div>
-                    <p class="pillar-desc">Track your daily water intake with smart reminders. Stay hydrated for optimal performance and recovery.</p>
-                    <div class="pillar-feature">Smart hydration reminders</div>
-                    <div class="pillar-feature">Daily goal tracking</div>
+                    <p class="pillar-desc" data-i18n="pillars.hydration.desc">Track your daily water intake with smart reminders. Stay hydrated for optimal performance and recovery.</p>
+                    <div class="pillar-feature" data-i18n="pillars.hydration.feature1">Smart hydration reminders</div>
+                    <div class="pillar-feature" data-i18n="pillars.hydration.feature2">Daily goal tracking</div>
                 </div>
                 <div class="pillar-card fade-in">
                     <div class="pillar-header">
                         <div class="pillar-icon">😴</div>
-                        <h3 class="pillar-title">Sleep</h3>
+                        <h3 class="pillar-title" data-i18n="pillars.sleep.title">Sleep</h3>
                     </div>
-                    <p class="pillar-desc">Log your sleep to track recovery. Connect wearables for automatic tracking. Sleep quality impacts everything.</p>
-                    <div class="pillar-feature">Wearable integration</div>
-                    <div class="pillar-feature">Recovery-based adjustments</div>
+                    <p class="pillar-desc" data-i18n="pillars.sleep.desc">Log your sleep to track recovery. Connect wearables for automatic tracking. Sleep quality impacts everything.</p>
+                    <div class="pillar-feature" data-i18n="pillars.sleep.feature1">Wearable integration</div>
+                    <div class="pillar-feature" data-i18n="pillars.sleep.feature2">Recovery-based adjustments</div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 64px;">
-                <p style="font-size: 20px; color: var(--white); margin-bottom: 16px; font-weight: 600;">
+                <p style="font-size: 20px; color: var(--white); margin-bottom: 16px; font-weight: 600;" data-i18n="pillars.coachSubtitle">
                     Plus Your 24/7 AI Coach
                 </p>
-                <p style="font-size: 16px; color: var(--gray-400); max-width: 600px; margin: 0 auto;">
+                <p style="font-size: 16px; color: var(--gray-400); max-width: 600px; margin: 0 auto;" data-i18n="pillars.coachDesc">
                     Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Your AI coach knows your program, progress, and goals—always available to guide you.
                 </p>
             </div>
@@ -1535,24 +1543,24 @@
     <section class="meal-logging-section">
         <div class="container">
             <div class="section-header fade-in">
-                <p class="section-label">Natural Language Meal Logging</p>
-                <h2 class="section-title">MEAL LOGGING<br>IS A BREEZE.</h2>
-                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;">
+                <p class="section-label" data-i18n="mealLogging.label">Natural Language Meal Logging</p>
+                <h2 class="section-title" data-i18n-nl="mealLogging.title">MEAL LOGGING<br>IS A BREEZE.</h2>
+                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;" data-i18n="mealLogging.subtitle">
                     No more searching through databases. Just type what you ate in natural language, and our AI figures out the nutrition.
                 </p>
             </div>
             <div class="meal-logging-demo fade-in">
-                <div class="demo-input">
+                <div class="demo-input" data-i18n="mealLogging.demoInput">
                     "I had <span class="highlight">grilled chicken breast with brown rice and steamed broccoli</span> for lunch"
                 </div>
                 <div class="demo-result">
                     <div class="demo-result-icon">✓</div>
                     <div class="demo-result-text">
-                        <strong>Logged:</strong> 350 calories, 45g protein, 35g carbs, 8g fat
+                        <strong data-i18n="mealLogging.demoResult">Logged:</strong> <span data-i18n="mealLogging.demoResultDetails">350 calories, 45g protein, 35g carbs, 8g fat</span>
                     </div>
                 </div>
             </div>
-            <p style="font-size: 15px; color: var(--gray-500); margin-top: 32px; max-width: 500px; margin-left: auto; margin-right: auto;">
+            <p style="font-size: 15px; color: var(--gray-500); margin-top: 32px; max-width: 500px; margin-left: auto; margin-right: auto;" data-i18n="mealLogging.footer">
                 Works in 11 languages. Respects your diet preferences. Adapts to your culture. It's that simple.
             </p>
         </div>
@@ -1561,92 +1569,92 @@
     <section class="wow-features-section">
         <div class="container">
             <div class="section-header fade-in" style="color: var(--black);">
-                <p class="section-label">Built For Everyone</p>
-                <h2 class="section-title">YOUR BODY.<br>YOUR LIFE STAGE.<br>YOUR PROGRAM.</h2>
-                <p style="font-size: 18px; color: var(--gray-600); max-width: 700px; margin: 24px auto 0; line-height: 1.7;">
+                <p class="section-label" data-i18n="wowFeatures.label">Built For Everyone</p>
+                <h2 class="section-title" data-i18n-nl="wowFeatures.title">YOUR BODY.<br>YOUR LIFE STAGE.<br>YOUR PROGRAM.</h2>
+                <p style="font-size: 18px; color: var(--gray-600); max-width: 700px; margin: 24px auto 0; line-height: 1.7;" data-i18n="wowFeatures.subtitle">
                     A 25-year-old beginner and a 55-year-old intermediate need completely different approaches. ForgeFit understands the research and adapts to you.
                 </p>
             </div>
             <div class="wow-grid">
                 <div class="wow-card fade-in">
-                    <span class="wow-badge">Age-Aware AI</span>
-                    <h3 class="wow-title">50+ & 60+<br>Specialized</h3>
-                    <p class="wow-desc">
+                    <span class="wow-badge" data-i18n="wowFeatures.ageAware.badge">Age-Aware AI</span>
+                    <h3 class="wow-title" data-i18n-nl="wowFeatures.ageAware.title">50+ & 60+<br>Specialized</h3>
+                    <p class="wow-desc" data-i18n="wowFeatures.ageAware.desc">
                         Research shows age affects muscle protein synthesis, hormone levels, and recovery. We don't give everyone the same plan. Your program adapts to your age with appropriate volume, intensity, and recovery protocols.
                     </p>
                     <div class="wow-highlight">
                         <span class="wow-highlight-icon">🔬</span>
-                        <div class="wow-highlight-text">
+                        <div class="wow-highlight-text" data-i18n="wowFeatures.ageAware.highlight">
                             <strong>Science-backed:</strong> Special protocols for 50-59 and 60+ age groups with modified intensity and extended recovery.
                         </div>
                     </div>
                 </div>
                 
                 <div class="wow-card fade-in">
-                    <span class="wow-badge">Pregnancy-Safe</span>
-                    <h3 class="wow-title">Pregnancy<br>Fitness</h3>
-                    <p class="wow-desc">
+                    <span class="wow-badge" data-i18n="wowFeatures.pregnancy.badge">Pregnancy-Safe</span>
+                    <h3 class="wow-title" data-i18n-nl="wowFeatures.pregnancy.title">Pregnancy<br>Fitness</h3>
+                    <p class="wow-desc" data-i18n="wowFeatures.pregnancy.desc">
                         Safe, modified workouts that adapt to your trimester. Nutrition guidance that supports both you and your baby. Track your fitness journey through pregnancy and beyond.
                     </p>
                     <div class="wow-highlight">
                         <span class="wow-highlight-icon">🤰</span>
-                        <div class="wow-highlight-text">
+                        <div class="wow-highlight-text" data-i18n="wowFeatures.pregnancy.highlight">
                             <strong>Trimester-aware:</strong> Workouts and nutrition plans that adjust automatically based on your stage of pregnancy.
                         </div>
                     </div>
                 </div>
                 
                 <div class="wow-card fade-in">
-                    <span class="wow-badge">AI Vision</span>
-                    <h3 class="wow-title">Photo Body<br>Analysis</h3>
-                    <p class="wow-desc">
+                    <span class="wow-badge" data-i18n="wowFeatures.photoAnalysis.badge">AI Vision</span>
+                    <h3 class="wow-title" data-i18n-nl="wowFeatures.photoAnalysis.title">Photo Body<br>Analysis</h3>
+                    <p class="wow-desc" data-i18n="wowFeatures.photoAnalysis.desc">
                         Upload 3 photos. Our AI analyzes your body composition, muscle development, and posture—no gym assessment needed. Get personalized recommendations based on what your body actually looks like.
                     </p>
                     <div class="wow-highlight">
                         <span class="wow-highlight-icon">📸</span>
-                        <div class="wow-highlight-text">
+                        <div class="wow-highlight-text" data-i18n="wowFeatures.photoAnalysis.highlight">
                             <strong>GPT-4 Vision:</strong> Advanced AI that sees your body composition, posture, and fitness level from photos. Face blur for privacy.
                         </div>
                     </div>
                 </div>
                 
                 <div class="wow-card fade-in">
-                    <span class="wow-badge">11 Languages</span>
-                    <h3 class="wow-title">Cultural<br>Adaptation</h3>
-                    <p class="wow-desc">
+                    <span class="wow-badge" data-i18n="wowFeatures.cultural.badge">11 Languages</span>
+                    <h3 class="wow-title" data-i18n-nl="wowFeatures.cultural.title">Cultural<br>Adaptation</h3>
+                    <p class="wow-desc" data-i18n="wowFeatures.cultural.desc">
                         Meal plans that respect your culture. Get recipes in 11 languages with local cuisine. Indian, Mexican, Mediterranean, Asian—your meals, your way.
                     </p>
                     <div class="wow-highlight">
                         <span class="wow-highlight-icon">🌍</span>
-                        <div class="wow-highlight-text">
+                        <div class="wow-highlight-text" data-i18n="wowFeatures.cultural.highlight">
                             <strong>Local cuisine:</strong> Not just translated—actually adapted. Indian dal, Mexican tacos, Japanese bento boxes, all with proper macros.
                         </div>
                     </div>
                 </div>
                 
                 <div class="wow-card fade-in">
-                    <span class="wow-badge">Works Offline</span>
-                    <h3 class="wow-title">Train<br>Anywhere</h3>
-                    <p class="wow-desc">
+                    <span class="wow-badge" data-i18n="wowFeatures.offline.badge">Works Offline</span>
+                    <h3 class="wow-title" data-i18n-nl="wowFeatures.offline.title">Train<br>Anywhere</h3>
+                    <p class="wow-desc" data-i18n="wowFeatures.offline.desc">
                         No internet? No problem. All workouts, exercises, and meal plans work completely offline. Sync when you're back online. Your progress never stops.
                     </p>
                     <div class="wow-highlight">
                         <span class="wow-highlight-icon">📱</span>
-                        <div class="wow-highlight-text">
+                        <div class="wow-highlight-text" data-i18n="wowFeatures.offline.highlight">
                             <strong>100% offline:</strong> 5,700+ exercise videos, all workout plans, and meal suggestions available without internet.
                         </div>
                     </div>
                 </div>
                 
                 <div class="wow-card fade-in">
-                    <span class="wow-badge">99.98% Coverage</span>
-                    <h3 class="wow-title">Never<br>Wonder How</h3>
-                    <p class="wow-desc">
+                    <span class="wow-badge" data-i18n="wowFeatures.videoCoverage.badge">99.98% Coverage</span>
+                    <h3 class="wow-title" data-i18n-nl="wowFeatures.videoCoverage.title">Never<br>Wonder How</h3>
+                    <p class="wow-desc" data-i18n="wowFeatures.videoCoverage.desc">
                         With 99.98% video coverage across 5,700+ exercises, you'll never be stuck wondering how to perform a movement. Every exercise has a video demonstration.
                     </p>
                     <div class="wow-highlight">
                         <span class="wow-highlight-icon">🎥</span>
-                        <div class="wow-highlight-text">
+                        <div class="wow-highlight-text" data-i18n="wowFeatures.videoCoverage.highlight">
                             <strong>HD videos:</strong> Professional demonstrations for virtually every exercise. Form cues, common mistakes, and alternatives included.
                         </div>
                     </div>
@@ -1657,35 +1665,35 @@
 
     <section class="statement-section">
         <div class="container">
-            <p class="statement-text fade-in">
+            <p class="statement-text fade-in" data-i18n-nl="statement.text">
                 GENERIC PLANS<br>
-                <span class="outline">DON'T WORK</span>
+                <span class="outline" data-i18n="statement.outline">DON'T WORK</span>
             </p>
-            <p class="statement-sub fade-in">Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. No templates. No guesswork. Just results.</p>
+            <p class="statement-sub fade-in" data-i18n="statement.subtext">Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. No templates. No guesswork. Just results.</p>
         </div>
     </section>
 
     <section class="features-section" id="features">
         <div class="container">
             <div class="section-header fade-in" style="color: var(--black);">
-                <p class="section-label">Complete System</p>
-                <h2 class="section-title">Everything You Need</h2>
+                <p class="section-label" data-i18n="features.label">Complete System</p>
+                <h2 class="section-title" data-i18n="features.title">Everything You Need</h2>
             </div>
             <div class="features-grid">
                 <div class="feature-card fade-in">
                     <div class="feature-icon">🏋️</div>
-                    <h3 class="feature-title">52-Week Programs</h3>
-                    <p class="feature-desc">Progressive programming tailored to your goals. 5,700+ exercise library with 99.98% video coverage. Never wonder how to perform a movement.</p>
+                    <h3 class="feature-title" data-i18n="features.programs.title">52-Week Programs</h3>
+                    <p class="feature-desc" data-i18n="features.programs.desc">Progressive programming tailored to your goals. 5,700+ exercise library with 99.98% video coverage. Never wonder how to perform a movement.</p>
                 </div>
                 <div class="feature-card fade-in">
                     <div class="feature-icon">🥗</div>
-                    <h3 class="feature-title">AI Meal Planning</h3>
-                    <p class="feature-desc">Respects your diet and culture. Get meals in 11 languages with local cuisine. Real-time compliance tracking and accountability.</p>
+                    <h3 class="feature-title" data-i18n="features.mealPlanning.title">AI Meal Planning</h3>
+                    <p class="feature-desc" data-i18n="features.mealPlanning.desc">Respects your diet and culture. Get meals in 11 languages with local cuisine. Real-time compliance tracking and accountability.</p>
                 </div>
                 <div class="feature-card fade-in">
                     <div class="feature-icon">📈</div>
-                    <h3 class="feature-title">Progress Analytics</h3>
-                    <p class="feature-desc">Body composition tracking, photo progress with face blur for privacy, and detailed analytics to see your transformation.</p>
+                    <h3 class="feature-title" data-i18n="features.analytics.title">Progress Analytics</h3>
+                    <p class="feature-desc" data-i18n="features.analytics.desc">Body composition tracking, photo progress with face blur for privacy, and detailed analytics to see your transformation.</p>
                 </div>
             </div>
         </div>
@@ -1694,110 +1702,110 @@
     <section class="testimonials-section">
         <div class="container">
             <div class="section-header fade-in">
-                <p class="section-label">Real Results</p>
-                <h2 class="section-title">WHAT USERS<br>ARE SAYING</h2>
-                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;">
+                <p class="section-label" data-i18n="testimonials.label">Real Results</p>
+                <h2 class="section-title" data-i18n-nl="testimonials.title">WHAT USERS<br>ARE SAYING</h2>
+                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;" data-i18n="testimonials.subtitle">
                     People are seeing real results. Not because of motivation—because of accountability.
                 </p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card fade-in">
-                    <p class="testimonial-text">
+                    <p class="testimonial-text" data-i18n="testimonials.testimonial1.text">
                         I've tried every fitness app. This is the first one that actually keeps me accountable. The AI coach knows my program and calls me out when I skip workouts. Down 15 pounds in 12 weeks.
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">SM</div>
                         <div class="testimonial-info">
-                            <div class="testimonial-name">Sarah M.</div>
-                            <div class="testimonial-role">Marketing Manager, 32</div>
+                            <div class="testimonial-name" data-i18n="testimonials.testimonial1.name">Sarah M.</div>
+                            <div class="testimonial-role" data-i18n="testimonials.testimonial1.role">Marketing Manager, 32</div>
                             <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong>12 weeks</strong> on program</span>
-                                <span class="testimonial-stat"><strong>87%</strong> compliance</span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial1.weeks">12 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial1.compliance">87%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card fade-in">
-                    <p class="testimonial-text">
+                    <p class="testimonial-text" data-i18n="testimonials.testimonial2.text">
                         At 58, I thought I was too old to start. The age-specific programming is incredible. My coach adjusts everything for my recovery. I'm stronger now than I was at 40.
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">RJ</div>
                         <div class="testimonial-info">
-                            <div class="testimonial-name">Robert J.</div>
-                            <div class="testimonial-role">Retired Engineer, 58</div>
+                            <div class="testimonial-name" data-i18n="testimonials.testimonial2.name">Robert J.</div>
+                            <div class="testimonial-role" data-i18n="testimonials.testimonial2.role">Retired Engineer, 58</div>
                             <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong>16 weeks</strong> on program</span>
-                                <span class="testimonial-stat"><strong>92%</strong> compliance</span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial2.weeks">16 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial2.compliance">92%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card fade-in">
-                    <p class="testimonial-text">
+                    <p class="testimonial-text" data-i18n="testimonials.testimonial3.text">
                         The meal logging is a game changer. I just type 'chicken and rice' and it figures everything out. No more searching through databases. And the cultural meals? Perfect for my Indian diet.
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">PK</div>
                         <div class="testimonial-info">
-                            <div class="testimonial-name">Priya K.</div>
-                            <div class="testimonial-role">Software Developer, 29</div>
+                            <div class="testimonial-name" data-i18n="testimonials.testimonial3.name">Priya K.</div>
+                            <div class="testimonial-role" data-i18n="testimonials.testimonial3.role">Software Developer, 29</div>
                             <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong>8 weeks</strong> on program</span>
-                                <span class="testimonial-stat"><strong>94%</strong> compliance</span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial3.weeks">8 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial3.compliance">94%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card fade-in">
-                    <p class="testimonial-text">
+                    <p class="testimonial-text" data-i18n="testimonials.testimonial4.text">
                         The 4-pillar tracking is what makes this different. I can see my hydration, sleep, workouts, and nutrition all in one place. The AI coach connects the dots and tells me why I'm not recovering.
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">MC</div>
                         <div class="testimonial-info">
-                            <div class="testimonial-name">Marcus C.</div>
-                            <div class="testimonial-role">Personal Trainer, 35</div>
+                            <div class="testimonial-name" data-i18n="testimonials.testimonial4.name">Marcus C.</div>
+                            <div class="testimonial-role" data-i18n="testimonials.testimonial4.role">Personal Trainer, 35</div>
                             <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong>20 weeks</strong> on program</span>
-                                <span class="testimonial-stat"><strong>96%</strong> compliance</span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial4.weeks">20 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial4.compliance">96%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card fade-in">
-                    <p class="testimonial-text">
+                    <p class="testimonial-text" data-i18n="testimonials.testimonial5.text">
                         I'm 6 months pregnant and the pregnancy-safe workouts are perfect. My coach adjusts everything automatically. I feel strong and confident, and I know I'm doing the right things for me and my baby.
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">EL</div>
                         <div class="testimonial-info">
-                            <div class="testimonial-name">Emma L.</div>
-                            <div class="testimonial-role">Teacher, 31</div>
+                            <div class="testimonial-name" data-i18n="testimonials.testimonial5.name">Emma L.</div>
+                            <div class="testimonial-role" data-i18n="testimonials.testimonial5.role">Teacher, 31</div>
                             <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong>24 weeks</strong> on program</span>
-                                <span class="testimonial-stat"><strong>89%</strong> compliance</span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial5.weeks">24 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial5.compliance">89%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card fade-in">
-                    <p class="testimonial-text">
+                    <p class="testimonial-text" data-i18n="testimonials.testimonial6.text">
                         The photo body analysis was mind-blowing. Uploaded 3 photos and got a complete program. No gym assessment, no trainer needed. The AI saw things I didn't even know about my posture.
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">DT</div>
                         <div class="testimonial-info">
-                            <div class="testimonial-name">David T.</div>
-                            <div class="testimonial-role">Consultant, 42</div>
+                            <div class="testimonial-name" data-i18n="testimonials.testimonial6.name">David T.</div>
+                            <div class="testimonial-role" data-i18n="testimonials.testimonial6.role">Consultant, 42</div>
                             <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong>10 weeks</strong> on program</span>
-                                <span class="testimonial-stat"><strong>91%</strong> compliance</span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial6.weeks">10 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
+                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial6.compliance">91%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
                             </div>
                         </div>
                     </div>
@@ -1811,19 +1819,19 @@
             <div class="stats-grid">
                 <div class="stat-item fade-in">
                     <div class="stat-value">52</div>
-                    <div class="stat-label">Week Programs</div>
+                    <div class="stat-label" data-i18n="stats.weekPrograms">Week Programs</div>
                 </div>
                 <div class="stat-item fade-in">
                     <div class="stat-value">5<span class="orange">,700+</span></div>
-                    <div class="stat-label">Exercises</div>
+                    <div class="stat-label" data-i18n="stats.exercises">Exercises</div>
                 </div>
                 <div class="stat-item fade-in">
                     <div class="stat-value">11</div>
-                    <div class="stat-label">Languages</div>
+                    <div class="stat-label" data-i18n="stats.languages">Languages</div>
                 </div>
                 <div class="stat-item fade-in">
                     <div class="stat-value">24<span class="orange">/7</span></div>
-                    <div class="stat-label">AI Coach</div>
+                    <div class="stat-label" data-i18n="stats.aiCoach">AI Coach</div>
                 </div>
             </div>
         </div>
@@ -1832,26 +1840,26 @@
     <section class="pricing-section" id="pricing">
         <div class="container">
             <div class="section-header fade-in" style="text-align: center; margin-bottom: 48px;">
-                <p class="section-label">Simple Pricing</p>
-                <h2 class="section-title">One Plan. Everything.</h2>
+                <p class="section-label" data-i18n="pricing.label">Simple Pricing</p>
+                <h2 class="section-title" data-i18n="pricing.title">One Plan. Everything.</h2>
             </div>
             <div class="pricing-card fade-in">
-                <p class="pricing-label">ForgeFit Pro</p>
+                <p class="pricing-label" data-i18n="pricing.planName">ForgeFit Pro</p>
                 <div class="pricing-amount">$3<span style="font-size: 60px;">.99</span></div>
-                <div class="pricing-period">per month</div>
-                <p class="pricing-or">or</p>
-                <div class="pricing-annual">$19.99/year <span style="color: var(--orange);">(save 58%)</span></div>
+                <div class="pricing-period" data-i18n="pricing.perMonth">per month</div>
+                <p class="pricing-or" data-i18n="pricing.or">or</p>
+                <div class="pricing-annual"><span data-i18n="pricing.perYear">$19.99/year</span> <span style="color: var(--orange);" data-i18n="pricing.save">(save 58%)</span></div>
                 <ul class="pricing-features">
-                    <li>52-week personalized workout plans</li>
-                    <li>AI-powered meal planning</li>
-                    <li>5,700+ exercise library with videos</li>
-                    <li>Real-time compliance tracking</li>
-                    <li>24/7 AI coach chat</li>
-                    <li>Progress analytics & body composition</li>
-                    <li>Works offline</li>
-                    <li>11 languages supported</li>
+                    <li data-i18n="pricing.feature1">52-week personalized workout plans</li>
+                    <li data-i18n="pricing.feature2">AI-powered meal planning</li>
+                    <li data-i18n="pricing.feature3">5,700+ exercise library with videos</li>
+                    <li data-i18n="pricing.feature4">Real-time compliance tracking</li>
+                    <li data-i18n="pricing.feature5">24/7 AI coach chat</li>
+                    <li data-i18n="pricing.feature6">Progress analytics & body composition</li>
+                    <li data-i18n="pricing.feature7">Works offline</li>
+                    <li data-i18n="pricing.feature8">11 languages supported</li>
                 </ul>
-                <a href="#download" class="btn btn-orange download-btn" style="width: 100%;">Start Free Trial</a>
+                <a href="#download" class="btn btn-orange download-btn" style="width: 100%;" data-i18n="pricing.startFreeTrial">Start Free Trial</a>
             </div>
         </div>
     </section>
@@ -1861,17 +1869,17 @@
         <div class="container">
             <div class="cta-content">
                 <img src="icon.png" alt="ForgeFit" class="cta-logo fade-in">
-                <h2 class="cta-title fade-in">YOUR AI COACH IS WAITING.</h2>
-                <p class="cta-subtitle fade-in">7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.</p>
+                <h2 class="cta-title fade-in" data-i18n="cta.title">YOUR AI COACH IS WAITING.</h2>
+                <p class="cta-subtitle fade-in" data-i18n="cta.subtitle">7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.</p>
                 <div class="fade-in">
-                    <a href="#" class="btn btn-orange download-btn">Download Free</a>
+                    <a href="#" class="btn btn-orange download-btn" data-i18n="cta.downloadFree">Download Free</a>
                 </div>
                 <div class="store-badges fade-in">
                     <a href="#" class="store-badge download-btn" data-store="App Store">
                         <span class="store-icon">🍎</span>
                         <div class="store-text">
-                            <span class="store-label">Download on the</span>
-                            <span class="store-name">App Store</span>
+                            <span class="store-label" data-i18n="cta.appStore.label">Download on the</span>
+                            <span class="store-name" data-i18n="cta.appStore.name">App Store</span>
                         </div>
                     </a>
                     <a href="#" class="store-badge download-btn" data-store="Google Play">
@@ -1879,8 +1887,8 @@
                             <path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.11L13.69 12L3.84 21.89C3.34 21.6 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.53 12.9 20.18 13.18L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z" fill="currentColor"/>
                         </svg>
                         <div class="store-text">
-                            <span class="store-label">Get it on</span>
-                            <span class="store-name">Google Play</span>
+                            <span class="store-label" data-i18n="cta.googlePlay.label">Get it on</span>
+                            <span class="store-name" data-i18n="cta.googlePlay.name">Google Play</span>
                         </div>
                     </a>
                 </div>
@@ -1896,22 +1904,22 @@
                         <img src="icon.png" alt="ForgeFit" class="logo-img">
                         <span class="logo-text">FORGEFIT</span>
                     </a>
-                    <p>AI-powered fitness coaching that keeps you accountable. Built for results, powered by intelligence.</p>
+                    <p data-i18n="footer.description">AI-powered fitness coaching that keeps you accountable. Built for results, powered by intelligence.</p>
                 </div>
                 <div>
-                    <h4 class="footer-title">Product</h4>
+                    <h4 class="footer-title" data-i18n="footer.product">Product</h4>
                     <ul class="footer-links">
-                        <li><a href="#how">How It Works</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#how" data-i18n="nav.howItWorks">How It Works</a></li>
+                        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Company</h4>
+                    <h4 class="footer-title" data-i18n="footer.company">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" data-i18n="footer.about">About</a></li>
+                        <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+                        <li><a href="#" data-i18n="footer.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
@@ -1923,7 +1931,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 ForgeFit. All rights reserved.</p>
+                <p class="footer-copyright" data-i18n="footer.copyright">© 2026 ForgeFit. All rights reserved.</p>
                 <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
                     <div class="lang-switcher" id="footerLangSwitcher" style="position: relative;">
                         <button class="lang-switcher-btn" id="footerLangSwitcherBtn" style="font-size: 11px;">

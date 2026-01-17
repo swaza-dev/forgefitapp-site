@@ -1,264 +1,264 @@
 {
   "meta": {
-    "title": "ForgeFit – AI That Knows Your Body",
-    "description": "AI-powered fitness coaching that analyzes your unique body composition, age, and experience to create truly personalized programs."
+    "title": "ForgeFit – あなたの体を理解するAI",
+    "description": "あなたの独自の体組成、年齢、経験を分析し、真にパーソナライズされたプログラムを作成するAI搭載のフィットネスコーチング。"
   },
   "nav": {
-    "howItWorks": "How It Works",
-    "features": "Features",
-    "pricing": "Pricing",
-    "getStarted": "Get Started"
+    "howItWorks": "仕組み",
+    "features": "機能",
+    "pricing": "料金",
+    "getStarted": "始める"
   },
   "hero": {
-    "tagline": "AI-Powered Fitness App",
-    "title": "YOU DON'T NEED",
-    "titleOutline": "ANOTHER APP.",
-    "subtitle": "You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.",
-    "startFreeTrial": "Start Free Trial",
-    "seeHowItWorks": "See How It Works",
-    "weekPrograms": "Week Programs",
-    "exercises": "Exercises",
-    "aiCoach": "AI Coach"
+    "tagline": "AI搭載フィットネスアプリ",
+    "title": "あなたの体。",
+    "titleOutline": "あなたのプログラム。",
+    "subtitle": "あなたを責任を持たせるコーチが必要です。ほとんどのフィットネスアプリは汎用的なワークアウトを提供し、最善を願うだけです。ForgeFitは違います。",
+    "startFreeTrial": "無料トライアルを開始",
+    "seeHowItWorks": "仕組みを見る",
+    "weekPrograms": "週間プログラム",
+    "exercises": "エクササイズ",
+    "aiCoach": "AIコーチ"
   },
   "marquee": {
-    "realTimeAccountability": "Real-Time Accountability",
-    "aiPersonalization": "AI-Powered Personalization",
-    "nutritionGuidance": "Complete Nutrition Guidance",
-    "worksOffline": "Works Offline",
-    "languages": "11 Languages",
-    "progressAnalytics": "Progress Analytics"
+    "realTimeAccountability": "リアルタイム責任管理",
+    "aiPersonalization": "AIによるパーソナライゼーション",
+    "nutritionGuidance": "完全な栄養ガイダンス",
+    "worksOffline": "オフライン対応",
+    "languages": "11言語",
+    "progressAnalytics": "進捗分析"
   },
   "problem": {
-    "text": "Most fitness apps give you generic workouts and hope for the best.",
-    "subtext": "ForgeFit analyzes YOUR body, goals, experience, and equipment—then builds a complete 52-week program designed specifically for you."
+    "text": "ForgeFitは、フィットネスの4つの重要な柱（筋力トレーニング、有酸素運動、栄養、水分補給）を追跡・最適化するAI搭載のフィットネスコーチングアプリです。真の結果はジムでの時間だけでなく、バランスから生まれます。",
+    "subtext": "進捗に適応する52週間のパーソナライズされたプログラムを提供し、4つの柱すべてで一貫性を構築し、手頃な価格で目標を達成するのをサポートします。"
   },
   "emotional": {
-    "title": "THE #1 REASON PEOPLE FAIL\nISN'T LACK OF MOTIVATION.",
-    "quote": "It's lack of accountability. Most people know what to do. They just don't do it consistently. That's where we come in. We track your compliance in real-time, show you exactly where you stand, and keep you honest. Not because we're watching—because you deserve to see your progress.",
-    "subtext": "This isn't about perfection. It's about showing up. Day after day. Week after week. Until showing up becomes who you are."
+    "title": "人が失敗する理由第1位は\nモチベーション不足ではありません。",
+    "quote": "責任の欠如です。ほとんどの人は何をすべきか知っています。ただ一貫して実行していないだけです。そこで私たちの出番です。リアルタイムでコンプライアンスを追跡し、正確な位置を示し、正直さを保ちます。見ているからではなく—あなたが自分の進捗を見る価値があるからです。",
+    "subtext": "これは完璧さについてではありません。現れることについてです。日々。週々。現れることがあなたの本質になるまで。"
   },
   "value": {
-    "label": "The ForgeFit Difference",
-    "title": "YOUR AI COACH,\nALWAYS AVAILABLE",
+    "label": "ForgeFitの違い",
+    "title": "あなたのAIコーチ、\nいつでも利用可能",
     "aiPersonalization": {
-      "title": "AI-Powered Personalization",
-      "desc": "Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access. Your program is built from the ground up for YOU."
+      "title": "AIによるパーソナライゼーション",
+      "desc": "体型、フィットネスレベル、目標、設備アクセスにまたがる60の異なるユーザープロファイルに基づいています。あなたのプログラムはあなたのためにゼロから構築されています。"
     },
     "accountability": {
-      "title": "Real-Time Accountability",
-      "desc": "Track compliance across workouts, nutrition, hydration, and sleep. We keep you honest. Miss a workout? We know. Crush your week? We celebrate it."
+      "title": "リアルタイム責任管理",
+      "desc": "ワークアウト、栄養、水分補給、睡眠全体のコンプライアンスを追跡します。私たちはあなたを正直に保ちます。ワークアウトを逃しましたか？私たちは知っています。週を完璧にこなしましたか？私たちはそれを祝福します。"
     },
     "nutrition": {
-      "title": "Complete Nutrition Guidance",
-      "desc": "Personalized nutrition coaching that respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages."
+      "title": "完全な栄養ガイダンス",
+      "desc": "あなたの食事（ペスカタリアン、ベジタリアン、ビーガン）を尊重し、11言語の食事で文化に適応するパーソナライズされた栄養コーチング。"
     },
     "coach": {
-      "title": "24/7 AI Coach Chat",
-      "desc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling."
+      "title": "24/7 AIコーチチャット",
+      "desc": "フォームで行き詰まっていますか？何を食べるかわかりませんか？エクササイズを交換する必要がありますか？尋ねるだけです。ポケットにパーソナルトレーナーがいるようなもの。待つ必要はありません。スケジュールは必要ありません。"
     }
   },
   "pillars": {
-    "label": "Why ForgeFit is Different",
-    "title": "ONE PLATFORM.\nALL FOUR PILLARS.",
-    "subtitle": "Most apps track one thing. We track everything that matters—plus give you a 24/7 AI coach to guide you through it all.",
+    "label": "ForgeFitが違う理由",
+    "title": "1つのプラットフォーム。\n4つの柱すべて。",
+    "subtitle": "ほとんどのアプリは1つのことを追跡します。私たちは重要なすべてを追跡します—さらに、すべてを案内する24/7のAIコーチを提供します。",
     "workouts": {
-      "title": "Workouts",
-      "desc": "52-week progressive programs tailored to your body, goals, and equipment. 5,700+ exercises with video demonstrations.",
-      "feature1": "Auto-progressive overload",
-      "feature2": "Equipment-based programming"
+      "title": "ワークアウト",
+      "desc": "あなたの体、目標、設備に合わせた52週間のプログレッシブプログラム。動画デモンストレーション付き5,700以上のエクササイズ。",
+      "feature1": "自動プログレッシブオーバーロード",
+      "feature2": "設備ベースのプログラミング"
     },
     "nutrition": {
-      "title": "Nutrition",
-      "desc": "Meal logging is a breeze. Just type in natural language what you ate, and we'll figure out the nutrition. AI-powered meal planning that respects your diet and culture.",
-      "feature1": "Natural language meal logging",
-      "feature2": "11 languages with local cuisine"
+      "title": "栄養",
+      "desc": "食事ログは簡単です。自然言語で食べたものを入力するだけです。栄養を計算します。あなたの食事と文化を尊重するAI搭載の食事計画。",
+      "feature1": "自然言語食事ログ",
+      "feature2": "地元料理の11言語"
     },
     "hydration": {
-      "title": "Hydration",
-      "desc": "Track your daily water intake with smart reminders. Stay hydrated for optimal performance and recovery.",
-      "feature1": "Smart hydration reminders",
-      "feature2": "Daily goal tracking"
+      "title": "水分補給",
+      "desc": "スマートリマインダーで毎日の水分摂取量を追跡します。最適なパフォーマンスと回復のために水分補給を維持します。",
+      "feature1": "スマート水分補給リマインダー",
+      "feature2": "毎日の目標追跡"
     },
     "sleep": {
-      "title": "Sleep",
-      "desc": "Log your sleep to track recovery. Connect wearables for automatic tracking. Sleep quality impacts everything.",
-      "feature1": "Wearable integration",
-      "feature2": "Recovery-based adjustments"
+      "title": "睡眠",
+      "desc": "回復を追跡するために睡眠を記録します。自動追跡のためにウェアラブルを接続します。睡眠の質はすべてに影響します。",
+      "feature1": "ウェアラブル統合",
+      "feature2": "回復ベースの調整"
     },
-    "coachSubtitle": "Plus Your 24/7 AI Coach",
-    "coachDesc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Your AI coach knows your program, progress, and goals—always available to guide you."
+    "coachSubtitle": "さらに24/7 AIコーチ",
+    "coachDesc": "フォームで行き詰まっていますか？何を食べるかわかりませんか？エクササイズを交換する必要がありますか？尋ねるだけです。あなたのAIコーチはプログラム、進捗、目標を知っています—いつでも案内する準備ができています。"
   },
   "mealLogging": {
-    "label": "Natural Language Meal Logging",
-    "title": "MEAL LOGGING\nIS A BREEZE.",
-    "subtitle": "No more searching through databases. Just type what you ate in natural language, and our AI figures out the nutrition.",
-    "demoInput": "I had grilled chicken breast with brown rice and steamed broccoli for lunch",
-    "demoResult": "Logged:",
-    "demoResultDetails": "350 calories, 45g protein, 35g carbs, 8g fat",
-    "footer": "Works in 11 languages. Respects your diet preferences. Adapts to your culture. It's that simple."
+    "label": "自然言語食事ログ",
+    "title": "食事ログは\n簡単です。",
+    "subtitle": "データベースを検索する必要はもうありません。自然言語で食べたものを入力するだけです。AIが栄養を計算します。",
+    "demoInput": "昼食に玄米と蒸しブロッコリーと一緒にグリルチキン胸肉を食べました",
+    "demoResult": "記録済み：",
+    "demoResultDetails": "350カロリー、45gタンパク質、35g炭水化物、8g脂肪",
+    "footer": "11言語で動作します。あなたの食事の好みを尊重します。あなたの文化に適応します。それほど簡単です。"
   },
   "wowFeatures": {
-    "label": "Built For Everyone",
-    "title": "YOUR BODY.\nYOUR LIFE STAGE.\nYOUR PROGRAM.",
-    "subtitle": "A 25-year-old beginner and a 55-year-old intermediate need completely different approaches. ForgeFit understands the research and adapts to you.",
+    "label": "すべての人のために構築",
+    "title": "あなたの体。\nあなたの人生の段階。\nあなたのプログラム。",
+    "subtitle": "25歳の初心者と55歳の中級者には完全に異なるアプローチが必要です。ForgeFitは研究を理解し、あなたに適応します。",
     "ageAware": {
-      "badge": "Age-Aware AI",
-      "title": "50+ & 60+\nSpecialized",
-      "desc": "Research shows age affects muscle protein synthesis, hormone levels, and recovery. We don't give everyone the same plan. Your program adapts to your age with appropriate volume, intensity, and recovery protocols.",
-      "highlight": "Science-backed: Special protocols for 50-59 and 60+ age groups with modified intensity and extended recovery."
+      "badge": "年齢を意識したAI",
+      "title": "50代＆60代以上\n専門化",
+      "desc": "研究によると、年齢は筋肉タンパク質合成、ホルモンレベル、回復に影響します。私たちは全員に同じプランを提供しません。あなたのプログラムは適切な量、強度、回復プロトコルで年齢に適応します。",
+      "highlight": "科学に基づく：修正された強度と延長された回復で50-59歳および60歳以上の年齢グループのための特別なプロトコル。"
     },
     "pregnancy": {
-      "badge": "Pregnancy-Safe",
-      "title": "Pregnancy\nFitness",
-      "desc": "Safe, modified workouts that adapt to your trimester. Nutrition guidance that supports both you and your baby. Track your fitness journey through pregnancy and beyond.",
-      "highlight": "Trimester-aware: Workouts and nutrition plans that adjust automatically based on your stage of pregnancy."
+      "badge": "妊娠安全",
+      "title": "妊娠中\nフィットネス",
+      "desc": "あなたの妊娠期間に適応する安全で修正されたワークアウト。あなたと赤ちゃんの両方をサポートする栄養ガイダンス。妊娠中およびその後のフィットネスの旅を追跡します。",
+      "highlight": "妊娠期間を意識：妊娠段階に基づいて自動的に調整されるワークアウトと栄養プラン。"
     },
     "photoAnalysis": {
-      "badge": "AI Vision",
-      "title": "Photo Body\nAnalysis",
-      "desc": "Upload 3 photos. Our AI analyzes your body composition, muscle development, and posture—no gym assessment needed. Get personalized recommendations based on what your body actually looks like.",
-      "highlight": "GPT-4 Vision: Advanced AI that sees your body composition, posture, and fitness level from photos. Face blur for privacy."
+      "badge": "AIビジョン",
+      "title": "写真体\n分析",
+      "desc": "3枚の写真をアップロードしてください。AIが体組成、筋肉の発達、姿勢を分析します—ジム評価は不要です。あなたの体の実際の見た目に基づいてパーソナライズされた推奨事項を取得します。",
+      "highlight": "GPT-4 Vision：写真から体組成、姿勢、フィットネスレベルを見る高度なAI。プライバシーのための顔ぼかし。"
     },
     "cultural": {
-      "badge": "11 Languages",
-      "title": "Cultural\nAdaptation",
-      "desc": "Meal plans that respect your culture. Get recipes in 11 languages with local cuisine. Indian, Mexican, Mediterranean, Asian—your meals, your way.",
-      "highlight": "Local cuisine: Not just translated—actually adapted. Indian dal, Mexican tacos, Japanese bento boxes, all with proper macros."
+      "badge": "11言語",
+      "title": "文化的\n適応",
+      "desc": "あなたの文化を尊重する食事プラン。地元料理の11言語でレシピを取得します。インド、メキシコ、地中海、アジア—あなたの食事、あなたの方法。",
+      "highlight": "地元料理：単に翻訳されただけではありません—実際に適応されています。インドのダール、メキシコのタコス、日本の弁当箱、すべて適切なマクロで。"
     },
     "offline": {
-      "badge": "Works Offline",
-      "title": "Train\nAnywhere",
-      "desc": "No internet? No problem. All workouts, exercises, and meal plans work completely offline. Sync when you're back online. Your progress never stops.",
-      "highlight": "100% offline: 5,700+ exercise videos, all workout plans, and meal suggestions available without internet."
+      "badge": "オフライン対応",
+      "title": "どこでも\nトレーニング",
+      "desc": "インターネットがありませんか？問題ありません。すべてのワークアウト、エクササイズ、食事プランは完全にオフラインで動作します。オンラインに戻ったら同期します。あなたの進捗は決して止まりません。",
+      "highlight": "100%オフライン：5,700以上のエクササイズ動画、すべてのワークアウトプラン、食事の提案がインターネットなしで利用可能。"
     },
     "videoCoverage": {
-      "badge": "99.98% Coverage",
-      "title": "Never\nWonder How",
-      "desc": "With 99.98% video coverage across 5,700+ exercises, you'll never be stuck wondering how to perform a movement. Every exercise has a video demonstration.",
-      "highlight": "HD videos: Professional demonstrations for virtually every exercise. Form cues, common mistakes, and alternatives included."
+      "badge": "99.98%カバレッジ",
+      "title": "方法を\n迷わない",
+      "desc": "5,700以上のエクササイズで99.98%の動画カバレッジにより、動きの実行方法を迷うことはありません。すべてのエクササイズに動画デモンストレーションがあります。",
+      "highlight": "HD動画：ほぼすべてのエクササイズのプロフェッショナルなデモンストレーション。フォームのヒント、一般的な間違い、代替案が含まれています。"
     }
   },
   "statement": {
-    "text": "GENERIC PLANS\nDON'T WORK",
-    "outline": "DON'T WORK",
-    "subtext": "Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. No templates. No guesswork. Just results."
+    "text": "汎用的なプランは\n機能しません",
+    "outline": "機能しません",
+    "subtext": "私たちのAIはあなたの体、目標、経験、利用可能な設備を分析し—その後、あなた専用に設計された完全な52週間プログラムを構築します。テンプレートはありません。推測はありません。結果だけです。"
   },
   "features": {
-    "label": "Complete System",
-    "title": "Everything You Need",
+    "label": "完全なシステム",
+    "title": "必要なすべて",
     "programs": {
-      "title": "52-Week Programs",
-      "desc": "Progressive programming tailored to your goals. 5,700+ exercise library with 99.98% video coverage. Never wonder how to perform a movement."
+      "title": "52週間プログラム",
+      "desc": "あなたの目標に合わせたプログレッシブプログラミング。99.98%の動画カバレッジを持つ5,700以上のエクササイズライブラリ。動きの実行方法を迷うことはありません。"
     },
     "mealPlanning": {
-      "title": "AI Meal Planning",
-      "desc": "Respects your diet and culture. Get meals in 11 languages with local cuisine. Real-time compliance tracking and accountability."
+      "title": "AI食事計画",
+      "desc": "あなたの食事と文化を尊重します。地元料理の11言語で食事を取得します。リアルタイムコンプライアンス追跡と責任管理。"
     },
     "analytics": {
-      "title": "Progress Analytics",
-      "desc": "Body composition tracking, photo progress with face blur for privacy, and detailed analytics to see your transformation."
+      "title": "進捗分析",
+      "desc": "体組成追跡、プライバシーのための顔ぼかし付き写真進捗、および変換を確認するための詳細な分析。"
     }
   },
   "testimonials": {
-    "label": "Real Results",
-    "title": "WHAT USERS\nARE SAYING",
-    "subtitle": "People are seeing real results. Not because of motivation—because of accountability.",
+    "label": "実際の結果",
+    "title": "ユーザーが\n言っていること",
+    "subtitle": "人々は実際の結果を見ています。モチベーションではなく—責任管理のためです。",
     "testimonial1": {
-      "text": "I've tried every fitness app. This is the first one that actually keeps me accountable. The AI coach knows my program and calls me out when I skip workouts. Down 15 pounds in 12 weeks.",
-      "name": "Sarah M.",
-      "role": "Marketing Manager, 32",
-      "weeks": "12 weeks",
+      "text": "すべてのフィットネスアプリを試しました。実際に私を責任を持たせるのはこれが初めてです。AIコーチは私のプログラムを知っており、ワークアウトをスキップしたときに私に警告します。12週間で15ポンド減量。",
+      "name": "サラ・M.",
+      "role": "マーケティングマネージャー、32歳",
+      "weeks": "12週間",
       "compliance": "87%"
     },
     "testimonial2": {
-      "text": "At 58, I thought I was too old to start. The age-specific programming is incredible. My coach adjusts everything for my recovery. I'm stronger now than I was at 40.",
-      "name": "Robert J.",
-      "role": "Retired Engineer, 58",
-      "weeks": "16 weeks",
+      "text": "58歳で、始めるには年を取りすぎていると思いました。年齢固有のプログラミングは信じられません。コーチは回復のためにすべてを調整します。今は40歳の時よりも強くなっています。",
+      "name": "ロバート・J.",
+      "role": "退職エンジニア、58歳",
+      "weeks": "16週間",
       "compliance": "92%"
     },
     "testimonial3": {
-      "text": "The meal logging is a game changer. I just type 'chicken and rice' and it figures everything out. No more searching through databases. And the cultural meals? Perfect for my Indian diet.",
-      "name": "Priya K.",
-      "role": "Software Developer, 29",
-      "weeks": "8 weeks",
+      "text": "食事ログはゲームチェンジャーです。「チキンとライス」と入力するだけで、すべてを計算します。データベースを検索する必要はもうありません。文化的な食事は？私のインドの食事に完璧です。",
+      "name": "プリヤ・K.",
+      "role": "ソフトウェア開発者、29歳",
+      "weeks": "8週間",
       "compliance": "94%"
     },
     "testimonial4": {
-      "text": "The 4-pillar tracking is what makes this different. I can see my hydration, sleep, workouts, and nutrition all in one place. The AI coach connects the dots and tells me why I'm not recovering.",
-      "name": "Marcus C.",
-      "role": "Personal Trainer, 35",
-      "weeks": "20 weeks",
+      "text": "4つの柱の追跡がこれを違うものにします。水分補給、睡眠、ワークアウト、栄養を1つの場所で見ることができます。AIコーチは点を結び、なぜ回復していないのかを教えてくれます。",
+      "name": "マーカス・C.",
+      "role": "パーソナルトレーナー、35歳",
+      "weeks": "20週間",
       "compliance": "96%"
     },
     "testimonial5": {
-      "text": "I'm 6 months pregnant and the pregnancy-safe workouts are perfect. My coach adjusts everything automatically. I feel strong and confident, and I know I'm doing the right things for me and my baby.",
-      "name": "Emma L.",
-      "role": "Teacher, 31",
-      "weeks": "24 weeks",
+      "text": "私は妊娠6ヶ月で、妊娠安全なワークアウトは完璧です。コーチはすべてを自動的に調整します。強く自信を持って感じ、私と赤ちゃんのために正しいことをしていることを知っています。",
+      "name": "エマ・L.",
+      "role": "教師、31歳",
+      "weeks": "24週間",
       "compliance": "89%"
     },
     "testimonial6": {
-      "text": "The photo body analysis was mind-blowing. Uploaded 3 photos and got a complete program. No gym assessment, no trainer needed. The AI saw things I didn't even know about my posture.",
-      "name": "David T.",
-      "role": "Consultant, 42",
-      "weeks": "10 weeks",
+      "text": "写真体分析は驚異的でした。3枚の写真をアップロードし、完全なプログラムを取得しました。ジム評価は不要、トレーナーは不要。AIは姿勢について私さえ知らなかったことを見ました。",
+      "name": "デイビッド・T.",
+      "role": "コンサルタント、42歳",
+      "weeks": "10週間",
       "compliance": "91%"
     },
-    "onProgram": "on program",
-    "compliance": "compliance"
+    "onProgram": "プログラム中",
+    "compliance": "コンプライアンス"
   },
   "stats": {
-    "weekPrograms": "Week Programs",
-    "exercises": "Exercises",
-    "languages": "Languages",
-    "aiCoach": "AI Coach"
+    "weekPrograms": "週間プログラム",
+    "exercises": "エクササイズ",
+    "languages": "言語",
+    "aiCoach": "AIコーチ"
   },
   "pricing": {
-    "label": "Simple Pricing",
-    "title": "One Plan. Everything.",
+    "label": "シンプルな料金",
+    "title": "1つのプラン。すべて。",
     "planName": "ForgeFit Pro",
-    "perMonth": "per month",
-    "or": "or",
-    "perYear": "$19.99/year",
-    "save": "save 58%",
-    "feature1": "52-week personalized workout plans",
-    "feature2": "AI-powered meal planning",
-    "feature3": "5,700+ exercise library with videos",
-    "feature4": "Real-time compliance tracking",
-    "feature5": "24/7 AI coach chat",
-    "feature6": "Progress analytics & body composition",
-    "feature7": "Works offline",
-    "feature8": "11 languages supported",
-    "startFreeTrial": "Start Free Trial"
+    "perMonth": "月額",
+    "or": "または",
+    "perYear": "$19.99/年",
+    "save": "58%節約",
+    "feature1": "52週間のパーソナライズされたワークアウトプラン",
+    "feature2": "AI搭載の食事計画",
+    "feature3": "動画付き5,700以上のエクササイズライブラリ",
+    "feature4": "リアルタイムコンプライアンス追跡",
+    "feature5": "24/7 AIコーチチャット",
+    "feature6": "進捗分析と体組成",
+    "feature7": "オフライン対応",
+    "feature8": "11言語サポート",
+    "startFreeTrial": "無料トライアルを開始"
   },
   "cta": {
-    "title": "YOUR AI COACH IS WAITING.",
-    "subtitle": "7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.",
-    "downloadFree": "Download Free",
+    "title": "あなたのAIコーチが待っています。",
+    "subtitle": "7日間の無料トライアル。その後は月額$3.99または年間$19.99のみ。ForgeFitをダウンロードして、今日から変革を始めましょう。",
+    "downloadFree": "無料ダウンロード",
     "appStore": {
-      "label": "Download on the",
-      "name": "App Store"
+      "label": "App Storeで",
+      "name": "ダウンロード"
     },
     "googlePlay": {
-      "label": "Get it on",
-      "name": "Google Play"
+      "label": "Google Playで",
+      "name": "入手"
     }
   },
   "footer": {
-    "description": "AI-powered fitness coaching that keeps you accountable. Built for results, powered by intelligence.",
-    "product": "Product",
-    "company": "Company",
-    "legal": "Legal",
-    "about": "About",
-    "blog": "Blog",
-    "contact": "Contact",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "copyright": "© 2026 ForgeFit. All rights reserved."
+    "description": "あなたを責任を持たせるAI搭載のフィットネスコーチング。結果のために構築され、知性によって動力を与えられます。",
+    "product": "製品",
+    "company": "会社",
+    "legal": "法的",
+    "about": "について",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "copyright": "© 2026 ForgeFit. 全著作権所有。"
   },
   "comingSoon": {
-    "title": "Coming Soon!",
-    "message": "We're putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download."
+    "title": "近日公開！",
+    "message": "ForgeFitに最後の仕上げを加えています。アプリがダウンロード可能になる時期に関する更新情報をお待ちください。"
   }
 }

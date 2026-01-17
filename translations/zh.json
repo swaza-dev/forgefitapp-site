@@ -1,264 +1,264 @@
 {
   "meta": {
-    "title": "ForgeFit – AI That Knows Your Body",
-    "description": "AI-powered fitness coaching that analyzes your unique body composition, age, and experience to create truly personalized programs."
+    "title": "ForgeFit – 了解您身体的AI",
+    "description": "AI驱动的健身指导，分析您独特的身体成分、年龄和经验，创建真正个性化的计划。"
   },
   "nav": {
-    "howItWorks": "How It Works",
-    "features": "Features",
-    "pricing": "Pricing",
-    "getStarted": "Get Started"
+    "howItWorks": "工作原理",
+    "features": "功能",
+    "pricing": "定价",
+    "getStarted": "开始"
   },
   "hero": {
-    "tagline": "AI-Powered Fitness App",
-    "title": "YOU DON'T NEED",
-    "titleOutline": "ANOTHER APP.",
-    "subtitle": "You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.",
-    "startFreeTrial": "Start Free Trial",
-    "seeHowItWorks": "See How It Works",
-    "weekPrograms": "Week Programs",
-    "exercises": "Exercises",
-    "aiCoach": "AI Coach"
+    "tagline": "AI驱动的健身应用",
+    "title": "您的身体。",
+    "titleOutline": "您的计划。",
+    "subtitle": "您需要一个让您负责任的教练。大多数健身应用给您通用训练，只希望最好。ForgeFit不同。",
+    "startFreeTrial": "免费试用",
+    "seeHowItWorks": "了解工作原理",
+    "weekPrograms": "周计划",
+    "exercises": "练习",
+    "aiCoach": "AI教练"
   },
   "marquee": {
-    "realTimeAccountability": "Real-Time Accountability",
-    "aiPersonalization": "AI-Powered Personalization",
-    "nutritionGuidance": "Complete Nutrition Guidance",
-    "worksOffline": "Works Offline",
-    "languages": "11 Languages",
-    "progressAnalytics": "Progress Analytics"
+    "realTimeAccountability": "实时责任",
+    "aiPersonalization": "AI驱动的个性化",
+    "nutritionGuidance": "完整营养指导",
+    "worksOffline": "离线工作",
+    "languages": "11种语言",
+    "progressAnalytics": "进度分析"
   },
   "problem": {
-    "text": "Most fitness apps give you generic workouts and hope for the best.",
-    "subtext": "ForgeFit analyzes YOUR body, goals, experience, and equipment—then builds a complete 52-week program designed specifically for you."
+    "text": "ForgeFit是一款AI驱动的健身指导应用，它跟踪和优化健身的四个基本支柱：力量训练、有氧运动、营养和水分补充 - 因为真正的结果来自平衡，而不仅仅是健身房时间。",
+    "subtext": "它提供个性化的52周计划，根据您的进度进行调整，帮助您在四个支柱上建立一致性，并以可承受的价格实现您的目标。"
   },
   "emotional": {
-    "title": "THE #1 REASON PEOPLE FAIL\nISN'T LACK OF MOTIVATION.",
-    "quote": "It's lack of accountability. Most people know what to do. They just don't do it consistently. That's where we come in. We track your compliance in real-time, show you exactly where you stand, and keep you honest. Not because we're watching—because you deserve to see your progress.",
-    "subtext": "This isn't about perfection. It's about showing up. Day after day. Week after week. Until showing up becomes who you are."
+    "title": "人们失败的首要原因\n不是缺乏动力。",
+    "quote": "是缺乏责任。大多数人都知道该做什么。他们只是不能始终如一地做到。这就是我们的作用。我们实时追踪您的合规性，准确显示您的位置，让您保持诚实。不是因为我们正在观察—因为您应该看到自己的进步。",
+    "subtext": "这不是关于完美。这是关于出现。日复一日。周复一周。直到出现成为您是谁。"
   },
   "value": {
-    "label": "The ForgeFit Difference",
-    "title": "YOUR AI COACH,\nALWAYS AVAILABLE",
+    "label": "ForgeFit的差异",
+    "title": "您的AI教练，\n始终可用",
     "aiPersonalization": {
-      "title": "AI-Powered Personalization",
-      "desc": "Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access. Your program is built from the ground up for YOU."
+      "title": "AI驱动的个性化",
+      "desc": "基于60个不同的用户档案，涵盖体型、健身水平、目标和设备访问。您的计划是为您从头开始构建的。"
     },
     "accountability": {
-      "title": "Real-Time Accountability",
-      "desc": "Track compliance across workouts, nutrition, hydration, and sleep. We keep you honest. Miss a workout? We know. Crush your week? We celebrate it."
+      "title": "实时责任",
+      "desc": "追踪训练、营养、补水和睡眠的合规性。我们让您保持诚实。错过了训练？我们知道。完美完成一周？我们庆祝它。"
     },
     "nutrition": {
-      "title": "Complete Nutrition Guidance",
-      "desc": "Personalized nutrition coaching that respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages."
+      "title": "完整营养指导",
+      "desc": "个性化的营养指导，尊重您的饮食（鱼素、素食、纯素），并通过11种语言的餐点适应您的文化。"
     },
     "coach": {
-      "title": "24/7 AI Coach Chat",
-      "desc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling."
+      "title": "24/7 AI教练聊天",
+      "desc": "在动作上卡住了？不确定该吃什么？需要更换练习？只需询问。就像口袋里有个私人教练。无需等待。无需安排。"
     }
   },
   "pillars": {
-    "label": "Why ForgeFit is Different",
-    "title": "ONE PLATFORM.\nALL FOUR PILLARS.",
-    "subtitle": "Most apps track one thing. We track everything that matters—plus give you a 24/7 AI coach to guide you through it all.",
+    "label": "为什么ForgeFit不同",
+    "title": "一个平台。\n四个支柱。",
+    "subtitle": "大多数应用追踪一件事。我们追踪所有重要的事情—另外给您一个24/7的AI教练来指导您完成所有事情。",
     "workouts": {
-      "title": "Workouts",
-      "desc": "52-week progressive programs tailored to your body, goals, and equipment. 5,700+ exercises with video demonstrations.",
-      "feature1": "Auto-progressive overload",
-      "feature2": "Equipment-based programming"
+      "title": "训练",
+      "desc": "52周的渐进式计划，适合您的身体、目标和设备。5,700多个带视频演示的练习。",
+      "feature1": "自动渐进式超负荷",
+      "feature2": "基于设备的编程"
     },
     "nutrition": {
-      "title": "Nutrition",
-      "desc": "Meal logging is a breeze. Just type in natural language what you ate, and we'll figure out the nutrition. AI-powered meal planning that respects your diet and culture.",
-      "feature1": "Natural language meal logging",
-      "feature2": "11 languages with local cuisine"
+      "title": "营养",
+      "desc": "记录餐食轻而易举。只需用自然语言输入您吃的内容，我们会计算出营养。AI驱动的餐食计划，尊重您的饮食和文化。",
+      "feature1": "自然语言餐食记录",
+      "feature2": "11种语言与当地美食"
     },
     "hydration": {
-      "title": "Hydration",
-      "desc": "Track your daily water intake with smart reminders. Stay hydrated for optimal performance and recovery.",
-      "feature1": "Smart hydration reminders",
-      "feature2": "Daily goal tracking"
+      "title": "补水",
+      "desc": "用智能提醒追踪您每日的饮水量。保持水分以获得最佳表现和恢复。",
+      "feature1": "智能补水提醒",
+      "feature2": "每日目标追踪"
     },
     "sleep": {
-      "title": "Sleep",
-      "desc": "Log your sleep to track recovery. Connect wearables for automatic tracking. Sleep quality impacts everything.",
-      "feature1": "Wearable integration",
-      "feature2": "Recovery-based adjustments"
+      "title": "睡眠",
+      "desc": "记录您的睡眠以追踪恢复。连接可穿戴设备进行自动追踪。睡眠质量影响一切。",
+      "feature1": "可穿戴设备集成",
+      "feature2": "基于恢复的调整"
     },
-    "coachSubtitle": "Plus Your 24/7 AI Coach",
-    "coachDesc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Your AI coach knows your program, progress, and goals—always available to guide you."
+    "coachSubtitle": "加上您的24/7 AI教练",
+    "coachDesc": "在动作上卡住了？不确定该吃什么？需要更换练习？只需询问。您的AI教练知道您的计划、进度和目标—始终可用以指导您。"
   },
   "mealLogging": {
-    "label": "Natural Language Meal Logging",
-    "title": "MEAL LOGGING\nIS A BREEZE.",
-    "subtitle": "No more searching through databases. Just type what you ate in natural language, and our AI figures out the nutrition.",
-    "demoInput": "I had grilled chicken breast with brown rice and steamed broccoli for lunch",
-    "demoResult": "Logged:",
-    "demoResultDetails": "350 calories, 45g protein, 35g carbs, 8g fat",
-    "footer": "Works in 11 languages. Respects your diet preferences. Adapts to your culture. It's that simple."
+    "label": "自然语言餐食记录",
+    "title": "记录餐食\n轻而易举。",
+    "subtitle": "不再需要搜索数据库。只需用自然语言输入您吃的内容，我们的AI会计算出营养。",
+    "demoInput": "我午餐吃了烤鸡胸肉配糙米和蒸西兰花",
+    "demoResult": "已记录：",
+    "demoResultDetails": "350卡路里，45g蛋白质，35g碳水化合物，8g脂肪",
+    "footer": "支持11种语言。尊重您的饮食偏好。适应您的文化。就这么简单。"
   },
   "wowFeatures": {
-    "label": "Built For Everyone",
-    "title": "YOUR BODY.\nYOUR LIFE STAGE.\nYOUR PROGRAM.",
-    "subtitle": "A 25-year-old beginner and a 55-year-old intermediate need completely different approaches. ForgeFit understands the research and adapts to you.",
+    "label": "为所有人打造",
+    "title": "您的身体。\n您的人生阶段。\n您的计划。",
+    "subtitle": "25岁的初学者和55岁的中级者需要完全不同的方法。ForgeFit理解研究并适应您。",
     "ageAware": {
-      "badge": "Age-Aware AI",
-      "title": "50+ & 60+\nSpecialized",
-      "desc": "Research shows age affects muscle protein synthesis, hormone levels, and recovery. We don't give everyone the same plan. Your program adapts to your age with appropriate volume, intensity, and recovery protocols.",
-      "highlight": "Science-backed: Special protocols for 50-59 and 60+ age groups with modified intensity and extended recovery."
+      "badge": "年龄感知AI",
+      "title": "50岁以上 & 60岁以上\n专业",
+      "desc": "研究显示年龄影响肌肉蛋白质合成、激素水平和恢复。我们不给大家相同的计划。您的计划通过适当的量、强度和恢复协议适应您的年龄。",
+      "highlight": "科学支持：针对50-59岁和60岁以上年龄组的特殊协议，具有修改的强度和延长的恢复。"
     },
     "pregnancy": {
-      "badge": "Pregnancy-Safe",
-      "title": "Pregnancy\nFitness",
-      "desc": "Safe, modified workouts that adapt to your trimester. Nutrition guidance that supports both you and your baby. Track your fitness journey through pregnancy and beyond.",
-      "highlight": "Trimester-aware: Workouts and nutrition plans that adjust automatically based on your stage of pregnancy."
+      "badge": "孕期安全",
+      "title": "孕期\n健身",
+      "desc": "安全、修改的训练，适应您的孕期。支持您和宝宝两者的营养指导。追踪您从孕期到以后的健身之旅。",
+      "highlight": "孕期感知：根据您的孕期阶段自动调整的训练和营养计划。"
     },
     "photoAnalysis": {
-      "badge": "AI Vision",
-      "title": "Photo Body\nAnalysis",
-      "desc": "Upload 3 photos. Our AI analyzes your body composition, muscle development, and posture—no gym assessment needed. Get personalized recommendations based on what your body actually looks like.",
-      "highlight": "GPT-4 Vision: Advanced AI that sees your body composition, posture, and fitness level from photos. Face blur for privacy."
+      "badge": "AI视觉",
+      "title": "照片身体\n分析",
+      "desc": "上传3张照片。我们的AI分析您的身体成分、肌肉发育和姿势—无需健身房评估。根据您身体的实际外观获得个性化建议。",
+      "highlight": "GPT-4 Vision：从照片中看到您身体成分、姿势和健身水平的高级AI。面部模糊以保护隐私。"
     },
     "cultural": {
-      "badge": "11 Languages",
-      "title": "Cultural\nAdaptation",
-      "desc": "Meal plans that respect your culture. Get recipes in 11 languages with local cuisine. Indian, Mexican, Mediterranean, Asian—your meals, your way.",
-      "highlight": "Local cuisine: Not just translated—actually adapted. Indian dal, Mexican tacos, Japanese bento boxes, all with proper macros."
+      "badge": "11种语言",
+      "title": "文化\n适应",
+      "desc": "尊重您文化的餐食计划。以11种语言和当地美食获得食谱。印度、墨西哥、地中海、亚洲—您的餐食，您的方式。",
+      "highlight": "当地美食：不仅仅是翻译—实际上是适应。印度豆类、墨西哥卷饼、日本便当盒，所有都带有适当的宏量营养素。"
     },
     "offline": {
-      "badge": "Works Offline",
-      "title": "Train\nAnywhere",
-      "desc": "No internet? No problem. All workouts, exercises, and meal plans work completely offline. Sync when you're back online. Your progress never stops.",
-      "highlight": "100% offline: 5,700+ exercise videos, all workout plans, and meal suggestions available without internet."
+      "badge": "离线工作",
+      "title": "任何地方\n训练",
+      "desc": "没有互联网？没问题。所有训练、练习和餐食计划完全离线工作。当您重新在线时同步。您的进度永不停止。",
+      "highlight": "100%离线：5,700多个练习视频、所有训练计划和餐食建议在无互联网情况下可用。"
     },
     "videoCoverage": {
-      "badge": "99.98% Coverage",
-      "title": "Never\nWonder How",
-      "desc": "With 99.98% video coverage across 5,700+ exercises, you'll never be stuck wondering how to perform a movement. Every exercise has a video demonstration.",
-      "highlight": "HD videos: Professional demonstrations for virtually every exercise. Form cues, common mistakes, and alternatives included."
+      "badge": "99.98%覆盖率",
+      "title": "永远不要\n疑惑如何",
+      "desc": "在5,700多个练习中，99.98%的视频覆盖率，您永远不会因为不知道如何执行动作而卡住。每个练习都有视频演示。",
+      "highlight": "高清视频：几乎每个练习的专业演示。包括动作提示、常见错误和替代方案。"
     }
   },
   "statement": {
-    "text": "GENERIC PLANS\nDON'T WORK",
-    "outline": "DON'T WORK",
-    "subtext": "Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. No templates. No guesswork. Just results."
+    "text": "通用计划\n不起作用",
+    "outline": "不起作用",
+    "subtext": "我们的AI分析您的身体、目标、经验和可用设备—然后构建专门为您设计的完整52周计划。没有模板。没有猜测。只有结果。"
   },
   "features": {
-    "label": "Complete System",
-    "title": "Everything You Need",
+    "label": "完整系统",
+    "title": "您需要的一切",
     "programs": {
-      "title": "52-Week Programs",
-      "desc": "Progressive programming tailored to your goals. 5,700+ exercise library with 99.98% video coverage. Never wonder how to perform a movement."
+      "title": "52周计划",
+      "desc": "针对您目标的渐进式编程。5,700多个练习库，99.98%的视频覆盖率。永远不要疑惑如何执行动作。"
     },
     "mealPlanning": {
-      "title": "AI Meal Planning",
-      "desc": "Respects your diet and culture. Get meals in 11 languages with local cuisine. Real-time compliance tracking and accountability."
+      "title": "AI餐食计划",
+      "desc": "尊重您的饮食和文化。以11种语言和当地美食获得餐食。实时合规追踪和责任。"
     },
     "analytics": {
-      "title": "Progress Analytics",
-      "desc": "Body composition tracking, photo progress with face blur for privacy, and detailed analytics to see your transformation."
+      "title": "进度分析",
+      "desc": "身体成分追踪、带面部模糊以保护隐私的照片进度，以及查看您转变的详细分析。"
     }
   },
   "testimonials": {
-    "label": "Real Results",
-    "title": "WHAT USERS\nARE SAYING",
-    "subtitle": "People are seeing real results. Not because of motivation—because of accountability.",
+    "label": "真实结果",
+    "title": "用户\n怎么说",
+    "subtitle": "人们看到了真实的结果。不是因为动力—而是因为责任。",
     "testimonial1": {
-      "text": "I've tried every fitness app. This is the first one that actually keeps me accountable. The AI coach knows my program and calls me out when I skip workouts. Down 15 pounds in 12 weeks.",
-      "name": "Sarah M.",
-      "role": "Marketing Manager, 32",
-      "weeks": "12 weeks",
+      "text": "我尝试过每个健身应用。这是第一个真正让我负责任的。AI教练知道我的计划，当我跳过训练时会提醒我。12周内减重15磅。",
+      "name": "莎拉 M.",
+      "role": "营销经理，32岁",
+      "weeks": "12周",
       "compliance": "87%"
     },
     "testimonial2": {
-      "text": "At 58, I thought I was too old to start. The age-specific programming is incredible. My coach adjusts everything for my recovery. I'm stronger now than I was at 40.",
-      "name": "Robert J.",
-      "role": "Retired Engineer, 58",
-      "weeks": "16 weeks",
+      "text": "58岁时，我认为我太老了，无法开始。特定年龄的编程令人难以置信。我的教练为我的恢复调整一切。我现在比40岁时更强壮。",
+      "name": "罗伯特 J.",
+      "role": "退休工程师，58岁",
+      "weeks": "16周",
       "compliance": "92%"
     },
     "testimonial3": {
-      "text": "The meal logging is a game changer. I just type 'chicken and rice' and it figures everything out. No more searching through databases. And the cultural meals? Perfect for my Indian diet.",
-      "name": "Priya K.",
-      "role": "Software Developer, 29",
-      "weeks": "8 weeks",
+      "text": "餐食记录改变了游戏规则。我只输入'鸡肉和米饭'，它就计算出所有内容。不再需要搜索数据库。文化餐食？完美适合我的印度饮食。",
+      "name": "普里亚 K.",
+      "role": "软件开发人员，29岁",
+      "weeks": "8周",
       "compliance": "94%"
     },
     "testimonial4": {
-      "text": "The 4-pillar tracking is what makes this different. I can see my hydration, sleep, workouts, and nutrition all in one place. The AI coach connects the dots and tells me why I'm not recovering.",
-      "name": "Marcus C.",
-      "role": "Personal Trainer, 35",
-      "weeks": "20 weeks",
+      "text": "4支柱追踪使这不同。我可以在一个地方看到我的补水、睡眠、训练和营养。AI教练连接点并告诉我为什么我没有恢复。",
+      "name": "马库斯 C.",
+      "role": "私人教练，35岁",
+      "weeks": "20周",
       "compliance": "96%"
     },
     "testimonial5": {
-      "text": "I'm 6 months pregnant and the pregnancy-safe workouts are perfect. My coach adjusts everything automatically. I feel strong and confident, and I know I'm doing the right things for me and my baby.",
-      "name": "Emma L.",
-      "role": "Teacher, 31",
-      "weeks": "24 weeks",
+      "text": "我怀孕6个月，孕期安全训练是完美的。我的教练自动调整一切。我感觉强壮和自信，我知道我正在为我和我的宝宝做正确的事情。",
+      "name": "艾玛 L.",
+      "role": "教师，31岁",
+      "weeks": "24周",
       "compliance": "89%"
     },
     "testimonial6": {
-      "text": "The photo body analysis was mind-blowing. Uploaded 3 photos and got a complete program. No gym assessment, no trainer needed. The AI saw things I didn't even know about my posture.",
-      "name": "David T.",
-      "role": "Consultant, 42",
-      "weeks": "10 weeks",
+      "text": "照片身体分析令人震惊。上传了3张照片，得到了完整的计划。无需健身房评估，无需教练。AI看到了我甚至不知道关于我姿势的事情。",
+      "name": "大卫 T.",
+      "role": "顾问，42岁",
+      "weeks": "10周",
       "compliance": "91%"
     },
-    "onProgram": "on program",
-    "compliance": "compliance"
+    "onProgram": "在计划中",
+    "compliance": "合规性"
   },
   "stats": {
-    "weekPrograms": "Week Programs",
-    "exercises": "Exercises",
-    "languages": "Languages",
-    "aiCoach": "AI Coach"
+    "weekPrograms": "周计划",
+    "exercises": "练习",
+    "languages": "语言",
+    "aiCoach": "AI教练"
   },
   "pricing": {
-    "label": "Simple Pricing",
-    "title": "One Plan. Everything.",
+    "label": "简单定价",
+    "title": "一个计划。一切。",
     "planName": "ForgeFit Pro",
-    "perMonth": "per month",
-    "or": "or",
-    "perYear": "$19.99/year",
-    "save": "save 58%",
-    "feature1": "52-week personalized workout plans",
-    "feature2": "AI-powered meal planning",
-    "feature3": "5,700+ exercise library with videos",
-    "feature4": "Real-time compliance tracking",
-    "feature5": "24/7 AI coach chat",
-    "feature6": "Progress analytics & body composition",
-    "feature7": "Works offline",
-    "feature8": "11 languages supported",
-    "startFreeTrial": "Start Free Trial"
+    "perMonth": "每月",
+    "or": "或",
+    "perYear": "$19.99/年",
+    "save": "节省58%",
+    "feature1": "52周个性化训练计划",
+    "feature2": "AI驱动的餐食计划",
+    "feature3": "5,700多个带视频的练习库",
+    "feature4": "实时合规追踪",
+    "feature5": "24/7 AI教练聊天",
+    "feature6": "进度分析和身体成分",
+    "feature7": "离线工作",
+    "feature8": "支持11种语言",
+    "startFreeTrial": "免费试用"
   },
   "cta": {
-    "title": "YOUR AI COACH IS WAITING.",
-    "subtitle": "7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.",
-    "downloadFree": "Download Free",
+    "title": "您的AI教练正在等待。",
+    "subtitle": "7天免费试用。然后只需每月$3.99或每年$19.99。下载ForgeFit，今天开始您的转变。",
+    "downloadFree": "免费下载",
     "appStore": {
-      "label": "Download on the",
-      "name": "App Store"
+      "label": "在",
+      "name": "App Store下载"
     },
     "googlePlay": {
-      "label": "Get it on",
-      "name": "Google Play"
+      "label": "在",
+      "name": "Google Play获取"
     }
   },
   "footer": {
-    "description": "AI-powered fitness coaching that keeps you accountable. Built for results, powered by intelligence.",
-    "product": "Product",
-    "company": "Company",
-    "legal": "Legal",
-    "about": "About",
-    "blog": "Blog",
-    "contact": "Contact",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "copyright": "© 2026 ForgeFit. All rights reserved."
+    "description": "AI驱动的健身指导，让您负责任。为结果而建，由智能驱动。",
+    "product": "产品",
+    "company": "公司",
+    "legal": "法律",
+    "about": "关于",
+    "blog": "博客",
+    "contact": "联系",
+    "privacy": "隐私",
+    "terms": "条款",
+    "copyright": "© 2026 ForgeFit. 保留所有权利。"
   },
   "comingSoon": {
-    "title": "Coming Soon!",
-    "message": "We're putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download."
+    "title": "即将推出！",
+    "message": "我们正在为ForgeFit做最后的润色。请继续关注应用何时可下载的更新。"
   }
 }

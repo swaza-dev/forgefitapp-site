@@ -11,8 +11,8 @@
   },
   "hero": {
     "tagline": "App de Fitness con IA",
-    "title": "NO NECESITAS",
-    "titleOutline": "OTRA APP.",
+    "title": "TU CUERPO.",
+    "titleOutline": "TU PROGRAMA.",
     "subtitle": "Necesitas un entrenador que te mantenga responsable. La mayoría de las apps de fitness te dan entrenamientos genéricos y esperan lo mejor. ForgeFit es diferente.",
     "startFreeTrial": "Prueba Gratis",
     "seeHowItWorks": "Ver Cómo Funciona",
@@ -29,8 +29,8 @@
     "progressAnalytics": "Análisis de Progreso"
   },
   "problem": {
-    "text": "La mayoría de las apps de fitness te dan entrenamientos genéricos y esperan lo mejor.",
-    "subtext": "ForgeFit analiza TU cuerpo, objetivos, experiencia y equipo—luego construye un programa completo de 52 semanas diseñado específicamente para ti."
+    "text": "ForgeFit es una aplicación de coaching fitness con IA que rastrea y optimiza los cuatro pilares esenciales del fitness: entrenamiento de fuerza, cardio, nutrición e hidratación - porque los resultados reales vienen del equilibrio, no solo del tiempo en el gimnasio.",
+    "subtext": "Ofrece programas personalizados de 52 semanas que se adaptan a tu progreso, ayudándote a construir consistencia en los cuatro pilares y alcanzar tus objetivos a un precio accesible."
   },
   "emotional": {
     "title": "LA RAZÓN #1 POR LA QUE LA GENTE FRACASA\nNO ES FALTA DE MOTIVACIÓN.",
