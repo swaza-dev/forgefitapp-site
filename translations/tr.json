@@ -29,7 +29,7 @@
     "progressAnalytics": "İlerleme Analitiği"
   },
   "problem": {
-    "text": "ForgeFit, fitness'ın dört temel direğini (kuvvet antrenmanı, kardiyo, beslenme ve hidrasyon) takip eden ve optimize eden AI destekli bir fitness koçluk uygulamasıdır - çünkü gerçek sonuçlar sadece spor salonu zamanından değil, dengeden gelir.",
+    "text": "ForgeFit, fitness'ın dört temel direğini (antrenmanlar, beslenme, hidrasyon ve uyku) takip eden ve optimize eden AI destekli bir fitness koçluk uygulamasıdır - çünkü gerçek sonuçlar sadece spor salonu zamanından değil, dengeden gelir.",
     "subtext": "İlerlemenize uyum sağlayan kişiselleştirilmiş 52 haftalık programlar sunar, dört direğin tümünde tutarlılık oluşturmanıza ve uygun fiyatlı bir şekilde hedeflerinize ulaşmanıza yardımcı olur."
   },
   "emotional": {
