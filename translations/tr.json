@@ -54,7 +54,7 @@
     },
     "coach": {
       "title": "7/24 AI Koç Sohbeti",
-      "desc": "Formda takıldınız mı? Ne yiyeceğinizden emin değil misiniz? Bir egzersizi değiştirmeniz mi gerekiyor? Sadece sorun. Cebinizde kişisel bir antrenör gibi. Bekleme yok. Planlama yok."
+      "desc": "Formda takıldınız mı? Ne yiyeceğinizden emin değil misiniz? Bir egzersizi değiştirmeniz mi gerekiyor? Sadece sorun. İhtiyacınız olduğunda her zaman mevcut. Bekleme yok. Planlama yok."
     }
   },
   "pillars": {
@@ -260,5 +260,49 @@
   "comingSoon": {
     "title": "Yakında!",
     "message": "ForgeFit'e son dokunuşları yapıyoruz. Uygulamanın ne zaman indirilebilir olacağına dair güncellemeler için bizi takip edin."
+  },
+  "marketing": {
+    "intro": {
+      "title": "Başka Bir Fitness Uygulamasına İhtiyacınız Yok",
+      "text": "Başka bir fitness uygulamasına ihtiyacınız yok. Sizi sorumlu tutan bir koça ihtiyacınız var.\n\nÇoğu fitness uygulaması size genel antrenmanlar verir ve en iyisini umar. ForgeFit farklı. Yapay zekamız vücudunuzu, hedeflerinizi, deneyiminizi ve mevcut ekipmanınızı analiz eder—sonra size özel olarak tasarlanmış eksiksiz bir 52 haftalık program oluşturur. Sorularınız olduğunda? AI koçunuz orada, yardıma hazır—24/7."
+    },
+    "aiCoach": {
+      "title": "AI KOÇUNUZ, HER ZAMAN MEVCUT",
+      "text": "Formda takıldınız mı? Antrenmandan önce ne yiyeceğinizden emin değil misiniz? Bir egzersizi değiştirmeniz mi gerekiyor? Sadece sorun. ForgeFit'in AI koçu size sohbet yoluyla gerçek zamanlı rehberlik sağlar—ihtiyacınız olduğunda her zaman mevcut. Bekleme yok. Planlama yok. Sadece ihtiyacınız olduğunda cevaplar."
+    },
+    "accountability": {
+      "title": "SONUÇ GETİREN SORUMLULUK",
+      "text": "İnsanların başarısız olmasının #1 nedeni motivasyon eksikliği değil—sorumluluk eksikliğidir. ForgeFit uyumluluğunuzu gerçek zamanlı olarak takip eder, tam olarak nerede olduğunuzu gösterir ve sizi dürüst tutar. Bir antrenmanı kaçırdınız mı? Biliyoruz. Harika bir hafta geçirdiniz mi? Kutluyoruz. Bu pasif takip değil. Bu dikkat eden bir koç."
+    },
+    "personalization": {
+      "title": "AI DESTEKLİ KİŞİSELLEŞTİRME",
+      "text": "ForgeFit'in AI'si tahmin etmez—öğrenir. Vücut tipleri, fitness seviyeleri, hedefler ve ekipman erişimini kapsayan 60 farklı kullanıcı profiline dayanarak, programınız sıfırdan SİZİN için oluşturulur. 5,700+ egzersizde %99.98 video kapsamıyla, bir hareketi nasıl gerçekleştireceğiniz konusunda asla takılıp kalmazsınız. İlerledikçe antrenmanlarınız uyum sağlar. Platonun şansı yok."
+    },
+    "analytics": {
+      "title": "ÖNEMLİ İLERLEME ANALİTİĞİ",
+      "text": "Detaylı analitiklerle dönüşümünüzün gelişimini görün—kuvvet kazanımları, hacim eğilimleri, vücut kompozisyonu değişiklikleri ve uyumluluk puanları. Zamanla ilerleme fotoğraflarını takip edin ve vücudunuzun hafta hafta değiştiğini izleyin. Gerçek veri. Gerçek sonuçlar. Tahmin yok."
+    },
+    "nutrition": {
+      "title": "TAM BESLENME REHBERLİĞİ",
+      "text": "Antrenman denklemin sadece yarısı. ForgeFit, yaşam tarzınıza uyan kişiselleştirilmiş beslenme koçluğu sunar—kas yapıyor, yağ yakıyor veya performansı optimize ediyor olun. Diyetinizi (pesketaryen, vejetaryen, vegan) saygı duyar ve 11 dilde yemeklerle kültürünüze uyum sağlar. Makrolar, yemek zamanlaması ve gerçekten mantıklı rehberlik."
+    },
+    "features": {
+      "title": "İHTİYACINIZ OLAN HER ŞEY",
+      "list": [
+        "Gerçek zamanlı AI koç sohbeti—istediğiniz zaman her şeyi sorun",
+        "Hedeflerinize göre uyarlanmış 52 haftalık ilerici programlama",
+        "Video gösterimleriyle 5,700+ egzersiz kütüphanesi (%99.98 kapsam)",
+        "AI destekli antrenman ve beslenme planları",
+        "Dört direğin tümünde gerçek zamanlı uyumluluk takibi ve sorumluluk",
+        "İlerleme analitiği ve vücut kompozisyonu takibi",
+        "Gizlilik için yüz bulanıklığı ile fotoğraf ilerleme takibi",
+        "HealthKit entegrasyonu",
+        "Çevrimdışı çalışır—her yerde antrenman yapın",
+        "11 dil desteklenir"
+      ]
+    },
+    "cta": {
+      "text": "DÖNÜŞÜMÜNÜZE BAŞLAYIN\n\n7 günlük ücretsiz deneme. Sonra sadece $3.99/ay veya $19.99/yıl.\n\nAI koçunuz bekliyor.\nForgeFit'i indirin ve bugün dönüşümünüze başlayın."
+    }
   }
 }

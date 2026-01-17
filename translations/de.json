@@ -54,7 +54,7 @@
     },
     "coach": {
       "title": "24/7 KI-Coach-Chat",
-      "desc": "Probleme mit der Form? Unsicher, was Sie essen sollen? Möchten Sie eine Übung austauschen? Fragen Sie einfach. Wie einen persönlichen Trainer in der Tasche. Kein Warten. Keine Terminvereinbarung."
+      "desc": "Probleme mit der Form? Unsicher, was Sie essen sollen? Möchten Sie eine Übung austauschen? Fragen Sie einfach. Immer verfügbar, wenn Sie es brauchen. Kein Warten. Keine Terminvereinbarung."
     }
   },
   "pillars": {
@@ -260,5 +260,49 @@
   "comingSoon": {
     "title": "Kommt bald!",
     "message": "Wir geben ForgeFit die letzten Schliff. Bleiben Sie dran für Updates, wann die App zum Download verfügbar sein wird."
+  },
+  "marketing": {
+    "intro": {
+      "title": "Sie Brauchen Keine Andere Fitness-App",
+      "text": "Sie brauchen keine andere Fitness-App. Sie brauchen einen Coach, der Sie zur Verantwortung zieht.\n\nDie meisten Fitness-Apps geben Ihnen generische Workouts und hoffen das Beste. ForgeFit ist anders. Unsere KI analysiert Ihren Körper, Ihre Ziele, Erfahrung und verfügbare Ausrüstung—dann erstellen wir ein vollständiges 52-Wochen-Programm, das speziell für Sie entwickelt wurde. Und wenn Sie Fragen haben? Ihr KI-Coach ist da, bereit zu helfen—24/7."
+    },
+    "aiCoach": {
+      "title": "IHR KI-COACH, IMMER VERFÜGBAR",
+      "text": "Probleme mit der Form? Nicht sicher, was Sie vor dem Training essen sollen? Müssen Sie eine Übung ersetzen? Fragen Sie einfach. ForgeFits KI-Coach gibt Ihnen Echtzeit-Anleitung über Chat—immer verfügbar, wenn Sie es brauchen. Kein Warten. Keine Terminvereinbarung. Nur Antworten, wann immer Sie sie brauchen."
+    },
+    "accountability": {
+      "title": "VERANTWORTLICHKEIT, DIE ERGEBNISSE BRINGT",
+      "text": "Der Hauptgrund, warum Menschen scheitern, ist nicht mangelnde Motivation—es ist mangelnde Verantwortlichkeit. ForgeFit verfolgt Ihre Compliance in Echtzeit, zeigt Ihnen genau, wo Sie stehen, und hält Sie ehrlich. Training verpasst? Wir wissen es. Woche gemeistert? Wir feiern es. Das ist kein passives Tracking. Das ist ein Coach, der aufpasst."
+    },
+    "personalization": {
+      "title": "KI-GESTÜTZTE PERSONALISIERUNG",
+      "text": "ForgeFits KI rät nicht—sie lernt. Basierend auf 60 verschiedenen Benutzerprofilen, die Körpertypen, Fitnessniveaus, Ziele und Gerätezugang umfassen, wird Ihr Programm von Grund auf für SIE erstellt. Mit 99.98% Videoabdeckung über 5,700+ Übungen werden Sie nie ratlos sein, wie Sie eine Bewegung ausführen sollen. Während Sie Fortschritte machen, passen sich Ihre Workouts an. Plateaus haben keine Chance."
+    },
+    "analytics": {
+      "title": "FORTSCRITTSANALYSEN, DIE WICHTIG SIND",
+      "text": "Sehen Sie Ihre Transformation mit detaillierten Analysen entfalten—Kraftgewinne, Volumentrends, Körperzusammensetzungsänderungen und Compliance-Werte. Verfolgen Sie Fortschrittsfotos im Laufe der Zeit und beobachten Sie, wie sich Ihr Körper Woche für Woche verändert. Echte Daten. Echte Ergebnisse. Kein Raten."
+    },
+    "nutrition": {
+      "title": "VOLLSTÄNDIGE ERNÄHRUNGSBERATUNG",
+      "text": "Training ist nur die Hälfte der Gleichung. ForgeFit bietet personalisiertes Ernährungscoaching, das zu Ihrem Lebensstil passt—ob Sie Muskeln aufbauen, Fett abbauen oder die Leistung optimieren. Respektiert Ihre Ernährung (Pescetarier, Vegetarier, Veganer) und passt sich Ihrer Kultur mit Mahlzeiten in 11 Sprachen an. Makros, Mahlzeiten-Timing und Beratung, die wirklich Sinn macht."
+    },
+    "features": {
+      "title": "ALLES, WAS SIE BRAUCHEN",
+      "list": [
+        "Echtzeit-KI-Coach-Chat—fragen Sie alles, jederzeit",
+        "52-Wochen progressive Programmierung, angepasst an Ihre Ziele",
+        "5,700+ Übungsbibliothek mit Videodemonstrationen (99.98% Abdeckung)",
+        "KI-gestützte Trainings- und Ernährungspläne",
+        "Echtzeit-Compliance-Tracking und Verantwortlichkeit über alle vier Säulen",
+        "Fortschrittsanalysen und Körperzusammensetzungs-Tracking",
+        "Foto-Fortschritts-Tracking mit Gesichtsverpixelung für Privatsphäre",
+        "HealthKit-Integration",
+        "Funktioniert offline—trainieren Sie überall",
+        "11 Sprachen unterstützt"
+      ]
+    },
+    "cta": {
+      "text": "BEGINNEN SIE IHRE TRANSFORMATION\n\n7-tägige kostenlose Testversion. Dann nur $3.99/Monat oder $19.99/Jahr.\n\nIhr KI-Coach wartet.\nLaden Sie ForgeFit herunter und beginnen Sie heute Ihre Transformation."
+    }
   }
 }

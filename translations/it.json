@@ -54,7 +54,7 @@
     },
     "coach": {
       "title": "Chat con Coach IA 24/7",
-      "desc": "Bloccato sulla forma? Non sei sicuro di cosa mangiare? Devi cambiare un esercizio? Chiedi semplicemente. Come avere un personal trainer in tasca. Nessuna attesa. Nessuna programmazione."
+      "desc": "Bloccato sulla forma? Non sei sicuro di cosa mangiare? Devi cambiare un esercizio? Chiedi semplicemente. Sempre disponibile quando ne hai bisogno. Nessuna attesa. Nessuna programmazione."
     }
   },
   "pillars": {
@@ -260,5 +260,49 @@
   "comingSoon": {
     "title": "Prossimamente!",
     "message": "Stiamo mettendo gli ultimi ritocchi a ForgeFit. Resta sintonizzato per aggiornamenti su quando l'app sarà disponibile per il download."
+  },
+  "marketing": {
+    "intro": {
+      "title": "Non Hai Bisogno di Un'Altra App di Fitness",
+      "text": "Non hai bisogno di un'altra app di fitness. Hai bisogno di un coach che ti tenga responsabile.\n\nLa maggior parte delle app di fitness ti dà allenamenti generici e spera per il meglio. ForgeFit è diverso. La nostra IA analizza il tuo corpo, obiettivi, esperienza e attrezzature disponibili—poi costruisce un programma completo di 52 settimane progettato specificamente per te. E quando hai domande? Il tuo coach IA è lì, pronto ad aiutare—24/7."
+    },
+    "aiCoach": {
+      "title": "IL TUO COACH IA, SEMPRE DISPONIBILE",
+      "text": "Bloccato sulla forma? Non sei sicuro di cosa mangiare prima di un allenamento? Devi cambiare un esercizio? Chiedi semplicemente. Il coach IA di ForgeFit ti dà guida in tempo reale tramite chat—sempre disponibile quando ne hai bisogno. Nessuna attesa. Nessuna programmazione. Solo risposte, quando ne hai bisogno."
+    },
+    "accountability": {
+      "title": "RESPONSABILITÀ CHE GENERA RISULTATI",
+      "text": "La ragione #1 per cui le persone falliscono non è la mancanza di motivazione—è la mancanza di responsabilità. ForgeFit traccia la tua conformità in tempo reale, ti mostra esattamente dove sei, e ti mantiene onesto. Saltato un allenamento? Lo sappiamo. Settimana fantastica? La celebriamo. Questo non è tracciamento passivo. Questo è un coach che presta attenzione."
+    },
+    "personalization": {
+      "title": "PERSONALIZZAZIONE ALIMENTATA DALL'IA",
+      "text": "L'IA di ForgeFit non indovina—impara. Basata su 60 profili utente diversi che coprono tipi di corpo, livelli di fitness, obiettivi e accesso alle attrezzature, il tuo programma è costruito da zero per TE. Con il 99.98% di copertura video su 5,700+ esercizi, non rimarrai mai bloccato a chiederti come eseguire un movimento. Man mano che progredisci, i tuoi allenamenti si adattano. I plateau non hanno possibilità."
+    },
+    "analytics": {
+      "title": "ANALISI DEL PROGRESSO CHE CONTANO",
+      "text": "Vedi la tua trasformazione svolgersi con analisi dettagliate—guadagni di forza, tendenze del volume, cambiamenti nella composizione corporea e punteggi di conformità. Traccia le foto del progresso nel tempo e guarda il tuo corpo cambiare settimana dopo settimana. Dati reali. Risultati reali. Nessuna supposizione."
+    },
+    "nutrition": {
+      "title": "GUIDA NUTRIZIONALE COMPLETA",
+      "text": "L'allenamento è solo metà dell'equazione. ForgeFit offre coaching nutrizionale personalizzato che si adatta al tuo stile di vita—che tu stia costruendo muscoli, perdendo grasso o ottimizzando le prestazioni. Rispetta la tua dieta (pescetariana, vegetariana, vegana) e si adatta alla tua cultura con pasti in 11 lingue. Macros, tempistica dei pasti e guida che ha davvero senso."
+    },
+    "features": {
+      "title": "TUTTO CIÒ DI CUI HAI BISOGNO",
+      "list": [
+        "Chat con coach IA in tempo reale—chiedi qualsiasi cosa, in qualsiasi momento",
+        "Programmazione progressiva di 52 settimane adattata ai tuoi obiettivi",
+        "Biblioteca di 5,700+ esercizi con dimostrazioni video (99.98% copertura)",
+        "Piani di allenamento e nutrizione alimentati dall'IA",
+        "Tracciamento della conformità in tempo reale e responsabilità su tutti e quattro i pilastri",
+        "Analisi del progresso e tracciamento della composizione corporea",
+        "Tracciamento del progresso fotografico con sfocatura del viso per la privacy",
+        "Integrazione HealthKit",
+        "Funziona offline—allena ovunque",
+        "11 lingue supportate"
+      ]
+    },
+    "cta": {
+      "text": "INIZIA LA TUA TRASFORMAZIONE\n\nProva gratuita di 7 giorni. Poi solo $3.99/mese o $19.99/anno.\n\nIl tuo coach IA ti sta aspettando.\nScarica ForgeFit e inizia la tua trasformazione oggi."
+    }
   }
 }

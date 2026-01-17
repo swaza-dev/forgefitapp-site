@@ -54,7 +54,7 @@
     },
     "coach": {
       "title": "24/7 AI Coach Chat",
-      "desc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling."
+      "desc": "Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Always available when you need it. No waiting. No scheduling."
     }
   },
   "pillars": {
@@ -260,5 +260,49 @@
   "comingSoon": {
     "title": "Coming Soon!",
     "message": "We're putting the finishing touches on ForgeFit. Stay tuned for updates on when the app will be available for download."
+  },
+  "marketing": {
+    "intro": {
+      "title": "You Don't Need Another Workout App",
+      "text": "You don't need another workout app. You need a coach that keeps you accountable.\n\nMost fitness apps give you generic workouts and hope for the best. ForgeFit is different. Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. And when you have questions? Your AI coach is right there, ready to help—24/7."
+    },
+    "aiCoach": {
+      "title": "YOUR AI COACH, ALWAYS AVAILABLE",
+      "text": "Stuck on form? Not sure what to eat before a workout? Need to swap an exercise? Just ask. ForgeFit's AI coach gives you real-time guidance through chat—always available when you need it. No waiting. No scheduling. Just answers, whenever you need them."
+    },
+    "accountability": {
+      "title": "ACCOUNTABILITY THAT DRIVES RESULTS",
+      "text": "The #1 reason people fail isn't lack of motivation—it's lack of accountability. ForgeFit tracks your compliance in real-time, shows you exactly where you stand, and keeps you honest. Miss a workout? We know. Crush your week? We celebrate it. This isn't passive tracking. This is a coach that pays attention."
+    },
+    "personalization": {
+      "title": "AI-POWERED PERSONALIZATION",
+      "text": "ForgeFit's AI doesn't guess—it learns. Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access, your program is built from the ground up for YOU. With 99.98% video coverage across 5,700+ exercises, you'll never be stuck wondering how to perform a movement. As you progress, your workouts adapt. Plateaus don't stand a chance."
+    },
+    "analytics": {
+      "title": "PROGRESS ANALYTICS THAT MATTER",
+      "text": "See your transformation unfold with detailed analytics—strength gains, volume trends, body composition changes, and compliance scores. Track progress photos over time and watch your body change week by week. Real data. Real results. No guesswork."
+    },
+    "nutrition": {
+      "title": "COMPLETE NUTRITION GUIDANCE",
+      "text": "Training is only half the equation. ForgeFit delivers personalized nutrition coaching that fits your lifestyle—whether you're building muscle, cutting fat, or optimizing performance. Respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages. Macros, meal timing, and guidance that actually makes sense."
+    },
+    "features": {
+      "title": "EVERYTHING YOU NEED",
+      "list": [
+        "Real-time AI coach chat—ask anything, anytime",
+        "52-week progressive programming tailored to your goals",
+        "5,700+ exercise library with video demonstrations (99.98% coverage)",
+        "AI-powered workout and nutrition plans",
+        "Real-time compliance tracking and accountability across all four pillars",
+        "Progress analytics and body composition tracking",
+        "Photo progress tracking with face blur for privacy",
+        "HealthKit integration",
+        "Works offline—train anywhere",
+        "11 languages supported"
+      ]
+    },
+    "cta": {
+      "text": "START YOUR TRANSFORMATION\n\n7-day free trial. Then just $3.99/month or $19.99/year.\n\nYour AI coach is waiting.\nDownload ForgeFit and begin your transformation today."
+    }
   }
 }
