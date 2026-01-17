@@ -371,16 +371,19 @@
         }
 
         .problem-text {
-            font-size: clamp(20px, 4vw, 32px);
-            line-height: 1.4;
-            color: var(--gray-300);
             max-width: 900px;
             margin: 0 auto;
         }
 
-        .problem-text strong {
-            color: var(--white);
-            font-weight: 700;
+        .problem-text p {
+            font-size: clamp(20px, 4vw, 32px);
+            line-height: 1.6;
+            color: var(--gray-300);
+            margin: 0 0 24px 0;
+        }
+
+        .problem-text p:last-child {
+            margin-bottom: 0;
         }
 
         /* Emotional Section */
@@ -1428,10 +1431,10 @@
 
     <section class="problem-section">
         <div class="container">
-            <p class="problem-text fade-in">
-                <strong data-i18n="problem.text">ForgeFit is an AI-powered fitness coaching app that tracks and optimizes all four essential pillars of fitness: strength training, cardio, nutrition, and hydration - because real results come from balance, not just gym time.</strong><br>
-                <span data-i18n="problem.subtext">It delivers personalized 52-week programs that adapt to your progress, helping you build consistency across all four pillars and reach your goals at an accessible price.</span>
-            </p>
+            <div class="problem-text fade-in">
+                <p data-i18n="problem.text">ForgeFit is an AI-powered fitness coaching app that tracks and optimizes all four essential pillars of fitness: strength training, cardio, nutrition, and hydration - because real results come from balance, not just gym time.</p>
+                <p data-i18n="problem.subtext">It delivers personalized 52-week programs that adapt to your progress, helping you build consistency across all four pillars and reach your goals at an accessible price.</p>
+            </div>
         </div>
     </section>
 
