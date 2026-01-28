@@ -2,2130 +2,1522 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForgeFit – AI That Knows Your Body</title>
-    <meta name="description" content="AI-powered fitness coaching that analyzes your unique body composition, age, and experience to create truly personalized programs.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>ForgeFit - Track All 4 Pillars of Fitness</title>
+    <meta name="description" content="Track training, nutrition, sleep, and hydration with AI coaching in 11 languages. Less than one coffee for the entire month.">
+    
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Ensure grid items align at top */
+        .feature-content > * {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
         :root {
             --black: #000000;
-            --white: #ffffff;
-            --orange: #FF6B00;
-            --orange-bright: #FF8533;
-            --orange-glow: rgba(255, 107, 0, 0.2);
-            --gray-100: #f5f5f5;
-            --gray-200: #e5e5e5;
-            --gray-400: #a3a3a3;
+            --white: #FFFFFF;
+            --orange: #FF6B35;
+            --orange-dark: #E5532B;
+            --gray-50: #FAFAFA;
+            --gray-100: #F5F5F5;
+            --gray-200: #E5E5E5;
+            --gray-400: #A3A3A3;
+            --gray-500: #737373;
             --gray-600: #525252;
+            --gray-700: #404040;
             --gray-800: #262626;
             --gray-900: #171717;
-            --font-display: 'Bebas Neue', Impact, sans-serif;
-            --font-body: 'Inter', -apple-system, sans-serif;
         }
-
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
         
         body {
-            font-family: var(--font-body);
-            background: var(--black);
-            color: var(--white);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.5;
-            overflow-x: hidden;
+            color: var(--black);
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
         }
-
-        ::selection { background: var(--orange); color: var(--white); }
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 32px; }
-        .text-orange { color: var(--orange); }
         
-        /* Nav */
-        .nav {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 100;
-            padding: 20px 0;
-            transition: all 0.3s ease;
+        * {
+            -webkit-tap-highlight-color: transparent;
         }
-
-        .nav.scrolled {
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--gray-800);
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
-
-        .nav-inner { 
-            display: flex; 
-            align-items: center; 
-            justify-content: space-between; 
-            gap: 20px;
+        
+        /* Navigation - Hevy Style */
+        nav {
+            background: var(--white);
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--black);
             text-decoration: none;
-            color: var(--white);
         }
-
-        .logo-img {
-            height: 36px;
-            width: auto;
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
             display: block;
         }
-
-        .logo-text {
-            font-family: var(--font-display);
-            font-size: 26px;
-            letter-spacing: 0.05em;
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            list-style: none;
         }
-
-        .nav-links { display: flex; align-items: center; gap: 40px; list-style: none; }
-        .nav-links a { 
-            color: var(--gray-400); 
-            text-decoration: none; 
-            font-size: 12px; 
-            font-weight: 600; 
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--gray-500);
+            font-weight: 500;
             transition: color 0.3s;
         }
-        .nav-links a:hover { color: var(--white); }
-
-        /* Language Switcher */
-        .lang-switcher {
-            position: relative;
-            display: inline-block !important;
-            visibility: visible !important;
-            opacity: 1 !important;
-            z-index: 100;
+        
+        .nav-links a:hover {
+            color: var(--orange);
         }
-
-        .lang-switcher-btn {
+        
+        /* Language Picker */
+        .lang-picker {
+            position: relative;
+        }
+        
+        .lang-picker-btn {
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid var(--gray-600);
-            color: var(--white);
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid var(--gray-200);
+            border-radius: 6px;
             cursor: pointer;
-            transition: all 0.3s;
-            border-radius: 4px;
-            min-width: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            transition: all 0.2s;
+            min-height: 44px;
+            touch-action: manipulation;
         }
-
-        .lang-switcher-btn:hover {
+        
+        .lang-picker-btn:hover {
             border-color: var(--orange);
-            color: var(--orange);
-            background: rgba(255, 107, 0, 0.1);
+            color: var(--black);
         }
-
-        .lang-switcher-dropdown {
+        
+        .lang-picker-btn .flag {
+            font-size: 1.25rem;
+        }
+        
+        .lang-picker-dropdown {
             position: absolute;
-            top: 100%;
+            top: calc(100% + 0.5rem);
             right: 0;
-            margin-top: 8px;
-            background: var(--black);
-            border: 1px solid var(--gray-800);
+            background: var(--white);
+            border: 1px solid var(--gray-200);
             border-radius: 8px;
-            min-width: 180px;
+            min-width: 200px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
-            transition: all 0.3s ease;
+            transition: all 0.2s;
             z-index: 1000;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            max-height: 400px;
+            overflow-y: auto;
         }
-
-        .lang-switcher.open .lang-switcher-dropdown {
+        
+        .lang-picker.open .lang-picker-dropdown {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
         }
-
+        
         .lang-option {
             display: flex;
             align-items: center;
-            gap: 12px;
-            padding: 12px 16px;
-            color: var(--gray-400);
+            gap: 0.75rem;
+            padding: 0.875rem 1.25rem;
+            cursor: pointer;
+            transition: background 0.2s;
             text-decoration: none;
-            font-size: 13px;
-            transition: all 0.2s;
-            border-bottom: 1px solid var(--gray-800);
+            color: var(--black);
+            font-size: 0.9375rem;
+            font-weight: 500;
+            min-height: 44px;
+            touch-action: manipulation;
         }
-
-        .lang-option:last-child {
-            border-bottom: none;
-        }
-
+        
         .lang-option:hover {
-            background: var(--gray-900);
-            color: var(--white);
+            background: var(--gray-50);
         }
-
+        
         .lang-option.active {
+            background: var(--gray-100);
             color: var(--orange);
-            background: var(--gray-900);
+            font-weight: 600;
         }
-
-        .lang-flag {
-            font-size: 18px;
-            line-height: 1;
+        
+        .lang-option .flag {
+            font-size: 1.5rem;
+            width: 24px;
+            text-align: center;
         }
-
-        .btn {
+        
+        .btn-nav {
+            background: var(--orange);
+            color: #FFFFFF !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            min-height: 44px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            padding: 14px 28px;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            text-decoration: none;
-            cursor: pointer;
-            border: none;
-            transition: all 0.3s ease;
+            touch-action: manipulation;
         }
-
-        .btn-orange { 
-            background: var(--orange); 
-            color: var(--white); 
-            box-shadow: 0 4px 20px var(--orange-glow);
+        
+        .btn-nav:hover {
+            background: #E85A25;
+            color: #FFFFFF !important;
         }
-        .btn-orange:hover { 
-            background: var(--orange-bright); 
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px var(--orange-glow);
+        
+        .btn-nav:visited {
+            color: #FFFFFF !important;
         }
-
-        .btn-outline { 
-            background: transparent; 
-            color: var(--white); 
-            border: 2px solid var(--gray-600); 
-        }
-        .btn-outline:hover { 
-            border-color: var(--white);
-            background: var(--white); 
-            color: var(--black); 
-        }
-
-        .btn-black { 
-            background: var(--black); 
-            color: var(--white); 
-            border: 2px solid var(--black); 
-        }
-        .btn-black:hover { background: var(--gray-900); }
-
-        /* Hero */
+        
+        /* Hero Section - Powerful Message */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding: 120px 0 80px;
-            overflow: hidden;
-        }
-
-        .hero-video-bg {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .hero-video-bg video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(15%) brightness(0.75) contrast(1.1);
-        }
-
-        .hero-video-bg::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.4) 100%);
-        }
-
-        .hero-content { 
-            position: relative; 
-            z-index: 2; 
-            max-width: 900px; 
+            background: var(--white);
+            padding: 5rem 0 3rem;
             text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
             margin: 0 auto;
+            padding: 0 2rem;
         }
-
-        .hero-tagline {
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--orange);
-            margin-bottom: 24px;
-        }
-
-        .hero-title {
-            font-family: var(--font-display);
-            font-size: clamp(56px, 12vw, 140px);
-            line-height: 0.95;
-            letter-spacing: -0.01em;
-            margin-bottom: 32px;
-            text-transform: uppercase;
-        }
-
-        .hero-title .outline {
-            -webkit-text-stroke: 2px var(--white);
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-subtitle {
-            font-size: 18px;
-            line-height: 1.7;
-            color: var(--gray-400);
-            max-width: 700px;
-            margin: 0 auto 40px;
-        }
-
-        .hero-cta { 
-            display: flex; 
-            gap: 16px; 
-            justify-content: center;
-            flex-wrap: wrap; 
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 64px;
-            margin-top: 60px;
-            padding-top: 40px;
-            border-top: 1px solid var(--gray-800);
-        }
-
-        .hero-stat { text-align: center; }
-
-        .hero-stat-value {
-            font-family: var(--font-display);
-            font-size: 56px;
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-
-        .hero-stat-value .orange { color: var(--orange); }
-
-        .hero-stat-label {
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--gray-600);
-        }
-
-        /* Marquee */
-        .marquee-section {
-            padding: 24px 0;
-            background: var(--orange);
-            overflow: hidden;
-        }
-
-        .marquee { display: flex; animation: marquee 30s linear infinite; }
-
-        .marquee-content {
-            display: flex;
-            align-items: center;
-            gap: 48px;
-            padding-right: 48px;
-            flex-shrink: 0;
-        }
-
-        .marquee-item {
-            font-family: var(--font-display);
-            font-size: 18px;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            white-space: nowrap;
-            color: var(--white);
-        }
-
-        .marquee-dot { width: 6px; height: 6px; background: var(--white); border-radius: 50%; opacity: 0.5; }
-
-        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-
-        /* Problem Section */
-        .problem-section {
-            padding: 100px 0;
-            background: var(--black);
-        }
-
-        .problem-text {
+        
+        .hero-content {
             max-width: 900px;
             margin: 0 auto;
-            text-align: left;
-            padding: 0;
+            padding: 0 2rem;
         }
-
-        .problem-text p {
-            font-size: clamp(18px, 3.5vw, 28px);
-            line-height: 1.7;
-            color: var(--gray-300);
-            margin: 0 0 28px 0;
-            text-align: left;
-            font-weight: 400;
-            letter-spacing: 0.01em;
-            text-indent: 0;
-            padding: 0;
-            margin-left: 0;
-            margin-right: 0;
-            display: block;
-        }
-
-        .problem-text p:first-child {
-            text-indent: 0;
-            margin-left: 0;
-            padding-left: 0;
-        }
-
-        .problem-text p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Emotional Section */
-        .emotional-section {
-            padding: 120px 0;
-            background: var(--black);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .emotional-section::before {
-            content: '';
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            width: 600px; height: 600px;
-            background: radial-gradient(circle, var(--orange-glow) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .emotional-title {
-            font-family: var(--font-display);
-            font-size: clamp(40px, 9vw, 100px);
-            line-height: 1;
-            text-transform: uppercase;
-            position: relative;
-            margin-bottom: 40px;
-        }
-
-        .emotional-quote {
-            font-size: clamp(18px, 3vw, 24px);
-            line-height: 1.8;
-            color: var(--gray-300);
-            max-width: 800px;
-            margin: 0 auto;
-            font-style: italic;
-            position: relative;
-        }
-
-        .emotional-quote::before,
-        .emotional-quote::after {
-            content: '"';
-            font-size: 4rem;
-            color: var(--orange);
-            opacity: 0.3;
-            position: absolute;
-        }
-
-        .emotional-quote::before {
-            top: -2rem;
-            left: -3rem;
-        }
-
-        .emotional-quote::after {
-            bottom: -3rem;
-            right: -3rem;
-        }
-
-        /* Value Section */
-        .value-section { padding: 100px 0; }
-
-        .section-header { margin-bottom: 48px; text-align: center; }
-
-        .section-label {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--orange);
-            margin-bottom: 20px;
-        }
-
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(40px, 7vw, 80px);
-            line-height: 0.95;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-        }
-
-        .value-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2px;
-            background: var(--gray-800);
-        }
-
-        .value-card {
-            background: var(--black);
-            padding: 48px 40px;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .value-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 4px; height: 0;
-            background: var(--orange);
-            transition: height 0.4s ease;
-        }
-
-        .value-card:hover { background: var(--gray-900); }
-        .value-card:hover::before { height: 100%; }
-
-        .value-number {
-            font-family: var(--font-display);
-            font-size: 140px;
-            line-height: 0.8;
-            position: absolute;
-            top: 16px; right: 24px;
-            opacity: 0.03;
-            color: var(--white);
-        }
-
-        .value-icon { font-size: 36px; margin-bottom: 20px; }
-
-        .value-title {
-            font-family: var(--font-display);
-            font-size: 32px;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-
-        .value-desc {
-            font-size: 15px;
-            line-height: 1.7;
-            color: var(--gray-400);
-            max-width: 380px;
-        }
-
-        /* Features */
-        .features-section {
-            padding: 100px 0;
-            background: var(--gray-100);
-            color: var(--black);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2px;
-            background: var(--gray-200);
-        }
-
-        .feature-card {
-            background: var(--gray-100);
-            padding: 40px 36px;
-            transition: all 0.4s ease;
-        }
-
-        .feature-card:hover { background: var(--white); }
-
-        .feature-icon { 
-            font-size: 32px; 
-            margin-bottom: 20px; 
-            width: 64px; height: 64px;
-            background: var(--black);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-        }
-
-        .feature-title {
-            font-family: var(--font-display);
-            font-size: 26px;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-            margin-bottom: 12px;
-        }
-
-        .feature-desc {
-            font-size: 14px;
-            line-height: 1.7;
-            color: var(--gray-600);
-        }
-
-        /* 4 Pillars Section */
-        .pillars-section {
-            padding: 120px 0;
-            background: var(--gray-900);
-            color: var(--white);
-        }
-
-        .pillars-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2px;
-            background: var(--gray-800);
-            margin-top: 48px;
-        }
-
-        .pillar-card {
-            background: var(--gray-900);
-            padding: 48px 40px;
-            transition: all 0.4s ease;
-            position: relative;
+        
+        .hero-text {
             display: flex;
             flex-direction: column;
-            gap: 16px;
-        }
-
-        .pillar-card:hover {
-            background: var(--black);
-        }
-
-        .pillar-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 0;
-            background: var(--orange);
-            transition: height 0.4s ease;
-        }
-
-        .pillar-card:hover::before {
-            height: 100%;
-        }
-
-        .pillar-header {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .pillar-icon {
-            font-size: 40px;
-            width: 64px;
-            height: 64px;
-            background: var(--black);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            flex-shrink: 0;
-        }
-
-        .pillar-title {
-            font-family: var(--font-display);
-            font-size: 28px;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-        }
-
-        .pillar-desc {
-            font-size: 15px;
-            line-height: 1.7;
-            color: var(--gray-400);
-        }
-
-        .pillar-feature {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 14px;
-            color: var(--gray-300);
-            margin-top: 8px;
-        }
-
-        .pillar-feature::before {
-            content: '→';
-            color: var(--orange);
-            font-weight: 700;
-            font-size: 18px;
-        }
-
-        /* Meal Logging Highlight */
-        .meal-logging-section {
-            padding: 120px 0;
-            background: var(--black);
             text-align: center;
         }
-
-        .meal-logging-demo {
-            max-width: 600px;
-            margin: 48px auto 0;
-            padding: 32px;
-            background: var(--gray-900);
-            border: 1px solid var(--gray-800);
-            border-radius: 12px;
-            text-align: left;
-        }
-
-        .demo-input {
-            font-size: 18px;
-            color: var(--gray-300);
-            font-style: italic;
-            margin-bottom: 16px;
-            padding: 16px;
-            background: var(--black);
-            border: 1px solid var(--gray-800);
-            border-radius: 8px;
-        }
-
-        .demo-input .highlight {
-            color: var(--orange);
-            font-style: normal;
-        }
-
-        .demo-result {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 16px;
-            background: rgba(255, 107, 0, 0.1);
-            border-left: 3px solid var(--orange);
-            border-radius: 8px;
-        }
-
-        .demo-result-icon {
-            font-size: 24px;
-        }
-
-        .demo-result-text {
-            font-size: 14px;
-            color: var(--gray-300);
-        }
-
-        .demo-result-text strong {
-            color: var(--white);
-        }
-
-        /* Wow Features Section */
-        .wow-features-section {
-            padding: 120px 0;
-            background: var(--white);
-            color: var(--black);
-        }
-
-        .wow-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-            margin-top: 64px;
-        }
-
-        .wow-card {
-            background: var(--gray-100);
-            padding: 48px 36px;
-            border: 2px solid transparent;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .wow-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--orange);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
-        .wow-card:hover {
-            background: var(--white);
-            border-color: var(--orange);
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .wow-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .wow-badge {
-            display: inline-block;
-            padding: 6px 14px;
-            background: var(--orange);
-            color: var(--white);
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        .wow-title {
-            font-family: var(--font-display);
-            font-size: 32px;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-            margin-bottom: 16px;
+        
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
             line-height: 1.1;
+            margin-bottom: 0.5rem;
+            color: var(--black);
+            text-align: center;
+            letter-spacing: -0.02em;
         }
-
-        .wow-desc {
-            font-size: 15px;
-            line-height: 1.7;
-            color: var(--gray-600);
-            margin-bottom: 20px;
-        }
-
-        .wow-highlight {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            padding: 16px;
-            background: rgba(255, 107, 0, 0.1);
-            border-left: 3px solid var(--orange);
-            margin-top: 16px;
-        }
-
-        .wow-highlight-icon {
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-
-        .wow-highlight-text {
-            font-size: 14px;
-            color: var(--gray-800);
+        
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: var(--gray-500);
+            margin: 1.5rem auto;
+            max-width: 700px;
+            text-align: center;
             line-height: 1.6;
         }
-
-        .wow-highlight-text strong {
-            color: var(--black);
-            font-weight: 700;
-        }
-
-        /* Statement */
-        .statement-section {
-            padding: 120px 0;
-            background: var(--black);
+        
+        .social-proof {
+            margin-top: 2rem;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
-
-        .statement-section::before {
-            content: '';
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            width: 600px; height: 600px;
-            background: radial-gradient(circle, var(--orange-glow) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .statement-text {
-            font-family: var(--font-display);
-            font-size: clamp(40px, 9vw, 120px);
-            line-height: 1;
-            text-transform: uppercase;
-            position: relative;
-        }
-
-        .statement-text .outline {
-            -webkit-text-stroke: 2px var(--white);
-            -webkit-text-fill-color: transparent;
-        }
-
-        .statement-sub {
-            font-size: 16px;
-            color: var(--gray-400);
-            max-width: 700px;
-            margin: 32px auto 0;
-            line-height: 1.7;
-            position: relative;
-        }
-
-        /* Testimonials Section */
-        .testimonials-section {
-            padding: 120px 0;
-            background: var(--black);
-            color: var(--white);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-            margin-top: 64px;
-        }
-
-        .testimonial-card {
-            background: var(--gray-900);
-            padding: 40px 32px;
-            border: 1px solid var(--gray-800);
-            transition: all 0.4s ease;
-            position: relative;
-        }
-
-        .testimonial-card:hover {
-            background: var(--gray-800);
-            border-color: var(--orange);
-            transform: translateY(-4px);
-        }
-
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 20px;
-            left: 24px;
-            font-family: var(--font-display);
-            font-size: 80px;
+        
+        .social-proof .rating {
+            font-size: 1.5rem;
             color: var(--orange);
-            opacity: 0.2;
-            line-height: 1;
+            margin: 0.5rem 0;
         }
-
-        .testimonial-text {
-            font-size: 16px;
-            line-height: 1.7;
-            color: var(--gray-300);
-            margin-bottom: 24px;
-            position: relative;
-            z-index: 1;
-            font-style: italic;
+        
+        .social-proof p {
+            font-size: 1.125rem;
+            margin: 0.5rem 0;
+            color: var(--gray-500);
         }
-
-        .testimonial-author {
+        
+        .download-section {
+            margin: 2rem 0;
+        }
+        
+        .download-section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--black);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .download-section-subtitle {
+            font-size: 0.9375rem;
+            color: var(--gray-500);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .download-buttons {
             display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .download-item {
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 16px;
-            padding-top: 24px;
-            border-top: 1px solid var(--gray-800);
+            gap: 0.75rem;
+            text-align: center;
         }
-
-        .testimonial-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: var(--orange);
-            display: flex;
+        
+        .download-item-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 0.5rem;
+        }
+        
+        .download-item-label {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        .qr-code {
+            width: 180px;
+            height: 180px;
+            border: 2px solid var(--gray-200);
+            border-radius: 16px;
+            padding: 0.75rem;
+            background: var(--white);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .qr-code:hover {
+            transform: scale(1.05);
+        }
+        
+        .qr-code img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        
+        .btn-download {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--white);
+            width: 200px;
+            height: 60px;
             flex-shrink: 0;
+            overflow: hidden;
         }
-
-        .testimonial-info {
-            flex: 1;
+        
+        .btn-download img {
+            height: 60px;
+            width: 200px;
+            object-fit: contain;
+            object-position: center;
+            display: block;
         }
-
-        .testimonial-name {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 4px;
+        
+        
+        /* Feature Sections - Alternating Layout */
+        .feature-section {
+            padding: 4rem 0;
         }
-
-        .testimonial-role {
-            font-size: 12px;
-            color: var(--gray-500);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+        
+        .feature-section:nth-child(even) {
+            background: var(--gray-100);
         }
-
-        .testimonial-stats {
+        
+        .feature-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+        
+        .feature-content.reverse {
+            direction: rtl;
+        }
+        
+        .feature-content.reverse > * {
+            direction: ltr;
+        }
+        
+        .feature-text {
             display: flex;
-            gap: 16px;
-            margin-top: 8px;
+            flex-direction: column;
+            margin-top: 0;
+            padding-top: 0;
         }
-
-        .testimonial-stat {
-            font-size: 11px;
-            color: var(--gray-600);
-        }
-
-        .testimonial-stat strong {
-            color: var(--orange);
-            font-weight: 700;
-        }
-
-        /* Stats Section */
-        .stats-section {
-            padding: 80px 0;
-            background: var(--white);
+        
+        .feature-text h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding-top: 0;
             color: var(--black);
+            line-height: 1.1;
         }
-
+        
+        .feature-text h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--gray-500);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .feature-list li {
+            padding: 0.75rem 0;
+            font-size: 1.125rem;
+            color: var(--gray-500);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .feature-list li:before {
+            content: "•";
+            color: var(--orange);
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .feature-image {
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        .feature-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: block;
+            margin-top: 0;
+        }
+        
+        /* Language Flags Section */
+        .languages-section {
+            padding: 3rem 0;
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .languages-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .flags-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+            font-size: 3rem;
+        }
+        
+        .language-names {
+            font-size: 1.125rem;
+            opacity: 0.8;
+            margin: 2rem 0;
+        }
+        
+        /* Stats Bar */
+        .stats-section {
+            padding: 3rem 0;
+            background: var(--white);
+        }
+        
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 0;
-        }
-
-        .stat-item {
-            padding: 32px 24px;
-            border-right: 1px solid var(--gray-200);
-            text-align: center;
-        }
-
-        .stat-item:last-child { border-right: none; }
-
-        .stat-value {
-            font-family: var(--font-display);
-            font-size: 72px;
-            line-height: 1;
-            margin-bottom: 12px;
-        }
-
-        .stat-value .orange { color: var(--orange); }
-
-        .stat-label {
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--gray-600);
-        }
-
-        /* Pricing */
-        .pricing-section {
-            padding: 100px 0;
-            background: var(--black);
-            color: var(--white);
-        }
-
-        .pricing-card {
-            max-width: 560px;
+            gap: 2rem;
+            max-width: 1000px;
             margin: 0 auto;
             text-align: center;
-            padding: 56px 48px;
-            border: 2px solid var(--gray-800);
-            position: relative;
         }
-
-        .pricing-card::before {
-            content: 'LAUNCH PRICING';
-            position: absolute;
-            top: -14px; left: 50%;
-            transform: translateX(-50%);
-            background: var(--orange);
-            color: var(--white);
-            padding: 6px 20px;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.1em;
+        
+        .stat-item {
+            padding: 2rem 1rem;
         }
-
-        .pricing-label {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--gray-600);
-            margin-bottom: 12px;
-        }
-
-        .pricing-amount {
-            font-family: var(--font-display);
-            font-size: 100px;
-            line-height: 1;
-            margin-bottom: 4px;
-        }
-
-        .pricing-period {
-            font-size: 15px;
-            color: var(--gray-600);
-            margin-bottom: 24px;
-        }
-
-        .pricing-or {
-            font-size: 13px;
-            color: var(--gray-400);
-            margin: 12px 0;
-        }
-
-        .pricing-annual {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 36px;
-        }
-
-        .pricing-features {
-            list-style: none;
-            text-align: left;
-            margin-bottom: 36px;
-        }
-
-        .pricing-features li {
-            font-size: 14px;
-            padding: 14px 0;
-            border-bottom: 1px solid var(--gray-800);
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .pricing-features li:last-child { border-bottom: none; }
-        .pricing-features li::before { content: '✓'; font-weight: 700; color: var(--orange); }
-
-        /* CTA */
-        .cta-section {
-            padding: 120px 0;
-            background: var(--black);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-bg-text {
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: var(--font-display);
-            font-size: 30vw;
-            color: var(--gray-900);
-            white-space: nowrap;
-            pointer-events: none;
-            opacity: 0.5;
-        }
-
-        .cta-content { position: relative; z-index: 1; }
-
-        .cta-logo {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 32px;
-            opacity: 0.9;
+        
+        .stat-number {
             display: block;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--orange);
+            margin-bottom: 0.5rem;
         }
-
-        .cta-title {
-            font-family: var(--font-display);
-            font-size: clamp(48px, 9vw, 100px);
-            line-height: 0.95;
+        
+        .stat-label {
+            font-size: 1rem;
+            color: var(--gray-500);
             text-transform: uppercase;
-            margin-bottom: 24px;
-        }
-
-        .cta-subtitle {
-            font-size: 17px;
-            color: var(--gray-400);
-            max-width: 600px;
-            margin: 0 auto 40px;
-            line-height: 1.7;
-        }
-
-        .store-badges {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 56px;
-            flex-wrap: wrap;
-        }
-
-        .store-badge {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 16px 28px;
-            border: 2px solid var(--gray-800);
-            text-decoration: none;
-            color: var(--white);
-            transition: all 0.3s ease;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-        }
-
-        .store-badge:hover { 
-            border-color: var(--orange); 
-            background: var(--orange); 
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(255, 107, 0, 0.3);
+            letter-spacing: 1px;
         }
         
-        .store-icon { 
-            font-size: 28px; 
-            line-height: 1;
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        /* Pricing Section */
+        .pricing-section {
+            padding: 4rem 0;
+            background: var(--gray-100);
+            text-align: center;
         }
         
-        .store-icon svg {
-            width: 28px;
-            height: 28px;
+        .pricing-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
         }
         
-        .store-text {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 2px;
+        .pricing-section .subtitle {
+            font-size: 1.25rem;
+            color: var(--gray-500);
+            margin-bottom: 2rem;
         }
         
-        .store-label {
-            font-size: 10px;
+        .pricing-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--orange);
+            margin: 1rem 0;
+        }
+        
+        .price-period {
+            font-size: 1.5rem;
+            color: var(--gray-500);
+        }
+        
+        .price-annual {
+            font-size: 1.125rem;
+            color: var(--gray-500);
+            margin-bottom: 2rem;
+        }
+        
+        .trial-badge {
+            background: var(--gray-100);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0 0;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            opacity: 0.7;
-            line-height: 1;
         }
         
-        .store-name { 
-            font-weight: 700; 
-            font-size: 16px; 
-            letter-spacing: 0.02em;
-            line-height: 1.2;
-        }
-
-        /* Footer */
-        .footer {
-            padding: 64px 0 32px;
+        /* Final CTA */
+        .final-cta {
+            padding: 4rem 0;
             background: var(--black);
-            border-top: 1px solid var(--gray-800);
+            color: var(--white);
+            text-align: center;
         }
-
-        .footer-grid {
+        
+        .final-cta h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+        }
+        
+        .final-cta p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--gray-800);
+            color: var(--white);
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 48px;
-            margin-bottom: 64px;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
         }
-
-        .footer-brand { display: flex; flex-direction: column; gap: 16px; }
+        
+        .footer-brand h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
         .footer-brand p {
-            font-size: 14px;
-            color: var(--gray-600);
-            line-height: 1.7;
-            max-width: 280px;
+            opacity: 0.8;
+            line-height: 1.6;
         }
-
-        .footer-title {
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            color: var(--gray-400);
+        
+        .footer-links h4 {
+            margin-bottom: 1rem;
+            color: var(--orange);
+            font-size: 1.125rem;
         }
-
-        .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 10px; }
-        .footer-links a { color: var(--gray-600); text-decoration: none; font-size: 13px; transition: color 0.3s; }
-        .footer-links a:hover { color: var(--white); }
-
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--orange);
+        }
+        
         .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 32px;
-            border-top: 1px solid var(--gray-800);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            opacity: 0.8;
         }
-
-        .footer-copyright { font-size: 12px; color: var(--gray-600); }
-        .footer-socials { display: flex; gap: 20px; }
-        .footer-socials a { color: var(--gray-600); text-decoration: none; font-size: 13px; transition: color 0.3s; }
-        .footer-socials a:hover { color: var(--orange); }
-
-        /* Mobile */
-        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
-        .mobile-menu-btn span { display: block; width: 24px; height: 2px; background: var(--white); margin: 6px 0; }
-
-        @media (max-width: 1024px) {
-            .hero-content { max-width: 100%; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .stat-item { border-bottom: 1px solid var(--gray-200); }
-            .stat-item:nth-child(2) { border-right: none; }
-            .value-grid { grid-template-columns: 1fr; }
-            .features-grid { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-            .hero-stats { gap: 40px; flex-wrap: wrap; }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            nav .container {
+                padding: 0 1.5rem;
+            }
+            
+            .logo {
+                font-size: 1.25rem;
+            }
+            
+            .logo img {
+                width: 36px;
+                height: 36px;
+            }
+            
+            .hero {
+                padding: 4rem 0 2.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.25rem;
+                margin: 2rem auto;
+            }
+            
+            .feature-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                padding: 0 1.5rem;
+            }
+            
+            .feature-content.reverse {
+                direction: ltr;
+            }
+            
+            .feature-text h2 {
+                font-size: 2rem;
+            }
+            
+            .feature-text h3 {
+                font-size: 1.25rem;
+            }
+            
+            .feature-list li {
+                font-size: 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+                padding: 0 1.5rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .pricing-card {
+                padding: 2.5rem 2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                padding: 0 1.5rem;
+            }
+            
+            .download-section-title {
+                font-size: 1.125rem;
+            }
+            
+            .download-section-subtitle {
+                font-size: 0.875rem;
+            }
+            
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 2.5rem;
+            }
+            
+            .download-item {
+                gap: 0.875rem;
+            }
+            
+            .download-item-title {
+                font-size: 0.9375rem;
+            }
+            
+            .qr-code {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .btn-download {
+                width: 167px;
+                height: 50px;
+            }
+            
+            .btn-download img {
+                height: 50px;
+                width: 167px;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .nav-links li:not(:last-child):not(:nth-last-child(2)) {
+                display: none;
+            }
+            
+            .nav-links a {
+                font-size: 0.875rem;
+            }
+            
+            .lang-picker-btn {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8125rem;
+                min-height: 40px;
+            }
+            
+            .btn-nav {
+                padding: 0.625rem 1.25rem;
+                font-size: 0.8125rem;
+                min-height: 40px;
+            }
         }
-
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .mobile-menu-btn { display: block; }
-            .lang-switcher { order: -1; margin-right: auto; }
-            .lang-switcher-btn { padding: 6px 10px; font-size: 10px; }
-            .hero { padding: 100px 0 60px; }
-            .hero-title { font-size: 48px; }
-            .hero-stats { gap: 24px; }
-            .hero-stat-value { font-size: 40px; }
-            .stats-grid { grid-template-columns: 1fr; }
-            .stat-item { border-right: none; }
-            .store-badges { flex-direction: column; align-items: center; gap: 16px; }
-            .store-badge { width: 100%; max-width: 280px; justify-content: center; }
-            .store-icon { font-size: 24px; }
-            .store-icon svg { width: 24px; height: 24px; }
-            .store-name { font-size: 14px; }
-            .store-label { font-size: 9px; }
-            .footer-grid { grid-template-columns: 1fr; }
-            .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
-            .hero-video-bg video { filter: grayscale(10%) brightness(0.8) contrast(1.2); }
-            .value-card { padding: 40px 24px; }
-            .value-number { font-size: 100px; }
-            .value-title { font-size: 24px; }
-            .feature-card { padding: 32px 24px; }
-            .pricing-card { padding: 40px 24px; }
-            .pricing-amount { font-size: 80px; }
-            .emotional-quote::before,
-            .emotional-quote::after { display: none; }
-            .marquee-item { font-size: 14px; }
-            .pillars-grid { grid-template-columns: 1fr; }
-            .pillar-card { padding: 36px 24px; }
-            .pillar-icon { width: 56px; height: 56px; font-size: 32px; }
-            .pillar-title { font-size: 24px; }
-            .meal-logging-demo { padding: 24px; }
-            .demo-input { font-size: 16px; }
-            .wow-grid { grid-template-columns: 1fr; gap: 24px; }
-            .wow-card { padding: 36px 24px; }
-            .wow-title { font-size: 24px; }
-            .testimonials-grid { grid-template-columns: 1fr; gap: 24px; }
-            .testimonial-card { padding: 32px 24px; }
-            .testimonial-text { font-size: 15px; }
+        
+        @media (max-width: 640px) {
+            nav {
+                padding: 1rem 0;
+            }
+            
+            nav .container {
+                padding: 0 1rem;
+            }
+            
+            .logo {
+                font-size: 1.125rem;
+                gap: 0.5rem;
+            }
+            
+            .logo img {
+                width: 32px;
+                height: 32px;
+            }
+            
+            .hero {
+                padding: 3rem 0 2rem;
+            }
+            
+            .hero-content {
+                padding: 0 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.25rem;
+                line-height: 1.2;
+            }
+            
+            .hero .tagline {
+                font-size: 1.125rem;
+                margin: 2rem auto;
+            }
+            
+            .social-proof p {
+                font-size: 1rem;
+            }
+            
+            .download-section-title {
+                font-size: 1rem;
+            }
+            
+            .download-section-subtitle {
+                font-size: 0.8125rem;
+            }
+            
+            .download-buttons {
+                margin: 2rem 0;
+                gap: 2rem;
+            }
+            
+            .download-item {
+                gap: 0.75rem;
+            }
+            
+            .download-item-title {
+                font-size: 0.875rem;
+            }
+            
+            .qr-code {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .download-item-label {
+                font-size: 0.8125rem;
+            }
+            
+            .btn-download {
+                width: 150px;
+                height: 45px;
+            }
+            
+            .btn-download img {
+                height: 45px;
+                width: 150px;
+            }
+            
+            .social-proof {
+                margin-top: 2rem;
+            }
+            
+            .social-proof .rating {
+                font-size: 1.25rem;
+            }
+            
+            .social-proof p {
+                font-size: 0.875rem;
+            }
+            
+            .feature-section {
+                padding: 2.5rem 0;
+            }
+            
+            .feature-content {
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+            
+            .feature-text h2 {
+                font-size: 1.75rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .feature-text h3 {
+                font-size: 1.125rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .feature-list {
+                margin: 1.5rem 0;
+            }
+            
+            .feature-list li {
+                padding: 0.625rem 0;
+                font-size: 0.9375rem;
+            }
+            
+            .feature-image img {
+                border-radius: 12px;
+            }
+            
+            .languages-section {
+                padding: 3rem 0;
+            }
+            
+            .languages-section h2 {
+                font-size: 1.75rem;
+                margin-bottom: 1.5rem;
+                padding: 0 1rem;
+            }
+            
+            .flags-grid {
+                gap: 1.5rem;
+                font-size: 2.5rem;
+                margin: 2rem 0;
+            }
+            
+            .language-names {
+                font-size: 0.9375rem;
+                padding: 0 1rem;
+            }
+            
+            .stats-section {
+                padding: 2.5rem 0;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem;
+                padding: 0 1rem;
+            }
+            
+            .stat-item {
+                padding: 1.5rem 0.75rem;
+            }
+            
+            .stat-number {
+                font-size: 2.25rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .stat-label {
+                font-size: 0.8125rem;
+            }
+            
+            .pricing-section {
+                padding: 3rem 0;
+            }
+            
+            .pricing-section h2 {
+                font-size: 1.5rem;
+                padding: 0 1rem;
+            }
+            
+            .pricing-section .subtitle {
+                font-size: 1.125rem;
+                margin-bottom: 2.5rem;
+                padding: 0 1rem;
+            }
+            
+            .pricing-card {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+            
+            .pricing-card h3 {
+                font-size: 1.25rem;
+            }
+            
+            .price {
+                font-size: 2.75rem;
+            }
+            
+            .price-period {
+                font-size: 1.25rem;
+            }
+            
+            .price-annual {
+                font-size: 1rem;
+            }
+            
+            .trial-badge {
+                padding: 1rem;
+                font-size: 0.875rem;
+            }
+            
+            .final-cta {
+                padding: 3rem 0;
+            }
+            
+            .final-cta h2 {
+                font-size: 1.75rem;
+                padding: 0 1rem;
+            }
+            
+            .final-cta p {
+                font-size: 1.125rem;
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+            }
+            
+            footer {
+                padding: 3rem 0 1.5rem;
+            }
+            
+            .footer-content {
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+            
+            .footer-brand h3 {
+                font-size: 1.5rem;
+            }
+            
+            .nav-links {
+                gap: 0.75rem;
+            }
+            
+            .nav-links li:not(:last-child):not(:nth-last-child(2)) {
+                display: none;
+            }
+            
+            .nav-links {
+                gap: 0.5rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.8125rem;
+            }
+            
+            .lang-picker-btn {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.75rem;
+                min-height: 38px;
+            }
+            
+            .lang-picker-btn .flag {
+                font-size: 1.125rem;
+            }
+            
+            .lang-picker-dropdown {
+                min-width: 180px;
+                right: 0;
+            }
+            
+            .lang-option {
+                padding: 0.75rem 1rem;
+                min-height: 44px;
+            }
+            
+            .btn-nav {
+                padding: 0.625rem 1rem;
+                font-size: 0.75rem;
+                min-height: 38px;
+            }
         }
-
-        @media (max-width: 480px) {
-            .container { padding: 0 20px; }
-            .hero-title { font-size: 36px; }
-            .hero-subtitle { font-size: 16px; }
-            .hero-stats { flex-direction: column; gap: 32px; }
-            .section-title { font-size: 32px; }
-            .value-card { padding: 32px 20px; }
-            .value-number { font-size: 80px; }
-            .value-icon { font-size: 28px; }
-            .value-title { font-size: 20px; }
-            .value-desc { font-size: 14px; }
-            .feature-card { padding: 28px 20px; }
-            .feature-icon { width: 56px; height: 56px; font-size: 28px; }
-            .feature-title { font-size: 22px; }
-            .statement-text { font-size: 32px; }
-            .emotional-title { font-size: 32px; }
-            .emotional-quote { font-size: 16px; padding: 0 20px; }
-            .pricing-card { padding: 32px 20px; }
-            .pricing-amount { font-size: 64px; }
-            .cta-title { font-size: 36px; }
-            .cta-bg-text { font-size: 40vw; }
-            .pillar-card { padding: 28px 20px; }
-            .pillar-icon { width: 48px; height: 48px; font-size: 28px; }
-            .pillar-title { font-size: 20px; }
-            .pillar-desc { font-size: 14px; }
-            .meal-logging-demo { padding: 20px; }
-            .demo-input { font-size: 14px; padding: 12px; }
-            .wow-card { padding: 28px 20px; }
-            .wow-title { font-size: 20px; }
-            .wow-desc { font-size: 14px; }
-            .wow-highlight { padding: 12px; }
-            .wow-highlight-text { font-size: 13px; }
-            .testimonial-card { padding: 28px 20px; }
-            .testimonial-card::before { font-size: 60px; top: 16px; left: 20px; }
-            .testimonial-text { font-size: 14px; }
-            .testimonial-avatar { width: 40px; height: 40px; font-size: 16px; }
-            .testimonial-name { font-size: 13px; }
-            .testimonial-role { font-size: 11px; }
+        
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .flags-grid {
+                gap: 1rem;
+                font-size: 2rem;
+            }
         }
-
-        /* Animations */
-        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
-        .fade-in.visible { opacity: 1; transform: translateY(0); }
     </style>
 </head>
 <body>
-    <nav class="nav" id="nav">
+
+    <!-- Navigation -->
+    <nav>
         <div class="container">
-            <div class="nav-inner">
-                <a href="/" class="logo">
-                    <img src="icon.png" alt="ForgeFit" class="logo-img">
-                    <span class="logo-text">FORGEFIT</span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#how" data-i18n="nav.howItWorks">How It Works</a></li>
-                    <li><a href="#features" data-i18n="nav.features">Features</a></li>
-                    <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-                </ul>
-                <div style="display: flex; align-items: center; gap: 16px;">
-                    <div class="lang-switcher" id="langSwitcher">
-                        <button class="lang-switcher-btn" id="langSwitcherBtn">
-                            <span id="currentLangCode">EN</span>
-                            <span style="font-size: 8px; margin-left: 4px;">▼</span>
+            <a href="/" class="logo">
+                <img src="icon.png" alt="ForgeFit" loading="eager">
+                <span>FORGEFIT</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="privacy/en/index.html" id="navPrivacyLink">Privacy</a></li>
+                <li>
+                    <div class="lang-picker" id="langPicker">
+                        <button class="lang-picker-btn" id="langPickerBtn" type="button">
+                            <span class="flag" id="currentFlag">🇺🇸</span>
+                            <span id="currentLang">EN</span>
+                            <span>▼</span>
                         </button>
-                        <div class="lang-switcher-dropdown" id="langDropdown"></div>
+                        <div class="lang-picker-dropdown" id="langDropdown">
+                            <a href="#" class="lang-option active" data-lang="en">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="es">
+                                <span class="flag">🇪🇸</span>
+                                <span>Español</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="pt">
+                                <span class="flag">🇧🇷</span>
+                                <span>Português</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="de">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="fr">
+                                <span class="flag">🇫🇷</span>
+                                <span>Français</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="it">
+                                <span class="flag">🇮🇹</span>
+                                <span>Italiano</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="ja">
+                                <span class="flag">🇯🇵</span>
+                                <span>日本語</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="ko">
+                                <span class="flag">🇰🇷</span>
+                                <span>한국어</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="zh">
+                                <span class="flag">🇨🇳</span>
+                                <span>简体中文</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="ru">
+                                <span class="flag">🇷🇺</span>
+                                <span>Русский</span>
+                            </a>
+                            <a href="#" class="lang-option" data-lang="tr">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </div>
                     </div>
-                    <a href="#download" class="btn btn-orange download-btn" data-i18n="nav.getStarted">Get Started</a>
-                </div>
-                <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
-            </div>
+                </li>
+                <li><a href="#download" class="btn-nav">Download</a></li>
+            </ul>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-video-bg">
-            <video autoplay muted loop playsinline preload="auto" poster="">
-                <source src="login-video.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <p class="hero-tagline" data-i18n="hero.tagline">AI-Powered Fitness App</p>
-                <h1 class="hero-title">
-                    <span data-i18n="hero.title">YOUR ALL-IN-ONE</span><br>
-                    <span class="outline" data-i18n="hero.titleOutline">AI POWERED FITNESS APP</span>
-                </h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">You need a coach that keeps you accountable. Most fitness apps give you generic workouts and hope for the best. ForgeFit is different.</p>
-                <div class="hero-cta">
-                    <a href="#download" class="btn btn-orange download-btn" data-i18n="hero.startFreeTrial">Start Free Trial</a>
-                    <a href="#how" class="btn btn-outline" data-i18n="hero.seeHowItWorks">See How It Works</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="hero-stat-value">52</div>
-                        <div class="hero-stat-label" data-i18n="hero.weekPrograms">Week Programs</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-value">5<span class="orange">,700+</span></div>
-                        <div class="hero-stat-label" data-i18n="hero.exercises">Exercises</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-value">24<span class="orange">/7</span></div>
-                        <div class="hero-stat-label" data-i18n="hero.aiCoach">AI Coach</div>
-                    </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Track All 4 Pillars</h1>
+                <h1>Build Discipline</h1>
+                <h1>Get Results</h1>
+                
+                <p class="tagline">
+                    ForgeFit tracks training, nutrition, sleep, and hydration—with AI coaching in 11 languages.
+                </p>
+                
+                <div class="social-proof">
+                    <p class="rating">★★★★★</p>
+                    <p>The complete fitness system. Less than one coffee for the entire month.</p>
+                    <p>Available in 11 languages</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="marquee-section">
-        <div class="marquee">
-            <div class="marquee-content">
-                <span class="marquee-item" data-i18n="marquee.realTimeAccountability">Real-Time Accountability</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.aiPersonalization">AI-Powered Personalization</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.nutritionGuidance">Complete Nutrition Guidance</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.worksOffline">Works Offline</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.languages">11 Languages</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.progressAnalytics">Progress Analytics</span><span class="marquee-dot"></span>
+    <!-- Feature 1: Track All 4 Pillars -->
+    <section class="feature-section" id="features">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2>Track all 4 pillars</h2>
+                <h3>See your complete fitness picture every day. Training, nutrition, sleep, and hydration—all in one place.</h3>
+                
+                <ul class="feature-list">
+                    <li>Daily compliance scoring across all 4 pillars</li>
+                    <li>See exactly where you stand each day</li>
+                    <li>AI tells you what to focus on today</li>
+                    <li>52-week adaptive training programs</li>
+                    <li>Complete offline capability</li>
+                </ul>
             </div>
-            <div class="marquee-content">
-                <span class="marquee-item" data-i18n="marquee.realTimeAccountability">Real-Time Accountability</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.aiPersonalization">AI-Powered Personalization</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.nutritionGuidance">Complete Nutrition Guidance</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.worksOffline">Works Offline</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.languages">11 Languages</span><span class="marquee-dot"></span>
-                <span class="marquee-item" data-i18n="marquee.progressAnalytics">Progress Analytics</span><span class="marquee-dot"></span>
-            </div>
-        </div>
-    </div>
-
-    <section class="problem-section">
-        <div class="container">
-            <div class="problem-text fade-in">
-                <p data-i18n="problem.text">ForgeFit is an AI-powered fitness coaching app that tracks and optimizes all four essential pillars of fitness: strength training, cardio, nutrition, and hydration - because real results come from balance, not just gym time.</p>
-                <p data-i18n="problem.subtext">It delivers personalized 52-week programs that adapt to your progress, helping you build consistency across all four pillars and reach your goals at an accessible price.</p>
+            
+            <div class="feature-image">
+                <img src="dashboard-screenshot.png" alt="Daily compliance dashboard showing all 4 fitness pillars with completion status">
             </div>
         </div>
     </section>
 
-    <section class="emotional-section">
+    <!-- Feature 2: Natural Language Logging -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2>Log everything naturally</h2>
+                <h3>No scanning. No searching databases. Just type what you ate or ask your AI coach anything.</h3>
+                
+                <ul class="feature-list">
+                    <li>Natural language meal logging</li>
+                    <li>AI figures out the nutrition automatically</li>
+                    <li>Ask your coach questions anytime</li>
+                    <li>Proactive check-ins when you're slipping</li>
+                    <li>Works in 11 languages</li>
+                </ul>
+            </div>
+            
+            <div class="feature-image">
+                <img src="N_logging_01.png" alt="Natural language conversation with AI coach for logging">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3: AI Coaching -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2>AI coach that adapts to you</h2>
+                <h3>Get real coaching—not canned responses. Your AI coach knows your program, progress, and goals.</h3>
+                
+                <ul class="feature-list">
+                    <li>Answer questions about training, nutrition, supplements</li>
+                    <li>Adjusts your program based on performance</li>
+                    <li>Proactively reaches out when you need support</li>
+                    <li>Available 24/7 in natural conversation</li>
+                    <li>Understands cultural context and local foods</li>
+                </ul>
+            </div>
+            
+            <div class="feature-image">
+                <img src="coach-chat.png" alt="AI coach chat conversation interface showing personalized coaching with Coach Alex">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 4: Comprehensive Training -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2>Complete training system</h2>
+                <h3>52-week programs tailored to your goals, age, and equipment. Built by experts, powered by AI.</h3>
+                
+                <ul class="feature-list">
+                    <li>5,700+ exercises with video demonstrations</li>
+                    <li>Programs for any equipment level (gym, home, bodyweight)</li>
+                    <li>Age-specific protocols for 50+ and 60+ athletes</li>
+                    <li>Pregnancy-safe workouts with trimester adjustments</li>
+                    <li>Auto-progressive overload that adapts to you</li>
+                </ul>
+            </div>
+            
+            <div class="feature-image">
+                <img src="workout-screenshot.png" alt="Complete training system with adaptive programming">
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages-section">
         <div class="container">
-            <h2 class="emotional-title fade-in" data-i18n-nl="emotional.title">THE #1 REASON PEOPLE FAIL<br>ISN'T LACK OF MOTIVATION.</h2>
-            <p class="emotional-quote fade-in" data-i18n="emotional.quote">
-                It's lack of accountability. Most people know what to do. They just don't do it consistently. That's where we come in. We track your compliance in real-time, show you exactly where you stand, and keep you honest. Not because we're watching—because you deserve to see your progress.
+            <h2>Your AI coach speaks your language. Literally.</h2>
+            
+            <div class="flags-grid">
+                <span>🇺🇸</span>
+                <span>🇪🇸</span>
+                <span>🇧🇷</span>
+                <span>🇩🇪</span>
+                <span>🇫🇷</span>
+                <span>🇮🇹</span>
+                <span>🇯🇵</span>
+                <span>🇰🇷</span>
+                <span>🇨🇳</span>
+                <span>🇷🇺</span>
+                <span>🇹🇷</span>
+            </div>
+            
+            <p class="language-names">
+                English • Español • Português • Deutsch • Français • Italiano<br>
+                日本語 • 한국어 • 简体中文 • Русский • Türkçe
             </p>
-            <p class="statement-sub fade-in" style="margin-top: 40px;" data-i18n="emotional.subtext">
-                This isn't about perfection. It's about showing up. Day after day. Week after week. Until showing up becomes who you are.
-            </p>
-        </div>
-    </section>
-
-    <section class="value-section" id="how">
-        <div class="container">
-            <div class="section-header fade-in">
-                <p class="section-label" data-i18n="value.label">The ForgeFit Difference</p>
-                <h2 class="section-title" data-i18n-nl="value.title">YOUR AI COACH,<br>ALWAYS AVAILABLE</h2>
-            </div>
-            <div class="value-grid">
-                <div class="value-card fade-in">
-                    <span class="value-number">01</span>
-                    <div class="value-icon">🤖</div>
-                    <h3 class="value-title" data-i18n="value.aiPersonalization.title">AI-Powered Personalization</h3>
-                    <p class="value-desc" data-i18n="value.aiPersonalization.desc">Based on 60 different user profiles spanning body types, fitness levels, goals, and equipment access. Your program is built from the ground up for YOU.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <span class="value-number">02</span>
-                    <div class="value-icon">📊</div>
-                    <h3 class="value-title" data-i18n="value.accountability.title">Real-Time Accountability</h3>
-                    <p class="value-desc" data-i18n="value.accountability.desc">Track compliance across workouts, nutrition, hydration, and sleep. We keep you honest. Miss a workout? We know. Crush your week? We celebrate it.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <span class="value-number">03</span>
-                    <div class="value-icon">🍽️</div>
-                    <h3 class="value-title" data-i18n="value.nutrition.title">Complete Nutrition Guidance</h3>
-                    <p class="value-desc" data-i18n="value.nutrition.desc">Personalized nutrition coaching that respects your diet (pescatarian, vegetarian, vegan) and adapts to your culture with meals in 11 languages.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <span class="value-number">04</span>
-                    <div class="value-icon">💬</div>
-                    <h3 class="value-title" data-i18n="value.coach.title">24/7 AI Coach Chat</h3>
-                    <p class="value-desc" data-i18n="value.coach.desc">Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Like having a personal trainer in your pocket. No waiting. No scheduling.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pillars-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <p class="section-label" data-i18n="pillars.label">Why ForgeFit is Different</p>
-                <h2 class="section-title" data-i18n-nl="pillars.title">ONE PLATFORM.<br>ALL FOUR PILLARS.</h2>
-                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;" data-i18n="pillars.subtitle">
-                    Most apps track one thing. We track everything that matters—plus give you a 24/7 AI coach to guide you through it all.
-                </p>
-            </div>
-            <div class="pillars-grid">
-                <div class="pillar-card fade-in">
-                    <div class="pillar-header">
-                        <div class="pillar-icon">💪</div>
-                        <h3 class="pillar-title" data-i18n="pillars.workouts.title">Workouts</h3>
-                    </div>
-                    <p class="pillar-desc" data-i18n="pillars.workouts.desc">52-week progressive programs tailored to your body, goals, and equipment. 5,700+ exercises with video demonstrations.</p>
-                    <div class="pillar-feature" data-i18n="pillars.workouts.feature1">Auto-progressive overload</div>
-                    <div class="pillar-feature" data-i18n="pillars.workouts.feature2">Equipment-based programming</div>
-                </div>
-                <div class="pillar-card fade-in">
-                    <div class="pillar-header">
-                        <div class="pillar-icon">🍽️</div>
-                        <h3 class="pillar-title" data-i18n="pillars.nutrition.title">Nutrition</h3>
-                    </div>
-                    <p class="pillar-desc" data-i18n="pillars.nutrition.desc">Meal logging is a breeze. Just type in natural language what you ate, and we'll figure out the nutrition. AI-powered meal planning that respects your diet and culture.</p>
-                    <div class="pillar-feature" data-i18n="pillars.nutrition.feature1">Natural language meal logging</div>
-                    <div class="pillar-feature" data-i18n="pillars.nutrition.feature2">11 languages with local cuisine</div>
-                </div>
-                <div class="pillar-card fade-in">
-                    <div class="pillar-header">
-                        <div class="pillar-icon">💧</div>
-                        <h3 class="pillar-title" data-i18n="pillars.hydration.title">Hydration</h3>
-                    </div>
-                    <p class="pillar-desc" data-i18n="pillars.hydration.desc">Track your daily water intake with smart reminders. Stay hydrated for optimal performance and recovery.</p>
-                    <div class="pillar-feature" data-i18n="pillars.hydration.feature1">Smart hydration reminders</div>
-                    <div class="pillar-feature" data-i18n="pillars.hydration.feature2">Daily goal tracking</div>
-                </div>
-                <div class="pillar-card fade-in">
-                    <div class="pillar-header">
-                        <div class="pillar-icon">😴</div>
-                        <h3 class="pillar-title" data-i18n="pillars.sleep.title">Sleep</h3>
-                    </div>
-                    <p class="pillar-desc" data-i18n="pillars.sleep.desc">Log your sleep to track recovery. Connect wearables for automatic tracking. Sleep quality impacts everything.</p>
-                    <div class="pillar-feature" data-i18n="pillars.sleep.feature1">Wearable integration</div>
-                    <div class="pillar-feature" data-i18n="pillars.sleep.feature2">Recovery-based adjustments</div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 64px;">
-                <p style="font-size: 20px; color: var(--white); margin-bottom: 16px; font-weight: 600;" data-i18n="pillars.coachSubtitle">
-                    Plus Your 24/7 AI Coach
-                </p>
-                <p style="font-size: 16px; color: var(--gray-400); max-width: 600px; margin: 0 auto;" data-i18n="pillars.coachDesc">
-                    Stuck on form? Not sure what to eat? Need to swap an exercise? Just ask. Your AI coach knows your program, progress, and goals—always available to guide you.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="meal-logging-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <p class="section-label" data-i18n="mealLogging.label">Natural Language Meal Logging</p>
-                <h2 class="section-title" data-i18n-nl="mealLogging.title">MEAL LOGGING<br>IS A BREEZE.</h2>
-                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;" data-i18n="mealLogging.subtitle">
-                    No more searching through databases. Just type what you ate in natural language, and our AI figures out the nutrition.
-                </p>
-            </div>
-            <div class="meal-logging-demo fade-in">
-                <div class="demo-input" data-i18n="mealLogging.demoInput">
-                    "I had <span class="highlight">grilled chicken breast with brown rice and steamed broccoli</span> for lunch"
-                </div>
-                <div class="demo-result">
-                    <div class="demo-result-icon">✓</div>
-                    <div class="demo-result-text">
-                        <strong data-i18n="mealLogging.demoResult">Logged:</strong> <span data-i18n="mealLogging.demoResultDetails">350 calories, 45g protein, 35g carbs, 8g fat</span>
-                    </div>
-                </div>
-            </div>
-            <p style="font-size: 15px; color: var(--gray-500); margin-top: 32px; max-width: 500px; margin-left: auto; margin-right: auto;" data-i18n="mealLogging.footer">
-                Works in 11 languages. Respects your diet preferences. Adapts to your culture. It's that simple.
+            
+            <p>
+                Coach Alex understands cultural context and local cuisine. Get meal plans and coaching in your native language.
             </p>
         </div>
     </section>
 
-    <section class="wow-features-section">
-        <div class="container">
-            <div class="section-header fade-in" style="color: var(--black);">
-                <p class="section-label" data-i18n="wowFeatures.label">Built For Everyone</p>
-                <h2 class="section-title" data-i18n-nl="wowFeatures.title">YOUR BODY.<br>YOUR LIFE STAGE.<br>YOUR PROGRAM.</h2>
-                <p style="font-size: 18px; color: var(--gray-600); max-width: 700px; margin: 24px auto 0; line-height: 1.7;" data-i18n="wowFeatures.subtitle">
-                    A 25-year-old beginner and a 55-year-old intermediate need completely different approaches. ForgeFit understands the research and adapts to you.
-                </p>
-            </div>
-            <div class="wow-grid">
-                <div class="wow-card fade-in">
-                    <span class="wow-badge" data-i18n="wowFeatures.ageAware.badge">Age-Aware AI</span>
-                    <h3 class="wow-title" data-i18n-nl="wowFeatures.ageAware.title">50+ & 60+<br>Specialized</h3>
-                    <p class="wow-desc" data-i18n="wowFeatures.ageAware.desc">
-                        Research shows age affects muscle protein synthesis, hormone levels, and recovery. We don't give everyone the same plan. Your program adapts to your age with appropriate volume, intensity, and recovery protocols.
-                    </p>
-                    <div class="wow-highlight">
-                        <span class="wow-highlight-icon">🔬</span>
-                        <div class="wow-highlight-text" data-i18n="wowFeatures.ageAware.highlight">
-                            <strong>Science-backed:</strong> Special protocols for 50-59 and 60+ age groups with modified intensity and extended recovery.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wow-card fade-in">
-                    <span class="wow-badge" data-i18n="wowFeatures.pregnancy.badge">Pregnancy-Safe</span>
-                    <h3 class="wow-title" data-i18n-nl="wowFeatures.pregnancy.title">Pregnancy<br>Fitness</h3>
-                    <p class="wow-desc" data-i18n="wowFeatures.pregnancy.desc">
-                        Safe, modified workouts that adapt to your trimester. Nutrition guidance that supports both you and your baby. Track your fitness journey through pregnancy and beyond.
-                    </p>
-                    <div class="wow-highlight">
-                        <span class="wow-highlight-icon">🤰</span>
-                        <div class="wow-highlight-text" data-i18n="wowFeatures.pregnancy.highlight">
-                            <strong>Trimester-aware:</strong> Workouts and nutrition plans that adjust automatically based on your stage of pregnancy.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wow-card fade-in">
-                    <span class="wow-badge" data-i18n="wowFeatures.photoAnalysis.badge">AI Vision</span>
-                    <h3 class="wow-title" data-i18n-nl="wowFeatures.photoAnalysis.title">Photo Body<br>Analysis</h3>
-                    <p class="wow-desc" data-i18n="wowFeatures.photoAnalysis.desc">
-                        Upload 3 photos. Our AI analyzes your body composition, muscle development, and posture—no gym assessment needed. Get personalized recommendations based on what your body actually looks like.
-                    </p>
-                    <div class="wow-highlight">
-                        <span class="wow-highlight-icon">📸</span>
-                        <div class="wow-highlight-text" data-i18n="wowFeatures.photoAnalysis.highlight">
-                            <strong>GPT-4 Vision:</strong> Advanced AI that sees your body composition, posture, and fitness level from photos. Face blur for privacy.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wow-card fade-in">
-                    <span class="wow-badge" data-i18n="wowFeatures.cultural.badge">11 Languages</span>
-                    <h3 class="wow-title" data-i18n-nl="wowFeatures.cultural.title">Cultural<br>Adaptation</h3>
-                    <p class="wow-desc" data-i18n="wowFeatures.cultural.desc">
-                        Meal plans that respect your culture. Get recipes in 11 languages with local cuisine. Indian, Mexican, Mediterranean, Asian—your meals, your way.
-                    </p>
-                    <div class="wow-highlight">
-                        <span class="wow-highlight-icon">🌍</span>
-                        <div class="wow-highlight-text" data-i18n="wowFeatures.cultural.highlight">
-                            <strong>Local cuisine:</strong> Not just translated—actually adapted. Indian dal, Mexican tacos, Japanese bento boxes, all with proper macros.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wow-card fade-in">
-                    <span class="wow-badge" data-i18n="wowFeatures.offline.badge">Works Offline</span>
-                    <h3 class="wow-title" data-i18n-nl="wowFeatures.offline.title">Train<br>Anywhere</h3>
-                    <p class="wow-desc" data-i18n="wowFeatures.offline.desc">
-                        No internet? No problem. All workouts, exercises, and meal plans work completely offline. Sync when you're back online. Your progress never stops.
-                    </p>
-                    <div class="wow-highlight">
-                        <span class="wow-highlight-icon">📱</span>
-                        <div class="wow-highlight-text" data-i18n="wowFeatures.offline.highlight">
-                            <strong>100% offline:</strong> 5,700+ exercise videos, all workout plans, and meal suggestions available without internet.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wow-card fade-in">
-                    <span class="wow-badge" data-i18n="wowFeatures.videoCoverage.badge">99.98% Coverage</span>
-                    <h3 class="wow-title" data-i18n-nl="wowFeatures.videoCoverage.title">Never<br>Wonder How</h3>
-                    <p class="wow-desc" data-i18n="wowFeatures.videoCoverage.desc">
-                        With 99.98% video coverage across 5,700+ exercises, you'll never be stuck wondering how to perform a movement. Every exercise has a video demonstration.
-                    </p>
-                    <div class="wow-highlight">
-                        <span class="wow-highlight-icon">🎥</span>
-                        <div class="wow-highlight-text" data-i18n="wowFeatures.videoCoverage.highlight">
-                            <strong>HD videos:</strong> Professional demonstrations for virtually every exercise. Form cues, common mistakes, and alternatives included.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="statement-section">
-        <div class="container">
-            <p class="statement-text fade-in" data-i18n-nl="statement.text">
-                GENERIC PLANS<br>
-                <span class="outline" data-i18n="statement.outline">DON'T WORK</span>
-            </p>
-            <p class="statement-sub fade-in" data-i18n="statement.subtext">Our AI analyzes your body, goals, experience, and available equipment—then builds a complete 52-week program designed specifically for you. No templates. No guesswork. Just results.</p>
-        </div>
-    </section>
-
-    <section class="features-section" id="features">
-        <div class="container">
-            <div class="section-header fade-in" style="color: var(--black);">
-                <p class="section-label" data-i18n="features.label">Complete System</p>
-                <h2 class="section-title" data-i18n="features.title">Everything You Need</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🏋️</div>
-                    <h3 class="feature-title" data-i18n="features.programs.title">52-Week Programs</h3>
-                    <p class="feature-desc" data-i18n="features.programs.desc">Progressive programming tailored to your goals. 5,700+ exercise library with 99.98% video coverage. Never wonder how to perform a movement.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🥗</div>
-                    <h3 class="feature-title" data-i18n="features.mealPlanning.title">AI Meal Planning</h3>
-                    <p class="feature-desc" data-i18n="features.mealPlanning.desc">Respects your diet and culture. Get meals in 11 languages with local cuisine. Real-time compliance tracking and accountability.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">📈</div>
-                    <h3 class="feature-title" data-i18n="features.analytics.title">Progress Analytics</h3>
-                    <p class="feature-desc" data-i18n="features.analytics.desc">Body composition tracking, photo progress with face blur for privacy, and detailed analytics to see your transformation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <p class="section-label" data-i18n="testimonials.label">Real Results</p>
-                <h2 class="section-title" data-i18n-nl="testimonials.title">WHAT USERS<br>ARE SAYING</h2>
-                <p style="font-size: 18px; color: var(--gray-400); max-width: 700px; margin: 24px auto 0; line-height: 1.7;" data-i18n="testimonials.subtitle">
-                    People are seeing real results. Not because of motivation—because of accountability.
-                </p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in">
-                    <p class="testimonial-text" data-i18n="testimonials.testimonial1.text">
-                        I've tried every fitness app. This is the first one that actually keeps me accountable. The AI coach knows my program and calls me out when I skip workouts. Down 15 pounds in 12 weeks.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SM</div>
-                        <div class="testimonial-info">
-                            <div class="testimonial-name" data-i18n="testimonials.testimonial1.name">Sarah M.</div>
-                            <div class="testimonial-role" data-i18n="testimonials.testimonial1.role">Marketing Manager, 32</div>
-                            <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial1.weeks">12 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial1.compliance">87%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card fade-in">
-                    <p class="testimonial-text" data-i18n="testimonials.testimonial2.text">
-                        At 58, I thought I was too old to start. The age-specific programming is incredible. My coach adjusts everything for my recovery. I'm stronger now than I was at 40.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">RJ</div>
-                        <div class="testimonial-info">
-                            <div class="testimonial-name" data-i18n="testimonials.testimonial2.name">Robert J.</div>
-                            <div class="testimonial-role" data-i18n="testimonials.testimonial2.role">Retired Engineer, 58</div>
-                            <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial2.weeks">16 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial2.compliance">92%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card fade-in">
-                    <p class="testimonial-text" data-i18n="testimonials.testimonial3.text">
-                        The meal logging is a game changer. I just type 'chicken and rice' and it figures everything out. No more searching through databases. And the cultural meals? Perfect for my Indian diet.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">PK</div>
-                        <div class="testimonial-info">
-                            <div class="testimonial-name" data-i18n="testimonials.testimonial3.name">Priya K.</div>
-                            <div class="testimonial-role" data-i18n="testimonials.testimonial3.role">Software Developer, 29</div>
-                            <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial3.weeks">8 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial3.compliance">94%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card fade-in">
-                    <p class="testimonial-text" data-i18n="testimonials.testimonial4.text">
-                        The 4-pillar tracking is what makes this different. I can see my hydration, sleep, workouts, and nutrition all in one place. The AI coach connects the dots and tells me why I'm not recovering.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">MC</div>
-                        <div class="testimonial-info">
-                            <div class="testimonial-name" data-i18n="testimonials.testimonial4.name">Marcus C.</div>
-                            <div class="testimonial-role" data-i18n="testimonials.testimonial4.role">Personal Trainer, 35</div>
-                            <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial4.weeks">20 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial4.compliance">96%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card fade-in">
-                    <p class="testimonial-text" data-i18n="testimonials.testimonial5.text">
-                        I'm 6 months pregnant and the pregnancy-safe workouts are perfect. My coach adjusts everything automatically. I feel strong and confident, and I know I'm doing the right things for me and my baby.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">EL</div>
-                        <div class="testimonial-info">
-                            <div class="testimonial-name" data-i18n="testimonials.testimonial5.name">Emma L.</div>
-                            <div class="testimonial-role" data-i18n="testimonials.testimonial5.role">Teacher, 31</div>
-                            <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial5.weeks">24 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial5.compliance">89%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card fade-in">
-                    <p class="testimonial-text" data-i18n="testimonials.testimonial6.text">
-                        The photo body analysis was mind-blowing. Uploaded 3 photos and got a complete program. No gym assessment, no trainer needed. The AI saw things I didn't even know about my posture.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">DT</div>
-                        <div class="testimonial-info">
-                            <div class="testimonial-name" data-i18n="testimonials.testimonial6.name">David T.</div>
-                            <div class="testimonial-role" data-i18n="testimonials.testimonial6.role">Consultant, 42</div>
-                            <div class="testimonial-stats">
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial6.weeks">10 weeks</strong> <span data-i18n="testimonials.onProgram">on program</span></span>
-                                <span class="testimonial-stat"><strong data-i18n="testimonials.testimonial6.compliance">91%</strong> <span data-i18n="testimonials.compliance">compliance</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item fade-in">
-                    <div class="stat-value">52</div>
-                    <div class="stat-label" data-i18n="stats.weekPrograms">Week Programs</div>
+                <div class="stat-item">
+                    <span class="stat-number">52</span>
+                    <span class="stat-label">Week Programs</span>
                 </div>
-                <div class="stat-item fade-in">
-                    <div class="stat-value">5<span class="orange">,700+</span></div>
-                    <div class="stat-label" data-i18n="stats.exercises">Exercises</div>
+                <div class="stat-item">
+                    <span class="stat-number">5,700+</span>
+                    <span class="stat-label">Exercises</span>
                 </div>
-                <div class="stat-item fade-in">
-                    <div class="stat-value">11</div>
-                    <div class="stat-label" data-i18n="stats.languages">Languages</div>
+                <div class="stat-item">
+                    <span class="stat-number">11</span>
+                    <span class="stat-label">Languages</span>
                 </div>
-                <div class="stat-item fade-in">
-                    <div class="stat-value">24<span class="orange">/7</span></div>
-                    <div class="stat-label" data-i18n="stats.aiCoach">AI Coach</div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">AI Coach</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pricing-section" id="pricing">
+    <!-- Final CTA -->
+    <section class="final-cta" id="download">
         <div class="container">
-            <div class="section-header fade-in" style="text-align: center; margin-bottom: 48px;">
-                <p class="section-label" data-i18n="pricing.label">Simple Pricing</p>
-                <h2 class="section-title" data-i18n="pricing.title">One Plan. Everything.</h2>
+            <h2>Ready to get started?</h2>
+            <p>Download ForgeFit and start tracking all 4 pillars today.</p>
+            
+            <div class="download-section">
+                <h3 class="download-section-title" style="color: var(--white);">Quick Download</h3>
+                <p class="download-section-subtitle" style="color: rgba(255,255,255,0.9);">Scan with your phone's camera to download instantly</p>
+                <div class="download-buttons">
+                    <div class="download-item">
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://apps.apple.com/app/forgefit-ai-coach/id674905895" alt="Scan to download on App Store">
+                        </div>
+                        <p class="download-item-title" style="color: var(--white);">Download ForgeFit from App Store</p>
+                        <p class="download-item-label" style="color: rgba(255,255,255,0.8);">iPhone / iPad</p>
+                        <a href="https://apps.apple.com/app/forgefit-ai-coach/id674905895" class="btn-download" target="_blank" rel="noopener">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us" alt="Download on App Store">
+                        </a>
+                    </div>
+                    <div class="download-item">
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://play.google.com/store/apps/details?id=com.forgefit.app" alt="Scan to download on Google Play">
+                        </div>
+                        <p class="download-item-title" style="color: var(--white);">Download ForgeFit from Google Play</p>
+                        <p class="download-item-label" style="color: rgba(255,255,255,0.8);">Android</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.forgefit.app" class="btn-download" target="_blank" rel="noopener">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="pricing-card fade-in">
-                <p class="pricing-label" data-i18n="pricing.planName">ForgeFit Pro</p>
-                <div class="pricing-amount">$3<span style="font-size: 60px;">.99</span></div>
-                <div class="pricing-period" data-i18n="pricing.perMonth">per month</div>
-                <p class="pricing-or" data-i18n="pricing.or">or</p>
-                <div class="pricing-annual"><span data-i18n="pricing.perYear">$19.99/year</span> <span style="color: var(--orange);" data-i18n="pricing.save">(save 58%)</span></div>
-                <ul class="pricing-features">
-                    <li data-i18n="pricing.feature1">52-week personalized workout plans</li>
-                    <li data-i18n="pricing.feature2">AI-powered meal planning</li>
-                    <li data-i18n="pricing.feature3">5,700+ exercise library with videos</li>
-                    <li data-i18n="pricing.feature4">Real-time compliance tracking</li>
-                    <li data-i18n="pricing.feature5">24/7 AI coach chat</li>
-                    <li data-i18n="pricing.feature6">Progress analytics & body composition</li>
-                    <li data-i18n="pricing.feature7">Works offline</li>
-                    <li data-i18n="pricing.feature8">11 languages supported</li>
+        </div>
+    </section>
+
+    <!-- Footer - Privacy and Terms URLs unchanged for Play Store -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>FORGEFIT</h3>
+                <p>Track all 4 pillars of fitness with AI coaching in 11 languages. Built for discipline, powered by intelligence.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
                 </ul>
-                <a href="#download" class="btn btn-orange download-btn" style="width: 100%;" data-i18n="pricing.startFreeTrial">Start Free Trial</a>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="mailto:mentolabsllc@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy/en/index.html" id="footerPrivacyLink">Privacy</a></li>
+                    <li><a href="terms/">Terms</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <section class="cta-section" id="download">
-        <div class="cta-bg-text">FORGE</div>
-        <div class="container">
-            <div class="cta-content">
-                <img src="icon.png" alt="ForgeFit" class="cta-logo fade-in">
-                <h2 class="cta-title fade-in" data-i18n="cta.title">YOUR AI COACH IS WAITING.</h2>
-                <p class="cta-subtitle fade-in" data-i18n="cta.subtitle">7-day free trial. Then just $3.99/month or $19.99/year. Download ForgeFit and begin your transformation today.</p>
-                <div class="fade-in">
-                    <a href="#" class="btn btn-orange download-btn" data-i18n="cta.downloadFree">Download Free</a>
-                </div>
-                <div class="store-badges fade-in">
-                    <a href="#" class="store-badge download-btn" data-store="App Store">
-                        <span class="store-icon">🍎</span>
-                        <div class="store-text">
-                            <span class="store-label" data-i18n="cta.appStore.label">Download on the</span>
-                            <span class="store-name" data-i18n="cta.appStore.name">App Store</span>
-                        </div>
-                    </a>
-                    <a href="#" class="store-badge download-btn" data-store="Google Play">
-                        <svg class="store-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.11L13.69 12L3.84 21.89C3.34 21.6 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.53 12.9 20.18 13.18L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z" fill="currentColor"/>
-                        </svg>
-                        <div class="store-text">
-                            <span class="store-label" data-i18n="cta.googlePlay.label">Get it on</span>
-                            <span class="store-name" data-i18n="cta.googlePlay.name">Google Play</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" class="logo">
-                        <img src="icon.png" alt="ForgeFit" class="logo-img">
-                        <span class="logo-text">FORGEFIT</span>
-                    </a>
-                    <p data-i18n="footer.description">AI-powered fitness coaching that keeps you accountable. Built for results, powered by intelligence.</p>
-                </div>
-                <div>
-                    <h4 class="footer-title" data-i18n="footer.product">Product</h4>
-                    <ul class="footer-links">
-                        <li><a href="#how" data-i18n="nav.howItWorks">How It Works</a></li>
-                        <li><a href="#features" data-i18n="nav.features">Features</a></li>
-                        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title" data-i18n="footer.company">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="#" data-i18n="footer.about">About</a></li>
-                        <li><a href="#" data-i18n="footer.blog">Blog</a></li>
-                        <li><a href="#" data-i18n="footer.contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title" data-i18n="footer.legal">Legal</h4>
-                    <ul class="footer-links">
-                        <li><a href="/privacy/" class="footer-link" data-i18n="footer.privacy">Privacy</a></li>
-                        <li><a href="/terms/" class="footer-link" data-i18n="footer.terms">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright" data-i18n="footer.copyright">© 2026 ForgeFit. All rights reserved.</p>
-                <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
-                    <div class="lang-switcher" id="footerLangSwitcher" style="position: relative;">
-                        <button class="lang-switcher-btn" id="footerLangSwitcherBtn" style="font-size: 11px;">
-                            <span id="footerCurrentLangCode">EN</span>
-                            <span>▼</span>
-                        </button>
-                        <div class="lang-switcher-dropdown" id="footerLangDropdown"></div>
-                    </div>
-                    <div class="footer-socials">
-                        <a href="#">Twitter</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 ForgeFit. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- i18n System -->
-    <script src="/js/i18n.js"></script>
-    
     <script>
-        // Nav scroll
-        const nav = document.getElementById('nav');
-        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.pageYOffset > 50));
-
-        // Scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => { 
-                e.preventDefault(); 
-                document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' }); 
-            });
-        });
-
-        // Coming Soon - prevent navigation for download buttons
-        document.querySelectorAll('.download-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                // Just prevent navigation, no alert
-                return false;
-            });
-        });
-
-        // Language Switcher
-        function initLanguageSwitcher() {
-            const switcher = document.getElementById('langSwitcher');
-            const btn = document.getElementById('langSwitcherBtn');
-            const dropdown = document.getElementById('langDropdown');
-            const currentLangCode = document.getElementById('currentLangCode');
+        // Language Picker
+        (function() {
+            const langPicker = document.getElementById('langPicker');
+            const langPickerBtn = document.getElementById('langPickerBtn');
+            const langDropdown = document.getElementById('langDropdown');
+            const currentFlag = document.getElementById('currentFlag');
+            const currentLang = document.getElementById('currentLang');
             
-            // Footer language switcher
-            const footerSwitcher = document.getElementById('footerLangSwitcher');
-            const footerBtn = document.getElementById('footerLangSwitcherBtn');
-            const footerDropdown = document.getElementById('footerLangDropdown');
-            const footerCurrentLangCode = document.getElementById('footerCurrentLangCode');
-
-            if (!switcher || !btn || !dropdown) return;
-
-            const languages = [
-                { code: 'en', name: 'English', flag: '🇺🇸' },
-                { code: 'es', name: 'Español', flag: '🇪🇸' },
-                { code: 'pt', name: 'Português', flag: '🇵🇹' },
-                { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-                { code: 'fr', name: 'Français', flag: '🇫🇷' },
-                { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-                { code: 'ja', name: '日本語', flag: '🇯🇵' },
-                { code: 'ko', name: '한국어', flag: '🇰🇷' },
-                { code: 'zh', name: '中文', flag: '🇨🇳' },
-                { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-                { code: 'tr', name: 'Türkçe', flag: '🇹🇷' }
-            ];
-
-            function updateLanguageSwitcher() {
-                const currentLang = window.i18n ? window.i18n.getCurrentLanguage() : 'en';
-                const currentLangData = languages.find(l => l.code === currentLang) || languages[0];
+            const languages = {
+                en: { flag: '🇺🇸', name: 'EN', full: 'English' },
+                es: { flag: '🇪🇸', name: 'ES', full: 'Español' },
+                pt: { flag: '🇧🇷', name: 'PT', full: 'Português' },
+                de: { flag: '🇩🇪', name: 'DE', full: 'Deutsch' },
+                fr: { flag: '🇫🇷', name: 'FR', full: 'Français' },
+                it: { flag: '🇮🇹', name: 'IT', full: 'Italiano' },
+                ja: { flag: '🇯🇵', name: 'JA', full: '日本語' },
+                ko: { flag: '🇰🇷', name: 'KO', full: '한국어' },
+                zh: { flag: '🇨🇳', name: 'ZH', full: '简体中文' },
+                ru: { flag: '🇷🇺', name: 'RU', full: 'Русский' },
+                tr: { flag: '🇹🇷', name: 'TR', full: 'Türkçe' }
+            };
+            
+            // Get current language from URL or default to 'en'
+            function getCurrentLang() {
+                const path = window.location.pathname;
+                const segments = path.split('/').filter(s => s);
+                if (segments.length > 0 && languages[segments[0]]) {
+                    return segments[0];
+                }
+                return 'en';
+            }
+            
+            // Update privacy links based on language
+            function updatePrivacyLinks(lang) {
+                const navPrivacyLink = document.getElementById('navPrivacyLink');
+                const footerPrivacyLink = document.getElementById('footerPrivacyLink');
+                const privacyUrl = `privacy/${lang}/index.html`;
                 
-                if (currentLangCode) {
-                    currentLangCode.textContent = currentLang.toUpperCase();
+                if (navPrivacyLink) {
+                    navPrivacyLink.href = privacyUrl;
                 }
-                if (footerCurrentLangCode) {
-                    footerCurrentLangCode.textContent = currentLang.toUpperCase();
+                if (footerPrivacyLink) {
+                    footerPrivacyLink.href = privacyUrl;
                 }
-
-                // Update nav dropdown
-                dropdown.innerHTML = '';
-                languages.forEach(lang => {
-                    const option = document.createElement('a');
-                    option.href = '#';
-                    option.className = `lang-option ${lang.code === currentLang ? 'active' : ''}`;
-                    option.innerHTML = `<span class="lang-flag">${lang.flag}</span><span>${lang.name}</span>`;
-                    option.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        if (window.i18n && lang.code !== currentLang) {
-                            window.i18n.changeLanguage(lang.code);
+            }
+            
+            // Update picker display
+            function updatePicker() {
+                const lang = getCurrentLang();
+                const langData = languages[lang];
+                if (langData) {
+                    currentFlag.textContent = langData.flag;
+                    currentLang.textContent = langData.name;
+                    
+                    // Update active state
+                    langDropdown.querySelectorAll('.lang-option').forEach(opt => {
+                        if (opt.dataset.lang === lang) {
+                            opt.classList.add('active');
+                        } else {
+                            opt.classList.remove('active');
                         }
-                        switcher.classList.remove('open');
-                        if (footerSwitcher) footerSwitcher.classList.remove('open');
                     });
-                    dropdown.appendChild(option);
-                });
-                
-                // Update footer dropdown
-                if (footerDropdown) {
-                    footerDropdown.innerHTML = '';
-                    languages.forEach(lang => {
-                        const option = document.createElement('a');
-                        option.href = '#';
-                        option.className = `lang-option ${lang.code === currentLang ? 'active' : ''}`;
-                        option.innerHTML = `<span class="lang-flag">${lang.flag}</span><span>${lang.name}</span>`;
-                        option.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            if (window.i18n && lang.code !== currentLang) {
-                                window.i18n.changeLanguage(lang.code);
-                            }
-                            switcher.classList.remove('open');
-                            if (footerSwitcher) footerSwitcher.classList.remove('open');
-                        });
-                        footerDropdown.appendChild(option);
-                    });
+                    
+                    // Update privacy links
+                    updatePrivacyLinks(lang);
                 }
             }
-
-            btn.addEventListener('click', (e) => {
+            
+            // Toggle dropdown
+            langPickerBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                switcher.classList.toggle('open');
-                if (footerSwitcher) footerSwitcher.classList.remove('open');
+                langPicker.classList.toggle('open');
             });
             
-            if (footerBtn && footerSwitcher) {
-                footerBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    footerSwitcher.classList.toggle('open');
-                    switcher.classList.remove('open');
-                });
-            }
-
+            // Close on outside click
             document.addEventListener('click', (e) => {
-                if (!switcher.contains(e.target)) {
-                    switcher.classList.remove('open');
-                }
-                if (footerSwitcher && !footerSwitcher.contains(e.target)) {
-                    footerSwitcher.classList.remove('open');
+                if (!langPicker.contains(e.target)) {
+                    langPicker.classList.remove('open');
                 }
             });
-
-            // Update when language changes
-            if (window.i18n) {
-                // Wait for i18n to initialize
-                setTimeout(updateLanguageSwitcher, 500);
-            } else {
-                updateLanguageSwitcher();
-            }
-        }
-
-        // Initialize language switcher - try multiple times to ensure it loads
-        function tryInitLanguageSwitcher() {
-            if (document.getElementById('langSwitcher')) {
-                initLanguageSwitcher();
-            } else {
-                setTimeout(tryInitLanguageSwitcher, 100);
-            }
-        }
-        
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', () => {
-                setTimeout(tryInitLanguageSwitcher, 500);
+            
+            // Handle language selection
+            langDropdown.querySelectorAll('.lang-option').forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = option.dataset.lang;
+                    
+                    // Update privacy links immediately
+                    updatePrivacyLinks(lang);
+                    
+                    const currentPath = window.location.pathname;
+                    const segments = currentPath.split('/').filter(s => s);
+                    
+                    // Remove existing language prefix
+                    if (languages[segments[0]]) {
+                        segments.shift();
+                    }
+                    
+                    // Build new path
+                    const newPath = segments.length > 0 
+                        ? `/${lang}/${segments.join('/')}`
+                        : `/${lang}`;
+                    
+                    window.location.href = newPath + window.location.search + window.location.hash;
+                });
             });
-        } else {
-            setTimeout(tryInitLanguageSwitcher, 500);
-        }
+            
+            // Initialize
+            updatePicker();
+        })();
     </script>
+
 </body>
 </html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Logging Animation Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .phone-mockup {
+            background: #000000;
+            border-radius: 24px;
+            padding: 8px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .phone-screen {
+            background: #000000;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 9/19.5;
+            position: relative;
+        }
+
+        .screen-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 16px;
+            display: block;
+        }
+
+        .screen-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .screen-overlay.active {
+            opacity: 1;
+        }
+
+        .typing-demo {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            color: #000000;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .typing-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        .typing-text .highlight {
+            color: #FF6B00;
+            font-weight: 600;
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 2px;
+            height: 20px;
+            background: #FF6B00;
+            margin-left: 2px;
+            animation: blink 1s infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .result-box {
+            background: rgba(255, 107, 0, 0.1);
+            border-left: 3px solid #FF6B00;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 16px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.5s ease;
+        }
+
+        .result-box.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .result-text {
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .result-text strong {
+            color: #FF6B00;
+            font-weight: 700;
+        }
+
+        .controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background: #FF6B00;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #FF8533;
+        }
+
+        .status {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 12px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="phone-mockup">
+            <div class="phone-screen">
+                <img src="N_logging_01.png" alt="Nutrition Input" class="screen-image" id="screen-1">
+                <img src="N_logging_02.png" alt="Nutrition Result" class="screen-image" id="screen-2" style="display: none;">
+            </div>
+        </div>
+
+        <div class="typing-demo" id="typing-demo">
+            <div class="typing-text" id="typing-text"></div>
+            <span class="typing-cursor" id="cursor"></span>
+        </div>
+
+        <div class="result-box" id="result-box">
+            <div class="result-text">
+                <strong>Logged:</strong> <span id="calories">0</span> calories, <span id="protein">0g</span> protein, <span id="carbs">0g</span> carbs, <span id="fat">0g</span> fat
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="startAnimation()">Start Animation</button>
+            <button class="btn" onclick="resetAnimation()" style="background: #666; margin-left: 10px;">Reset</button>
+        </div>
+
+        <div class="status" id="status">Click "Start Animation" to begin</div>
+    </div>
+
+    <script>
+        const fullText = "I had grilled chicken breast with brown rice and steamed broccoli for lunch";
+        const highlightStart = fullText.indexOf('grilled');
+        const highlightEnd = fullText.indexOf('broccoli') + 'broccoli'.length;
+        
+        let charIndex = 0;
+        let isAnimating = false;
+        const typingSpeed = 50; // milliseconds per character
+
+        function startAnimation() {
+            if (isAnimating) return;
+            
+            isAnimating = true;
+            charIndex = 0;
+            document.getElementById('typing-text').innerHTML = '';
+            document.getElementById('result-box').classList.remove('visible');
+            document.getElementById('screen-1').style.display = 'block';
+            document.getElementById('screen-2').style.display = 'none';
+            document.getElementById('status').textContent = 'Typing...';
+            
+            // Reset numbers
+            document.getElementById('calories').textContent = '0';
+            document.getElementById('protein').textContent = '0g';
+            document.getElementById('carbs').textContent = '0g';
+            document.getElementById('fat').textContent = '0g';
+            
+            typeNextChar();
+        }
+
+        function typeNextChar() {
+            const typingText = document.getElementById('typing-text');
+            
+            if (charIndex < fullText.length) {
+                const currentText = fullText.substring(0, charIndex + 1);
+                
+                if (charIndex >= highlightStart && charIndex < highlightEnd) {
+                    const beforeHighlight = fullText.substring(0, highlightStart);
+                    const highlight = fullText.substring(highlightStart, Math.min(charIndex + 1, highlightEnd));
+                    const afterHighlight = charIndex >= highlightEnd ? fullText.substring(highlightEnd, charIndex + 1) : '';
+                    typingText.innerHTML = `${beforeHighlight}<span class="highlight">${highlight}</span>${afterHighlight}`;
+                } else {
+                    typingText.textContent = currentText;
+                }
+                
+                charIndex++;
+                setTimeout(typeNextChar, typingSpeed);
+            } else {
+                // Typing complete
+                document.getElementById('status').textContent = 'Showing results...';
+                
+                // Switch to screen 2 after a short delay
+                setTimeout(() => {
+                    document.getElementById('screen-1').style.display = 'none';
+                    document.getElementById('screen-2').style.display = 'block';
+                }, 300);
+                
+                // Show result box and animate numbers
+                setTimeout(() => {
+                    document.getElementById('result-box').classList.add('visible');
+                    animateNumber('calories', 0, 350, 800);
+                    setTimeout(() => animateNumber('protein', 0, 45, 600), 200);
+                    setTimeout(() => animateNumber('carbs', 0, 35, 600), 400);
+                    setTimeout(() => animateNumber('fat', 0, 8, 400), 600);
+                    
+                    setTimeout(() => {
+                        document.getElementById('status').textContent = 'Animation complete!';
+                        isAnimating = false;
+                    }, 2000);
+                }, 500);
+            }
+        }
+
+        function animateNumber(id, start, end, duration) {
+            const element = document.getElementById(id);
+            const range = end - start;
+            const increment = range / (duration / 16); // 60fps
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+                    current = end;
+                    clearInterval(timer);
+                }
+                element.textContent = id === 'calories' ? Math.round(current) : Math.round(current) + 'g';
+            }, 16);
+        }
+
+        function resetAnimation() {
+            isAnimating = false;
+            charIndex = 0;
+            document.getElementById('typing-text').innerHTML = '';
+            document.getElementById('result-box').classList.remove('visible');
+            document.getElementById('screen-1').style.display = 'block';
+            document.getElementById('screen-2').style.display = 'none';
+            document.getElementById('calories').textContent = '0';
+            document.getElementById('protein').textContent = '0g';
+            document.getElementById('carbs').textContent = '0g';
+            document.getElementById('fat').textContent = '0g';
+            document.getElementById('status').textContent = 'Click "Start Animation" to begin';
+        }
+
+        // Auto-start on load (optional - comment out if you want manual start)
+        // window.addEventListener('load', () => {
+        //     setTimeout(startAnimation, 1000);
+        // });
+    </script>
+</body>
+</html>

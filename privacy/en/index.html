@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Privacy Policy - ForgeFit</title>
     <style>
         * {
@@ -10,97 +10,318 @@
             padding: 0;
             box-sizing: border-box;
         }
+        :root {
+            --black: #000000;
+            --white: #FFFFFF;
+            --orange: #FF6B35;
+            --light-gray: #F8F9FA;
+            --medium-gray: #E9ECEF;
+            --dark-gray: #212529;
+            --text-gray: #495057;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-            padding: 20px;
+            color: var(--text-gray);
+            background-color: var(--light-gray);
+            padding: 2rem 1rem;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
         .language-selector {
             text-align: right;
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
         }
-        .language-selector a {
-            color: #FF6B35;
+        
+        /* Language Picker */
+        .lang-picker {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .lang-picker-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid #E9ECEF;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-gray);
+            transition: all 0.2s;
+            min-height: 44px;
+            touch-action: manipulation;
+        }
+        
+        .lang-picker-btn:hover {
+            border-color: var(--orange);
+            color: var(--black);
+        }
+        
+        .lang-picker-btn .flag {
+            font-size: 1.25rem;
+        }
+        
+        .lang-picker-dropdown {
+            position: absolute;
+            top: calc(100% + 0.5rem);
+            right: 0;
+            background: var(--white);
+            border: 1px solid #E9ECEF;
+            border-radius: 8px;
+            min-width: 200px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.2s;
+            z-index: 1000;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .lang-picker.open .lang-picker-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .lang-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1.25rem;
+            cursor: pointer;
+            transition: background 0.2s;
             text-decoration: none;
-            font-size: 14px;
+            color: var(--black);
+            font-size: 0.9375rem;
+            font-weight: 500;
+            min-height: 44px;
+            touch-action: manipulation;
         }
-        .language-selector a:hover {
-            text-decoration: underline;
+        
+        .lang-option:hover {
+            background: var(--light-gray);
+        }
+        
+        .lang-option.active {
+            background: var(--light-gray);
+            color: var(--orange);
+            font-weight: 600;
+        }
+        
+        .lang-option .flag {
+            font-size: 1.5rem;
+            width: 24px;
+            text-align: center;
         }
         h1 {
-            color: #000;
-            font-size: 32px;
-            font-weight: 900;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
+            color: var(--black);
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
         }
         h1 .accent {
-            color: #FF6B35;
+            color: var(--orange);
         }
         .last-updated {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 40px;
+            color: var(--text-gray);
+            font-size: 0.875rem;
+            margin-bottom: 2.5rem;
         }
         h2 {
-            color: #000;
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
+            color: var(--black);
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
         }
         h3 {
-            color: #333;
-            font-size: 18px;
+            color: var(--black);
+            font-size: 1.25rem;
             font-weight: 600;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
         }
         p {
-            margin-bottom: 15px;
-            color: #444;
+            margin-bottom: 1rem;
+            color: var(--text-gray);
+            line-height: 1.7;
         }
         ul, ol {
-            margin-left: 30px;
-            margin-bottom: 15px;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
         }
         li {
-            margin-bottom: 10px;
-            color: #444;
+            margin-bottom: 0.75rem;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        li strong {
+            color: var(--black);
         }
         .contact-info {
-            background-color: #f9f9f9;
-            padding: 20px;
+            background-color: var(--light-gray);
+            padding: 1.5rem;
             border-radius: 8px;
-            margin-top: 40px;
+            margin-top: 2.5rem;
         }
         .contact-info p {
-            margin-bottom: 5px;
+            margin-bottom: 0.5rem;
         }
         a {
-            color: #FF6B35;
+            color: var(--orange);
             text-decoration: none;
+            transition: color 0.3s;
         }
         a:hover {
-            text-decoration: underline;
+            color: #E85A25;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+            .container {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+                margin-top: 2rem;
+            }
+            h3 {
+                font-size: 1.125rem;
+            }
+            .language-selector {
+                margin-bottom: 1.5rem;
+            }
+            .lang-picker-btn {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8125rem;
+                min-height: 40px;
+            }
+            
+            .lang-option {
+                padding: 0.75rem 1rem;
+                min-height: 44px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 0.75rem 0.25rem;
+            }
+            .container {
+                padding: 1.5rem 1rem;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+            h2 {
+                font-size: 1.375rem;
+                margin-top: 1.75rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            p, li {
+                font-size: 0.9375rem;
+            }
+            ul, ol {
+                margin-left: 1.25rem;
+            }
+            .contact-info {
+                padding: 1.25rem;
+            }
+            .lang-picker-dropdown {
+                min-width: 180px;
+                right: 0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="language-selector">
-            <a href="/privacy/">Select Language</a>
+            <div class="lang-picker" id="langPicker">
+                <button class="lang-picker-btn" id="langPickerBtn" type="button">
+                    <span class="flag" id="currentFlag">🇺🇸</span>
+                    <span id="currentLang">EN</span>
+                    <span>▼</span>
+                </button>
+                <div class="lang-picker-dropdown" id="langDropdown">
+                    <a href="#" class="lang-option active" data-lang="en">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="es">
+                        <span class="flag">🇪🇸</span>
+                        <span>Español</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="pt">
+                        <span class="flag">🇧🇷</span>
+                        <span>Português</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="de">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="fr">
+                        <span class="flag">🇫🇷</span>
+                        <span>Français</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="it">
+                        <span class="flag">🇮🇹</span>
+                        <span>Italiano</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="ja">
+                        <span class="flag">🇯🇵</span>
+                        <span>日本語</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="ko">
+                        <span class="flag">🇰🇷</span>
+                        <span>한국어</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="zh">
+                        <span class="flag">🇨🇳</span>
+                        <span>简体中文</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="ru">
+                        <span class="flag">🇷🇺</span>
+                        <span>Русский</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="tr">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                </div>
+            </div>
         </div>
         <h1>FORGE<span class="accent">FIT</span> PRIVACY POLICY</h1>
         <p class="last-updated">Last Updated: January 28, 2026</p>
@@ -288,6 +509,109 @@
             © 2026 ForgeFit. All rights reserved.
         </p>
     </div>
+
+    <script>
+        // Language Picker for Privacy Page
+        (function() {
+            const langPicker = document.getElementById('langPicker');
+            const langPickerBtn = document.getElementById('langPickerBtn');
+            const langDropdown = document.getElementById('langDropdown');
+            const currentFlag = document.getElementById('currentFlag');
+            const currentLang = document.getElementById('currentLang');
+            
+            const languages = {
+                en: { flag: '🇺🇸', name: 'EN', full: 'English' },
+                es: { flag: '🇪🇸', name: 'ES', full: 'Español' },
+                pt: { flag: '🇧🇷', name: 'PT', full: 'Português' },
+                de: { flag: '🇩🇪', name: 'DE', full: 'Deutsch' },
+                fr: { flag: '🇫🇷', name: 'FR', full: 'Français' },
+                it: { flag: '🇮🇹', name: 'IT', full: 'Italiano' },
+                ja: { flag: '🇯🇵', name: 'JA', full: '日本語' },
+                ko: { flag: '🇰🇷', name: 'KO', full: '한국어' },
+                zh: { flag: '🇨🇳', name: 'ZH', full: '简体中文' },
+                ru: { flag: '🇷🇺', name: 'RU', full: 'Русский' },
+                tr: { flag: '🇹🇷', name: 'TR', full: 'Türkçe' }
+            };
+            
+            // Get current language from URL path
+            function getCurrentLang() {
+                const path = window.location.pathname;
+                // Extract language from path like: .../privacy/en/index.html
+                const match = path.match(/privacy\/([a-z]{2})\//);
+                if (match && languages[match[1]]) {
+                    return match[1];
+                }
+                return 'en';
+            }
+            
+            // Update picker display
+            function updatePicker() {
+                const lang = getCurrentLang();
+                const langData = languages[lang];
+                if (langData) {
+                    currentFlag.textContent = langData.flag;
+                    currentLang.textContent = langData.name;
+                    
+                    // Update active state
+                    langDropdown.querySelectorAll('.lang-option').forEach(opt => {
+                        if (opt.dataset.lang === lang) {
+                            opt.classList.add('active');
+                        } else {
+                            opt.classList.remove('active');
+                        }
+                    });
+                }
+            }
+            
+            // Toggle dropdown
+            langPickerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langPicker.classList.toggle('open');
+            });
+            
+            // Close on outside click
+            document.addEventListener('click', (e) => {
+                if (!langPicker.contains(e.target)) {
+                    langPicker.classList.remove('open');
+                }
+            });
+            
+            // Handle language selection - navigate to the selected language's privacy page
+            langDropdown.querySelectorAll('.lang-option').forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = option.dataset.lang;
+                    
+                    // Get current full URL
+                    const currentUrl = window.location.href;
+                    
+                    // Handle file:// protocol (local viewing)
+                    if (window.location.protocol === 'file:') {
+                        // For file://, replace the language code in the path
+                        // Pattern: file:///.../privacy/en/index.html -> file:///.../privacy/{lang}/index.html
+                        // Match: /privacy/[lang]/index.html and replace with /privacy/{newLang}/index.html
+                        const newUrl = currentUrl.replace(/\/privacy\/([a-z]{2})\/index\.html/, `/privacy/${lang}/index.html`);
+                        window.location.href = newUrl;
+                    } else {
+                        // For http/https, use pathname manipulation
+                        const pathParts = window.location.pathname.split('/').filter(p => p);
+                        const privacyIndex = pathParts.indexOf('privacy');
+                        if (privacyIndex !== -1 && privacyIndex + 1 < pathParts.length) {
+                            pathParts[privacyIndex + 1] = lang;
+                            const newPath = '/' + pathParts.join('/');
+                            window.location.href = newPath;
+                        } else {
+                            // Fallback: relative path
+                            window.location.href = `../${lang}/index.html`;
+                        }
+                    }
+                });
+            });
+            
+            // Initialize
+            updatePicker();
+        })();
+    </script>
 </body>
 </html>
 
