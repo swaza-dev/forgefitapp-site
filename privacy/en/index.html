@@ -536,10 +536,15 @@
             // Get current language from URL path
             function getCurrentLang() {
                 const path = window.location.pathname;
-                // Extract language from path like: .../privacy/en/index.html
-                const match = path.match(/privacy\/([a-z]{2})\//);
-                if (match && languages[match[1]]) {
-                    return match[1];
+                // Path like /privacy/en/ or /privacy/en/index.html
+                const matchPrivacyFirst = path.match(/\/privacy\/([a-z]{2})(?:\/|$)/);
+                if (matchPrivacyFirst && languages[matchPrivacyFirst[1]]) {
+                    return matchPrivacyFirst[1];
+                }
+                // Path like /en/privacy or /en/privacy/ (Vercel rewrite)
+                const matchLangFirst = path.match(/^\/([a-z]{2})\/privacy/);
+                if (matchLangFirst && languages[matchLangFirst[1]]) {
+                    return matchLangFirst[1];
                 }
                 return 'en';
             }
@@ -577,34 +582,35 @@
             });
             
             // Handle language selection - navigate to the selected language's privacy page
+            const langCodes = ['en', 'es', 'pt', 'de', 'fr', 'it', 'ja', 'ko', 'zh', 'ru', 'tr'];
             langDropdown.querySelectorAll('.lang-option').forEach(option => {
                 option.addEventListener('click', (e) => {
                     e.preventDefault();
                     const lang = option.dataset.lang;
                     
-                    // Get current full URL
-                    const currentUrl = window.location.href;
-                    
-                    // Handle file:// protocol (local viewing)
                     if (window.location.protocol === 'file:') {
-                        // For file://, replace the language code in the path
-                        // Pattern: file:///.../privacy/en/index.html -> file:///.../privacy/{lang}/index.html
-                        // Match: /privacy/[lang]/index.html and replace with /privacy/{newLang}/index.html
-                        const newUrl = currentUrl.replace(/\/privacy\/([a-z]{2})\/index\.html/, `/privacy/${lang}/index.html`);
+                        const newUrl = window.location.href.replace(/\/privacy\/([a-z]{2})\/index\.html/, `/privacy/${lang}/index.html`);
                         window.location.href = newUrl;
-                    } else {
-                        // For http/https, use pathname manipulation
-                        const pathParts = window.location.pathname.split('/').filter(p => p);
-                        const privacyIndex = pathParts.indexOf('privacy');
-                        if (privacyIndex !== -1 && privacyIndex + 1 < pathParts.length) {
-                            pathParts[privacyIndex + 1] = lang;
-                            const newPath = '/' + pathParts.join('/');
-                            window.location.href = newPath;
-                        } else {
-                            // Fallback: relative path
-                            window.location.href = `../${lang}/index.html`;
-                        }
+                        return;
                     }
+                    
+                    const pathParts = window.location.pathname.split('/').filter(p => p);
+                    const privacyIndex = pathParts.indexOf('privacy');
+                    
+                    // URL is /en/privacy or /en/privacy/ (Vercel rewrite: lang first)
+                    if (pathParts.length >= 2 && langCodes.includes(pathParts[0]) && pathParts[1] === 'privacy') {
+                        pathParts[0] = lang;
+                        window.location.href = '/' + pathParts.join('/') + '/';
+                        return;
+                    }
+                    // URL is /privacy/en/ or /privacy/en/index.html (privacy first, then lang)
+                    if (privacyIndex === 0 && pathParts.length > 1 && langCodes.includes(pathParts[1])) {
+                        pathParts[1] = lang;
+                        window.location.href = '/' + pathParts.join('/');
+                        return;
+                    }
+                    // Fallback: go to /privacy/{lang}/
+                    window.location.href = `/privacy/${lang}/`;
                 });
             });
             
