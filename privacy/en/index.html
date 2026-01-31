@@ -54,9 +54,28 @@
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
         }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.9375rem;
+            transition: color 0.2s;
+        }
+        .back-home:hover {
+            color: var(--orange);
+        }
         .language-selector {
             text-align: right;
-            margin-bottom: 2rem;
         }
         
         /* Language Picker */
@@ -229,6 +248,12 @@
             .container {
                 padding: 2rem 1.5rem;
             }
+            .top-nav {
+                margin-bottom: 1.5rem;
+            }
+            .back-home {
+                font-size: 0.875rem;
+            }
             h1 {
                 font-size: 2rem;
             }
@@ -238,9 +263,6 @@
             }
             h3 {
                 font-size: 1.125rem;
-            }
-            .language-selector {
-                margin-bottom: 1.5rem;
             }
             .lang-picker-btn {
                 padding: 0.5rem 0.75rem;
@@ -289,7 +311,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="language-selector">
+        <div class="top-nav">
+            <a href="/en/" class="back-home">← Back to ForgeFit</a>
+            <div class="language-selector">
             <div class="lang-picker" id="langPicker">
                 <button class="lang-picker-btn" id="langPickerBtn" type="button">
                     <span class="flag" id="currentFlag">🇺🇸</span>
@@ -342,6 +366,7 @@
                         <span>Türkçe</span>
                     </a>
                 </div>
+            </div>
             </div>
         </div>
         <h1>FORGE<span class="accent">FIT</span> PRIVACY POLICY</h1>
