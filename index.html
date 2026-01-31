@@ -90,7 +90,7 @@
             z-index: 9999;
         }
         
-        /* Floating gradient orbs */
+        /* Floating gradient orbs - exactly matching reference */
         .glow-orb {
             position: fixed;
             border-radius: 50%;
@@ -98,6 +98,7 @@
             pointer-events: none;
             z-index: -1;
         }
+
         .glow-orb-1 {
             top: -10%;
             left: -5%;
@@ -106,6 +107,7 @@
             background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
             animation: float-slow 12s ease-in-out infinite;
         }
+
         .glow-orb-2 {
             top: 30%;
             right: -10%;
@@ -114,6 +116,7 @@
             background: radial-gradient(circle, var(--glow-blue) 0%, transparent 70%);
             animation: float-slow 15s ease-in-out infinite reverse;
         }
+
         .glow-orb-3 {
             bottom: 10%;
             left: 20%;
@@ -122,6 +125,7 @@
             background: radial-gradient(circle, var(--glow-purple) 0%, transparent 70%);
             animation: float-slow 10s ease-in-out infinite 2s;
         }
+
         .glow-orb-4 {
             bottom: -15%;
             right: 10%;
@@ -360,11 +364,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--bg-primary);
-            padding: 8rem 0 4rem;
+            padding: 8rem 2rem 4rem;
             text-align: center;
             position: relative;
-            overflow: hidden;
         }
         
         .container {
@@ -565,9 +567,8 @@
         
         /* Feature Sections - Dark theme */
         .feature-section {
-            padding: 6rem 0;
+            padding: 6rem 2rem;
             position: relative;
-            background: var(--bg-primary);
         }
         
         .feature-section:nth-child(even) {
@@ -870,12 +871,9 @@
         
         /* Final CTA - Dark theme with glow */
         .final-cta {
-            padding: 6rem 0;
-            background: var(--bg-primary);
-            color: var(--text-primary);
+            padding: 6rem 2rem;
             text-align: center;
             position: relative;
-            overflow: hidden;
         }
         
         /* CTA glow effect */
