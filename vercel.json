@@ -29,6 +29,10 @@
       "destination": "/index.html"
     },
     {
+      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/",
+      "destination": "/index.html"
+    },
+    {
       "source": "/",
       "destination": "/en"
     }
