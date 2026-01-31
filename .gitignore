@@ -12,4 +12,7 @@ Thumbs.db
 *.tmp
 *.bak
 
+# Dependencies
+node_modules/
+
 .vercel
