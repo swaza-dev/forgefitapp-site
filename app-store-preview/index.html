@@ -3,177 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ForgeFit – App Store screens (Nike style)</title>
+  <title>ForgeFit – App Store 6.9" template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: #0a0a0a;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    :root {
+      --bg-primary: #0a0a0f;
+      --text-primary: #ffffff;
+      --text-secondary: rgba(255, 255, 255, 0.88);
+      --accent-glow: rgba(255, 107, 53, 0.4);
+      --accent-glow-soft: rgba(255, 107, 53, 0.15);
+      --glow-blue: rgba(79, 172, 254, 0.2);
+      --glow-purple: rgba(168, 85, 247, 0.15);
     }
-    /* Each section = one App Store screenshot; 6.9" = 1320×2868 */
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Same noise overlay as website */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.025;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* Same glow orbs as website */
+    .glow-orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .glow-orb-1 {
+      top: -10%; left: -5%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+      animation: float-slow 12s ease-in-out infinite;
+    }
+    .glow-orb-2 {
+      top: 30%; right: -10%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, var(--glow-blue) 0%, transparent 70%);
+      animation: float-slow 15s ease-in-out infinite reverse;
+    }
+    .glow-orb-3 {
+      bottom: 10%; left: 20%;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, var(--glow-purple) 0%, transparent 70%);
+      animation: float-slow 10s ease-in-out infinite 2s;
+    }
+    .glow-orb-4 {
+      bottom: -15%; right: 10%;
+      width: 550px; height: 550px;
+      background: radial-gradient(circle, var(--accent-glow-soft) 0%, transparent 70%);
+      animation: float-slow 14s ease-in-out infinite 1s;
+    }
+    .glow-orb-5 {
+      top: -10%; right: -5%; left: auto;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+      animation: float-slow 14s ease-in-out infinite 1s;
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -20px) scale(1.05); }
+      66% { transform: translate(-20px, 20px) scale(0.95); }
+    }
+
+    /* Apple 6.9" – 1320×2868. Content above orbs. */
     .screen {
-      width: 100%;
-      max-width: min(430px, 100vw);
-      margin: 0 auto;
-      aspect-ratio: 1320 / 2868;
-      background: #111;
+      width: 1320px;
+      height: 2868px;
+      background: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
       padding: 0;
+      position: relative;
+      z-index: 1;
     }
-    .screen + .screen { margin-top: 0; }
-    /* 6.9" display: exact size for App Store export (1320×2868) */
-    @media (min-width: 1320px) {
-      .screen {
-        width: 1320px;
-        height: 2868px;
-        max-width: none;
-        aspect-ratio: auto;
-      }
-      .messaging {
-        padding: 200px 100px 80px;
-        max-width: 1120px;
-        margin: 0 auto;
-      }
-      .messaging__headline {
-        font-size: 48px;
-        line-height: 1.2;
-        margin-bottom: 16px;
-        letter-spacing: -0.02em;
-      }
-      .messaging__subline {
-        font-size: 26px;
-        line-height: 1.3;
-        font-weight: 500;
-      }
-    }
-    .messaging {
+
+    /* Message on top – template style, our copy, light on dark */
+    .text {
       width: 100%;
-      padding: 14% 8% 10%;
+      padding: 160px 80px 48px;
       text-align: center;
-      flex-shrink: 0;
     }
-    .messaging__headline {
-      font-size: clamp(1.6rem, 5.5vw, 2.5rem);
+    .text__headline {
+      font-size: 52px;
       font-weight: 800;
       letter-spacing: -0.03em;
-      color: #fff;
-      line-height: 1.2;
-      margin: 0 0 0.35em;
-      text-transform: none;
+      line-height: 1.15;
+      margin: 0 0 16px;
+      color: var(--text-primary);
     }
-    .messaging__subline {
-      font-size: clamp(0.95rem, 3vw, 1.25rem);
+    .text__subline {
+      font-size: 26px;
       font-weight: 500;
-      letter-spacing: 0.01em;
-      color: rgba(255,255,255,0.9);
-      line-height: 1.3;
+      color: var(--text-secondary);
+      line-height: 1.35;
       margin: 0;
     }
+
+    /* iPhone frame – phone-sized, Dynamic Island */
     .phone {
-      width: 100%;
-      max-width: 78%;
+      width: 30%;
+      min-width: 320px;
+      max-width: 400px;
+      flex: 1;
+      min-height: 0;
+      margin-top: 24px;
+      margin-bottom: 80px;
       aspect-ratio: 393 / 852;
-      margin-top: 2%;
-      margin-bottom: 6%;
-      background: linear-gradient(145deg, #2c2c2e 0%, #1c1c1e 100%);
-      border-radius: 3.125rem;
-      padding: 0.5rem;
+      background: linear-gradient(145deg, #2c2c2e 0%, #1c1c1e 50%, #0d0d0f 100%);
+      border-radius: 44px;
+      padding: 10px 8px 14px;
       box-shadow:
-        0 0 0 3px #1c1c1e,
-        0 0 0 4px #38383a,
-        inset 0 0 0 1px rgba(255,255,255,0.06),
-        0 25px 50px -12px rgba(0,0,0,0.5),
-        0 12px 24px -8px rgba(0,0,0,0.35);
-      position: relative;
+        0 0 0 3px rgba(255,255,255,0.08),
+        0 0 0 1px rgba(0,0,0,0.3) inset,
+        0 25px 50px -12px rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .phone__screen {
       width: 100%;
       height: 100%;
-      border-radius: 2.5rem;
+      min-height: 420px;
+      border-radius: 34px;
       overflow: hidden;
       background: #000;
       position: relative;
     }
-    .phone__screen img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top center;
-      display: block;
-    }
     .phone__island {
       position: absolute;
-      top: 0.75rem;
+      top: 14px;
       left: 50%;
       transform: translateX(-50%);
-      width: 32%;
-      min-width: 80px;
-      height: 3.2%;
-      min-height: 22px;
-      max-height: 28px;
+      width: 100px;
+      height: 28px;
       background: #000;
-      border-radius: 999px;
+      border-radius: 20px;
       z-index: 2;
-      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4) inset;
+    }
+
+    @media (max-width: 1319px) {
+      .screen {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        aspect-ratio: 1320 / 2868;
+      }
+      .text { padding: 14% 8% 6%; }
+      .text__headline { font-size: clamp(1.75rem, 5vw, 52px); }
+      .text__subline { font-size: clamp(1rem, 2.5vw, 26px); }
     }
   </style>
 </head>
 <body>
-  <!-- 1. Track all 4 pillars -->
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+  <div class="glow-orb glow-orb-3"></div>
+  <div class="glow-orb glow-orb-4"></div>
+  <div class="glow-orb glow-orb-5"></div>
+
   <section class="screen" id="screen-1">
-    <div class="messaging">
-      <h1 class="messaging__headline">Track all 4 pillars.</h1>
-      <p class="messaging__subline">Training, nutrition, sleep & hydration—in one place.</p>
+    <div class="text">
+      <h1 class="text__headline">All 4 pillars. One app.</h1>
+      <p class="text__subline">Training, nutrition, sleep & hydration—in one place.</p>
     </div>
     <div class="phone">
       <div class="phone__screen">
         <span class="phone__island" aria-hidden="true"></span>
-        <img src="../dashboard-screenshot.png" alt="ForgeFit dashboard">
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. Log everything naturally -->
-  <section class="screen" id="screen-2">
-    <div class="messaging">
-      <h1 class="messaging__headline">Log everything naturally.</h1>
-      <p class="messaging__subline">No scanning. Just type what you ate.</p>
-    </div>
-    <div class="phone">
-      <div class="phone__screen">
-        <span class="phone__island" aria-hidden="true"></span>
-        <img src="../N_logging_01.png" alt="ForgeFit meal logging">
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. AI coach that adapts to you -->
-  <section class="screen" id="screen-3">
-    <div class="messaging">
-      <h1 class="messaging__headline">Your AI coach. 24/7.</h1>
-      <p class="messaging__subline">Real coaching—not canned responses.</p>
-    </div>
-    <div class="phone">
-      <div class="phone__screen">
-        <span class="phone__island" aria-hidden="true"></span>
-        <img src="../coach-chat.png" alt="ForgeFit AI coach">
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Complete training system -->
-  <section class="screen" id="screen-4">
-    <div class="messaging">
-      <h1 class="messaging__headline">Complete training system.</h1>
-      <p class="messaging__subline">52-week programs. 5,700+ exercises.</p>
-    </div>
-    <div class="phone">
-      <div class="phone__screen">
-        <span class="phone__island" aria-hidden="true"></span>
-        <img src="../workout-screenshot.png" alt="ForgeFit workouts">
+        <!-- App screenshot goes here -->
       </div>
     </div>
   </section>

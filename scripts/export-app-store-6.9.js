@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Export App Store screens at 6.9" display size (1320×2868 px).
- * Run from project root: node scripts/export-app-store-6.9.js
+ * Export App Store screens at 6.9" display size.
+ * Apple accepted: 1320×2868, 1290×2796, 1260×2736 (portrait).
+ * We use 1320×2868. Run from project root: node scripts/export-app-store-6.9.js
  * Requires: npm install puppeteer (or npx puppeteer)
  */
 const path = require('path');
@@ -15,10 +16,11 @@ const WIDTH = 1320;
 const HEIGHT = 2868;
 
 const SCREENS = [
-  { id: 'screen-1', file: '01-track-4-pillars.png' },
-  { id: 'screen-2', file: '02-log-naturally.png' },
-  { id: 'screen-3', file: '03-ai-coach.png' },
-  { id: 'screen-4', file: '04-training-system.png' },
+  { id: 'screen-1', file: '01-hero-4-pillars.png' },
+  { id: 'screen-2', file: '02-track-4-pillars.png' },
+  { id: 'screen-3', file: '03-log-naturally.png' },
+  { id: 'screen-4', file: '04-ai-coach.png' },
+  { id: 'screen-5', file: '05-training-system.png' },
 ];
 
 async function main() {
