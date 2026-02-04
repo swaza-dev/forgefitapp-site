@@ -370,7 +370,7 @@
             </div>
         </div>
         <h1>FORGE<span class="accent">FIT</span> PRIVACY POLICY</h1>
-        <p class="last-updated">Last Updated: January 28, 2026</p>
+        <p class="last-updated">Last Updated: February 3, 2026</p>
 
         <p>
             ForgeFit ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("App").
@@ -386,7 +386,25 @@
             <li><strong>Payment Information:</strong> Processed securely through Apple's App Store and RevenueCat (we do not store payment card details)</li>
         </ul>
 
-        <h3>1.2 Information Collected Automatically</h3>
+        <h3>1.2 Required vs Optional Data Collection</h3>
+        <p><strong>Required for Core Features:</strong></p>
+        <ul>
+            <li>Workout logs (exercises, sets, reps, weight lifted)</li>
+            <li>Nutrition tracking (meals, macros, food logs)</li>
+            <li>Account information (email address, name)</li>
+            <li>Basic device information for app functionality</li>
+        </ul>
+        <p style="margin-top: 1rem;"><strong>Optional - You Choose:</strong></p>
+        <ul>
+            <li>Health Connect/HealthKit data (HRV, heart rate, steps, calories, sleep)</li>
+            <li>Photos for body composition analysis</li>
+            <li>Location data for outdoor workout tracking</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+            You can use ForgeFit's core workout tracking and nutrition features without granting access to optional health data. Health Connect/HealthKit integration enhances your experience with recovery insights but is not required.
+        </p>
+
+        <h3>1.3 Information Collected Automatically</h3>
         <ul>
             <li><strong>Health Data:</strong> We integrate with Apple HealthKit (iOS) and Google Health Connect (Android) to access health and fitness data including:
                 <ul>
@@ -396,6 +414,19 @@
                     <li>Workout data from connected devices and services (for example, Apple Watch on iOS or Health Connect sources on Android)</li>
                     <li>Sleep data (if you enable it via HealthKit/Health Connect permissions)</li>
                 </ul>
+                <p style="margin-top: 1rem;"><strong>Heart Rate Variability (HRV) - Recovery Monitoring:</strong></p>
+                <p style="margin-left: 1rem; margin-top: 0.5rem;">
+                    We collect Heart Rate Variability (HRV) data specifically for recovery assessment and training optimization. HRV is a key indicator of your nervous system recovery and overall readiness to train. Here's how we use HRV data:
+                </p>
+                <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+                    <li><strong>Recovery Assessment:</strong> We analyze HRV trends to determine if you are adequately recovered from previous workouts</li>
+                    <li><strong>Workout Readiness:</strong> Based on your HRV levels, we display a recovery status (Good, Fair, or Low) on your dashboard to help you decide whether to push hard or take it easy</li>
+                    <li><strong>Training Optimization:</strong> Low HRV indicates insufficient recovery. Our AI coach uses this data to recommend rest days or lighter training to prevent overtraining</li>
+                    <li><strong>Injury Prevention:</strong> By monitoring HRV trends, we can alert you when your body needs more recovery time, helping prevent overtraining-related injuries</li>
+                </ul>
+                <p style="margin-left: 1rem; margin-top: 0.5rem;">
+                    <strong>User Control:</strong> Health data collection is entirely optional. You can connect or disconnect HealthKit/Health Connect access at any time through your device settings. If you disconnect, you will still be able to use all core workout tracking and nutrition features.
+                </p>
             </li>
             <li><strong>Device Information:</strong> Device ID, operating system, and app version</li>
             <li><strong>Usage Data:</strong> How you interact with the App, features used, and app performance data</li>
@@ -429,10 +460,13 @@
             <li><strong>Apple HealthKit:</strong> To access and store health and fitness data on your device</li>
             <li><strong>Google Health Connect (Android):</strong> To access (and, if you enable it, write) health and fitness data on Android devices</li>
             <li><strong>RevenueCat:</strong> To manage subscription payments and restore purchases</li>
-            <li><strong>Supabase:</strong> To store and manage your account data and app content</li>
-            <li><strong>OpenAI/Modal Labs:</strong> To power AI features such as meal photo recognition and coaching responses</li>
+            <li><strong>Supabase:</strong> To store and manage your account data and app content securely with encryption</li>
+            <li><strong>OpenAI/Modal Labs:</strong> To power AI features such as meal photo recognition and coaching responses. <strong>Note:</strong> We do NOT send raw HRV or heart rate data to these services. Only aggregated, anonymized fitness summaries are used for AI coaching context.</li>
             <li><strong>Apple App Store:</strong> To process in-app purchases and subscriptions</li>
         </ul>
+        <p>
+            <strong>Important:</strong> Health data (including HRV, heart rate, and activity data) is NOT shared with third parties for advertising, marketing, or any purpose beyond providing you with personalized fitness coaching. Your health data stays private and is only used to enhance your personal fitness journey.
+        </p>
         <p>
             These third parties have their own privacy policies. We encourage you to review them to understand how they handle your data.
         </p>
