@@ -37,6 +37,16 @@
       "destination": "/en"
     }
   ],
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
