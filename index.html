@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=5.0, user-scalable=yes">
 
     <!-- SEO Meta Tags -->
-    <title>ForgeFit - AI Fitness Coach & Workout Tracker App | Track Training, Nutrition, Sleep</title>
-    <meta name="description" content="AI-powered fitness tracking app with personal coach in 11 languages. Track workouts, nutrition, hydration & sleep. 52-week programs, 5,700+ exercises. Works offline. $3.99/month.">
+    <title>ForgeFit - AI Personal Trainer App | $3.99/mo Fitness Coaching</title>
+    <meta name="description" content="Your AI fitness coach for $3.99/month. 52-week personalized programs, nutrition tracking, 5,700+ exercises. Train smarter with 24/7 AI coaching in 11 languages. Try free for 7 days.">
     <meta name="keywords" content="fitness tracker app, AI fitness coach, workout tracker, nutrition tracking app, fitness app, personal trainer app, workout app, all-in-one fitness, offline fitness app">
 
     <!-- Open Graph / Facebook -->
@@ -468,7 +468,8 @@
             text-align: center;
         }
         
-        .hero h1 {
+        .hero h1,
+        .hero .hero-headline {
             font-size: 4.5rem;
             font-weight: 900;
             line-height: 1.1;
@@ -479,20 +480,20 @@
             animation: fadeInUp 0.6s ease-out forwards;
             opacity: 0;
         }
-        
+
         .hero h1:nth-child(1) {
             animation-delay: 0.1s;
         }
-        
-        .hero h1:nth-child(2) {
+
+        .hero .hero-headline:nth-child(2) {
             background: var(--gradient-accent);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             animation-delay: 0.2s;
         }
-        
-        .hero h1:nth-child(3) {
+
+        .hero .hero-headline:nth-child(3) {
             animation-delay: 0.3s;
         }
         
@@ -1136,7 +1137,8 @@
         
         /* Responsive Design */
         @media (max-width: 1024px) {
-            .hero h1 {
+            .hero h1,
+            .hero .hero-headline {
                 font-size: 3.5rem;
             }
             
@@ -1168,8 +1170,9 @@
                 min-height: auto;
                 padding: 6rem 0 2rem;
             }
-            
-            .hero h1 {
+
+            .hero h1,
+            .hero .hero-headline {
                 font-size: 3rem;
             }
             
@@ -1323,8 +1326,9 @@
             .hero-content {
                 padding: 0 1rem;
             }
-            
-            .hero h1 {
+
+            .hero h1,
+            .hero .hero-headline {
                 font-size: 2.25rem;
                 line-height: 1.2;
             }
@@ -1539,7 +1543,8 @@
         }
         
         @media (max-width: 400px) {
-            .hero h1 {
+            .hero h1,
+            .hero .hero-headline {
                 font-size: 1.75rem;
             }
             
@@ -1638,10 +1643,10 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 data-i18n="home.heroLine1">Track All 4 Pillars</h1>
-                <h1 data-i18n="home.heroLine2">Build Discipline</h1>
-                <h1 data-i18n="home.heroLine3">Get Results</h1>
-                
+                <h1 data-i18n="home.heroLine1">AI Fitness Coach — Track Training, Nutrition, Hydration & Sleep</h1>
+                <div class="hero-headline" data-i18n="home.heroLine2">Build Discipline</div>
+                <div class="hero-headline" data-i18n="home.heroLine3">Get Results</div>
+
                 <p class="tagline" data-i18n="home.heroTagline">ForgeFit mobile app is the first app that tracks all 4 important pillars of fitness: Training, Nutrition, Hydration, and Sleep—with AI coaching in 11 languages.</p>
                 
                 <div class="social-proof">
@@ -1672,7 +1677,7 @@
             <div class="feature-image">
                 <div class="phone-frame">
                     <div class="phone-frame__screen">
-                        <img src="/dashboard-screenshot.png" alt="Daily compliance dashboard showing all 4 fitness pillars with completion status">
+                        <img src="/dashboard-screenshot.png" alt="ForgeFit AI fitness coach app dashboard showing workout training nutrition sleep hydration tracking with daily compliance scoring">
                     </div>
                 </div>
             </div>
@@ -1699,7 +1704,7 @@
             <div class="feature-image">
                 <div class="phone-frame">
                     <div class="phone-frame__screen">
-                        <img src="/N_logging_01.png" alt="Natural language conversation with AI coach for logging">
+                        <img src="/N_logging_01.png" alt="AI fitness coach natural language meal logging nutrition tracking conversation interface">
                     </div>
                 </div>
             </div>
@@ -1725,7 +1730,7 @@
             <div class="feature-image">
                 <div class="phone-frame">
                     <div class="phone-frame__screen">
-                        <img src="/coach-chat.png" alt="AI coach chat conversation interface showing personalized coaching with Coach Alex">
+                        <img src="/coach-chat.png" alt="AI personal trainer chat app Coach Alex 24/7 fitness coaching workout nutrition advice">
                     </div>
                 </div>
             </div>
@@ -1751,7 +1756,7 @@
             <div class="feature-image">
                 <div class="phone-frame">
                     <div class="phone-frame__screen">
-                        <img src="/workout-screenshot.png" alt="Complete training system with adaptive programming">
+                        <img src="/workout-screenshot.png" alt="ForgeFit workout tracker app 52-week training program 5700 exercises progressive overload system">
                     </div>
                 </div>
             </div>
@@ -1823,7 +1828,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-content" data-i18n="home.faq1A">ForgeFit is a comprehensive fitness tracking app that monitors all 4 pillars of fitness: Training, Nutrition, Hydration, and Sleep. With AI coaching in 11 languages, 52-week adaptive programs, and 5,700+ exercises, it's your complete fitness system in one app.</div>
+                        <div class="faq-answer-content" data-i18n="home.faq1A">ForgeFit is a comprehensive fitness tracking app that monitors all 4 pillars of fitness: Training, Nutrition, Hydration, and Sleep. With AI coaching in 11 languages, 52-week adaptive programs, and 5,700+ exercises, it's your complete fitness system in one app. <a href="#features" style="color: var(--orange); text-decoration: underline;">Learn more about features</a>.</div>
                     </div>
                 </div>
 
@@ -1833,7 +1838,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-content" data-i18n="home.faq2A">ForgeFit costs <strong>$3.99/month</strong> or <strong>$19.99/year</strong> (save 58%). We offer a <strong>7-day free trial</strong> so you can try all features risk-free. That's less than one coffee per month for your complete fitness system.</div>
+                        <div class="faq-answer-content" data-i18n="home.faq2A">ForgeFit costs <strong>$3.99/month</strong> or <strong>$19.99/year</strong> (save 58%). We offer a <strong>7-day free trial</strong> so you can try all features risk-free. That's less than one coffee per month for your complete fitness system. <a href="#download" style="color: var(--orange); text-decoration: underline;">Start your free trial</a>.</div>
                     </div>
                 </div>
 
@@ -1863,7 +1868,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-content" data-i18n="home.faq5A">Your AI coach (Coach Alex) understands your training program, progress, and goals. Ask questions about training, nutrition, supplements, or form checks in natural conversation. Coach Alex speaks 11 languages and understands cultural context and local foods.</div>
+                        <div class="faq-answer-content" data-i18n="home.faq5A">Your AI coach (Coach Alex) understands your training program, progress, and goals. Ask questions about training, nutrition, supplements, or form checks in natural conversation. Coach Alex speaks 11 languages and understands cultural context and local foods. <a href="#features" style="color: var(--orange); text-decoration: underline;">See AI coaching in action</a>.</div>
                     </div>
                 </div>
 
