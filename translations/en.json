@@ -51,7 +51,7 @@
     "feature4Li5": "Auto-progressive overload that adapts to you",
     "languagesTitle": "Your AI coach speaks your language",
     "languagesNames": "English • Español • Português • Deutsch • Français • Italiano\n日本語 • 한국어 • 简体中文 • Русский • Türkçe",
-    "languagesCoachAlex": "AI coaching that understands cultural context and local cuisine. Get meal plans and guidance in your native language.",
+    "languagesCoachAlex": "Your personal AI coach understands cultural context and local cuisine. Get meal plans and guidance in your native language.",
     "statsWeekPrograms": "Week Programs",
     "statsExercises": "Exercises",
     "statsLanguages": "Languages",
@@ -84,13 +84,15 @@
     "faq4Q": "Do I need an internet connection?",
     "faq4A": "No! ForgeFit works completely offline for workout logging, progress tracking, and viewing your programs. You only need internet for AI coach conversations and syncing data across devices.",
     "faq5Q": "How does the AI coaching work?",
-    "faq5A": "Your AI coach (Coach Alex) understands your training program, progress, and goals. Ask questions about training, nutrition, supplements, or form checks in natural conversation. Coach Alex speaks 11 languages and understands cultural context and local foods.",
+    "faq5A": "You'll be paired with Coach Alex or Coach Rachel based on your profile. Your coach understands your training program, progress, and goals. Ask questions about training, nutrition, supplements, or form checks in natural conversation. Both coaches speak 11 languages and understand cultural context and local foods.",
     "faq6Q": "Can I cancel my subscription anytime?",
     "faq6A": "Yes! Cancel anytime through your App Store (iOS) or Google Play (Android) subscription settings. No cancellation fees. Your data remains accessible until your subscription period ends.",
     "faq7Q": "Is my data private and secure?",
     "faq7A": "Absolutely. Your data is encrypted and stored securely. We never sell your personal information. Health data integrations (Apple Health, Google Health Connect) follow strict privacy standards. Read our full Privacy Policy.",
-    "faq8Q": "What languages are supported?",
-    "faq8A": "ForgeFit supports 11 languages: English, Spanish, Portuguese, German, French, Italian, Japanese, Korean, Chinese, Russian, and Turkish. Your AI coach understands cultural context and local foods in each language."
+    "faq8Q": "Will I get Coach Alex or Coach Rachel?",
+    "faq8A": "You'll be paired with the coach that best matches your profile. Coach Alex specializes in male physiology, while Coach Rachel specializes in female physiology and pregnancy fitness. Both have the same expertise, speak 11 languages, and understand cultural context and local foods.",
+    "faq9Q": "What languages are supported?",
+    "faq9A": "ForgeFit supports 11 languages: English, Spanish, Portuguese, German, French, Italian, Japanese, Korean, Chinese, Russian, and Turkish. Your AI coach understands cultural context and local foods in each language."
   },
   "hero": {
     "tagline": "AI-Powered Fitness App",
