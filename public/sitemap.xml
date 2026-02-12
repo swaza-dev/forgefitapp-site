@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage (English) -->
+  <url>
+    <loc>https://forgefitapp.com/</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Multi-language homepages -->
+  <url>
+    <loc>https://forgefitapp.com/en</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/es</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/pt</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/de</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/fr</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/it</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/ja</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/ko</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/zh</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/ru</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forgefitapp.com/tr</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Privacy pages -->
+  <url>
+    <loc>https://forgefitapp.com/privacy/</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms pages -->
+  <url>
+    <loc>https://forgefitapp.com/terms/</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

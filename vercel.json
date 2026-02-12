@@ -1,42 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/privacy-policy",
-      "destination": "/privacy/en/"
-    },
-    {
-      "source": "/privacy-policy.html",
-      "destination": "/privacy/en/"
-    },
-    {
-      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/privacy",
-      "destination": "/privacy/:lang/"
-    },
-    {
-      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/privacy/",
-      "destination": "/privacy/:lang/"
-    },
-    {
-      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/terms",
-      "destination": "/terms/:lang/"
-    },
-    {
-      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/terms/",
-      "destination": "/terms/:lang/"
-    },
-    {
-      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/:lang(en|es|pt|de|fr|it|ja|ko|zh|ru|tr)/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/",
-      "destination": "/en"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
