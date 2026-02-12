@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+
+    <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -865,7 +869,99 @@
             letter-spacing: 1.5px;
             font-weight: 600;
         }
-        
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 2rem;
+            background: var(--bg-primary);
+        }
+
+        .faq-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .faq-section > .container > p {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--border-hover);
+        }
+
+        .faq-item.active {
+            border-color: var(--orange);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .faq-question:hover {
+            color: var(--orange-light);
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            color: var(--orange);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .faq-answer-content strong {
+            color: var(--orange);
+            font-weight: 600;
+        }
+
         /* Final CTA - Dark theme with glow */
         .final-cta {
             padding: 4rem 2rem;
@@ -1317,7 +1413,30 @@
             .stats-section {
                 padding: 2.5rem 0;
             }
-            
+
+            .faq-section {
+                padding: 3rem 1rem;
+            }
+
+            .faq-section h2 {
+                font-size: 2rem;
+            }
+
+            .faq-section > .container > p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .faq-question {
+                padding: 1.25rem;
+                font-size: 1rem;
+            }
+
+            .faq-answer-content {
+                padding: 0 1.25rem 1.25rem;
+                font-size: 0.9375rem;
+            }
+
             .nav-links {
                 gap: 0.5rem;
             }
@@ -1391,6 +1510,7 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
                 <li><a href="/privacy/" id="navPrivacyLink" data-i18n="nav.privacy">Privacy</a></li>
                 <li>
                     <div class="lang-picker" id="langPicker">
@@ -1628,6 +1748,96 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 data-i18n="home.faqTitle">Frequently Asked Questions</h2>
+            <p data-i18n="home.faqSubtitle">Everything you need to know about ForgeFit</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="home.faq1Q">What is ForgeFit?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-i18n="home.faq1A">ForgeFit is a comprehensive fitness tracking app that monitors all 4 pillars of fitness: Training, Nutrition, Hydration, and Sleep. With AI coaching in 11 languages, 52-week adaptive programs, and 5,700+ exercises, it's your complete fitness system in one app.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="home.faq2Q">How much does ForgeFit cost?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-i18n="home.faq2A">ForgeFit costs <strong>$3.99/month</strong> or <strong>$19.99/year</strong> (save 58%). We offer a <strong>7-day free trial</strong> so you can try all features risk-free. That's less than one coffee per month for your complete fitness system.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="home.faq3Q">What platforms are supported?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-i18n="home.faq3A">ForgeFit is available on both iOS (iPhone and iPad) and Android devices. Download from the App Store or Google Play.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="home.faq4Q">Do I need an internet connection?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-i18n="home.faq4A">No! ForgeFit works completely offline for workout logging, progress tracking, and viewing your programs. You only need internet for AI coach conversations and syncing data across devices.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="home.faq5Q">How does the AI coaching work?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-i18n="home.faq5A">Your AI coach (Coach Alex) understands your training program, progress, and goals. Ask questions about training, nutrition, supplements, or form checks in natural conversation. Coach Alex speaks 11 languages and understands cultural context and local foods.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="home.faq6Q">Can I cancel my subscription anytime?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-i18n="home.faq6A">Yes! Cancel anytime through your App Store (iOS) or Google Play (Android) subscription settings. No cancellation fees. Your data remains accessible until your subscription period ends.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="home.faq7Q">Is my data private and secure?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-i18n="home.faq7A">Absolutely. Your data is encrypted and stored securely. We never sell your personal information. Health data integrations (Apple Health, Google Health Connect) follow strict privacy standards. Read our full <a href="/privacy/" style="color: var(--orange); text-decoration: underline;">Privacy Policy</a>.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="home.faq8Q">What languages are supported?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-i18n="home.faq8A">ForgeFit supports 11 languages: English, Spanish, Portuguese, German, French, Italian, Japanese, Korean, Chinese, Russian, and Turkish. Your AI coach understands cultural context and local foods in each language.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Final CTA -->
     <section class="final-cta" id="download">
         <div class="container">
@@ -1805,6 +2015,33 @@
             // Initialize
             updatePicker();
         })();
+
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const answerContent = item.querySelector('.faq-answer-content');
+
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+
+                    // Close all items
+                    faqItems.forEach(i => {
+                        i.classList.remove('active');
+                        i.querySelector('.faq-answer').style.maxHeight = null;
+                    });
+
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answerContent.scrollHeight + 'px';
+                    }
+                });
+            });
+        });
     </script>
 
 </body>
